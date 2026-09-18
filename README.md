@@ -121,7 +121,7 @@ Switching activity for power analysis came from simulation using an average work
 
 ## Physical Design
 
-The selected netlist was taken through a physical design flow using **Cadence Innovus** with **Nangate45/FreePDK45**. The implementation used the **1.796 ns** operating period selected after synthesis, corresponding to approximately **556.8 MHz**.
+The selected netlist was taken through a physical design flow using **Cadence Innovus** with **Nangate45/FreePDK45** technology. The implementation used the **1.796 ns** operating period selected after synthesis, corresponding to approximately **556.8 MHz**.
 
 The flow was:
 
@@ -146,13 +146,7 @@ Timing, power and DRC checks
 
 A square floorplan was used with **60% initial utilization**. Power distribution used VDD/GND rings and stripes. Signal routing used **metal1–metal6**.
 
-![Power planning layout](physical_design/images/power_layout.gif)
-
 Placement, Clock tree synthesis was then performed with targets of **50 ps transition** and **20 ps skew**, followed by routing and post-route setup/hold optimization.
-
-![Cell placement layout](physical_design/images/cell_placement_layout.gif)
-
-![Clock tree synthesis layout](physical_design/images/cts_layout.gif)
 
 Post-route timing was analyzed at typical, slow, and fast corners. For the scope of the project, timing closure was accepted at the **typical corner**, where the design achieved **+103 ps setup slack** and **+18 ps hold slack**, with no setup or hold violations at **556.8 MHz** under the applied constraints. External interface timing was not fully specified.
 
