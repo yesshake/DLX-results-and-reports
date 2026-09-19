@@ -4,7 +4,8 @@ This repository collects the architecture notes, verification results, synthesis
 
 The complete RTL is not published here because of university obligations. The public repository is therefore focused on the design decisions, diagrams, implementation flow, and results. The RTL can be shared privately where permitted.
 
-The final physical implementation runs at **556.8 MHz** with a **36,647.884 µm² standard-cell area** and **23.107 mW** total power at the typical corner (1.1 V).
+The current post-route implementation closes timing at **556.8 MHz** at the typical corner, with **36,648 µm²** of standard-cell area and **23.11 mW** estimated total power at **1.1 V** using activity assumptions.
+
 ## Architecture
 
 The processor is a 32 bit, five stage in-order pipeline:
@@ -19,8 +20,6 @@ The implementation follows the usual DLX pipeline structure, but most of the wor
 
 The IF stage maintains the program counter and interfaces with instruction memory. A 16-entry direct-mapped BTB is used for branch prediction. Control-flow corrections coming from Decode can replace the predicted path and redirect the PC.
 
-![Instruction Fetch stage architecture](images/if_stage_architecture.drawio.png)
-
 ### Instruction Decode
 
 Decode is the most control heavy stage of the processor. It handles instruction decoding, register file access, immediate generation, hazard checking, forwarding for Decode, and branch/jump resolution.
@@ -29,13 +28,9 @@ Branches are resolved in ID rather than EX. This keeps the branch correction pen
 
 The forwarding and hazard logic handles dependencies from instructions still in EX, MEM, and WB. A scoreboard-style mechanism is used to determine when an operand is not yet available and the pipeline must stall. Stalling holds the earlier pipeline state while a bubble is inserted into the following stage.
 
-![Instruction Decode stage architecture](images/id_stage_architecture.drawio.png)
-
 ### Execute
 
 The EX stage contains the arithmetic, logic, shift, comparison, and multiplication datapaths. Operands can be forwarded from later pipeline stages when the required value has not yet reached the register file.
-
-![Execute stage architecture](images/ex_stage_architecture.drawio.png)
 
 The main execution units were implemented explicitly in RTL rather than relying only on generic arithmetic operators:
 
@@ -47,7 +42,8 @@ The main execution units were implemented explicitly in RTL rather than relying 
 
 - **Multiplier:** a two stage pipelined \(32\times32\) multiplier using radix-4 Booth encoding and a Dadda tree for partial product reduction. The final two rows are combined using the P4 adder, and the lower 32 bits of the product are returned.
 
-Multiplication is a multi cycle operation. Its property supported by the hazard unit, both for result issue and for handling data dependencies.
+Multiplication has a 2 clock cycle latency but is fully pipelined, allowing a new multiplication to enter on the following cycle. The hazard logic tracks multiplier dependencies and reserves the shared EX completion path when required.
+
 
 ### Memory and Writeback
 
@@ -55,15 +51,11 @@ The MEM stage handles loads and stores and connects the internal pipeline to the
 
 The external memory interface also converts the pipeline requests into the instruction and data memory request and propagates memory stalls back into the pipeline.
 
-![Memory stage architecture](images/mem_stage_architecture.drawio.png)
-
 WB selects the value returned to the register file from the available result sources.
 
 ## Verification
 
-Functional verification was based mainly on directed assembly programs.
-
-The assembler/compiler used to generate the memory images was provided by the university and was modified to match the implemented ISA. Each test program has an expected final data-memory image.
+Functional verification was based mainly on directed assembly programs. The assembler used to generate the memory images was provided by the university and was modified to match the implemented ISA.
 
 The flow is:
 
@@ -99,6 +91,8 @@ The mapping was reloaded for this step rather than synthesized again, so timing,
 
 The sweep also showed that tighter constraints did not monotonically produce faster mappings. The most aggressive synthesis points could generate worse mappings, and the 0.7 ns and 0.8 ns mappings were excluded because they did not pass the required mapped-netlist functional regression.
 
+![Synthesis Design Space Exploration](images/power_area_vs_period.png)
+
 Clock-gated variants were explored with different minimum register widths. After functional filtering and comparison of timing, area, and activity-aware power, the selected mapping was:
 
 ```text
@@ -115,7 +109,7 @@ For this mapping, synthesis reported approximately:
 | Frequency | 556.8 MHz |
 | Dynamic power | 7.87 mW |
 | Total power | 8.357 mW |
-| Area | 24352.6 |
+| Area | 24352.6  µm² |
 
 Switching activity for power analysis came from simulation using an average workload intended to give a representative activity mix.
 
@@ -146,7 +140,7 @@ Timing, power and DRC checks
 
 A square floorplan was used with **60% initial utilization**. Power distribution used VDD/GND rings and stripes. Signal routing used **metal1–metal6**.
 
-Placement, Clock tree synthesis was then performed with targets of **50 ps transition** and **20 ps skew**, followed by routing and post-route setup/hold optimization.
+Placement and Clock tree synthesis was then performed with targets of **50 ps transition** and **20 ps skew**, followed by routing and post-route setup/hold optimization.
 
 Post-route timing was analyzed at typical, slow, and fast corners. For the scope of the project, timing closure was accepted at the **typical corner**, where the design achieved **+103 ps setup slack** and **+18 ps hold slack**, with no setup or hold violations at **556.8 MHz** under the applied constraints. External interface timing was not fully specified.
 
