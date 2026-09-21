@@ -1,0 +1,45 @@
+ 
+****************************************
+Report : area
+Design : dlx
+Version: W-2024.09-SP2
+Date   : Wed Sep 16 03:59:05 2026
+****************************************
+
+Library(s) Used:
+
+    NangateOpenCellLibrary (File: /home/repository/do/libnandgate/NangateOpenCellLibrary_typical_ecsm.db)
+
+Number of ports:                          418
+Number of nets:                         21572
+Number of cells:                        20485
+Number of combinational cells:          16996
+Number of sequential cells:              3474
+Number of macros/black boxes:               0
+Number of buf/inv:                       1881
+Number of references:                      60
+
+Combinational area:              18657.505956
+Buf/Inv area:                     1106.028004
+Noncombinational area:           15669.793438
+Macro/Black Box area:                0.000000
+Net Interconnect area:      undefined  (Wire load has zero net area)
+
+Total cell area:                 34327.299395
+Total area:                 undefined
+
+Hierarchical area distribution
+------------------------------
+
+                                  Global cell area            Local cell area
+                                  -------------------  ------------------------------ 
+Hierarchical cell                 Absolute    Percent  Combi-      Noncombi-   Black-
+                                  Total       Total    national    national    boxes   Design
+--------------------------------  ----------  -------  ----------  ----------  ------  -------------
+dlx                               34327.2994    100.0   9375.1700   4499.9218  0.0000  dlx
+id_stage_inst/reg_file_inst       11612.7618     33.8   5468.6940   6144.0678  0.0000  reg_file_id_1
+if_stage_inst/btb_inst             8839.4458     25.8   3813.6420   5025.8038  0.0000  BTB_if_1
+--------------------------------  ----------  -------  ----------  ----------  ------  -------------
+Total                                                  18657.5060  15669.7934  0.0000
+
+1

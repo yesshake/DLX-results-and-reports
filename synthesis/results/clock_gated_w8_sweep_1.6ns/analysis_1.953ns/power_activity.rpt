@@ -1,0 +1,43 @@
+Information: Propagating switching activity (low effort zero delay simulation). (PWR-6)
+ 
+****************************************
+Report : power
+        -hier
+        -analysis_effort low
+Design : dlx
+Version: W-2024.09-SP2
+Date   : Thu Sep 17 15:15:51 2026
+****************************************
+
+
+Library(s) Used:
+
+    NangateOpenCellLibrary (File: /home/repository/do/libnandgate/NangateOpenCellLibrary_typical_ecsm.db)
+
+
+Operating Conditions: typical   Library: NangateOpenCellLibrary
+Wire Load Model Mode: top
+
+Design        Wire Load Model            Library
+------------------------------------------------
+dlx                    5K_hvratio_1_1    NangateOpenCellLibrary
+
+
+Global Operating Voltage = 1.1  
+Power-specific unit information :
+    Voltage Units = 1V
+    Capacitance Units = 1.000000ff
+    Time Units = 1ns
+    Dynamic Power Units = 1uW    (derived from V,C,T units)
+    Leakage Power Units = 1nW
+
+
+--------------------------------------------------------------------------------
+                                       Switch   Int      Leak     Total
+Hierarchy                              Power    Power    Power    Power    %
+--------------------------------------------------------------------------------
+dlx                                    2.83e+03 4.38e+03 4.77e+05 7.69e+03 100.0
+  id_stage_inst/reg_file_inst (reg_file_id_1)
+                                        354.748  785.153 1.23e+05 1.26e+03  16.4
+  mem_if_inst (mem_if_1)                  3.119    2.620  919.646    6.659   0.1
+1

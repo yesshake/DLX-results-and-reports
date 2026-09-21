@@ -1,0 +1,1457 @@
+Information: Updating design information... (UID-85)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -nworst 5
+        -max_paths 20
+Design : dlx
+Version: W-2024.09-SP2
+Date   : Wed Sep 16 14:13:39 2026
+****************************************
+
+Operating Conditions: typical   Library: NangateOpenCellLibrary
+Wire Load Model Mode: top
+
+  Startpoint: ex_stage_inst/rd_addr_reg/reg_data_reg[2]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: if_stage_inst/predicted_target_reg/reg_data_reg[1]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  dlx                5K_hvratio_1_1        NangateOpenCellLibrary
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  ex_stage_inst/rd_addr_reg/reg_data_reg[2]/CK (DFF_X1)
+                                                          0.00       0.00 r
+  ex_stage_inst/rd_addr_reg/reg_data_reg[2]/Q (DFF_X1)
+                                                          0.09       0.09 r
+  U13409/ZN (XNOR2_X1)                                    0.06       0.14 r
+  U8388/ZN (AND2_X1)                                      0.05       0.19 r
+  U13410/ZN (AND4_X1)                                     0.07       0.26 r
+  U8536/ZN (OR2_X1)                                       0.04       0.30 r
+  U13753/ZN (NOR2_X1)                                     0.03       0.32 f
+  U8547/ZN (NAND2_X1)                                     0.03       0.35 r
+  U8549/ZN (OAI211_X1)                                    0.05       0.40 f
+  U5219/ZN (OR3_X2)                                       0.09       0.49 f
+  U5728/ZN (NAND3_X1)                                     0.04       0.53 r
+  U8771/ZN (XNOR2_X1)                                     0.07       0.60 r
+  U8772/ZN (NOR2_X1)                                      0.03       0.63 f
+  U8784/ZN (OAI21_X1)                                     0.05       0.68 r
+  U6936/ZN (OR2_X1)                                       0.04       0.72 r
+  U8788/ZN (NAND2_X1)                                     0.02       0.74 f
+  U5665/ZN (AND2_X1)                                      0.04       0.78 f
+  U13728/ZN (OAI211_X1)                                   0.04       0.82 r
+  U7147/ZN (NAND2_X1)                                     0.03       0.85 f
+  U7271/ZN (AND2_X2)                                      0.05       0.90 f
+  U7167/ZN (OR2_X1)                                       0.06       0.96 f
+  U7188/ZN (OAI21_X1)                                     0.05       1.01 r
+  U7305/ZN (XNOR2_X1)                                     0.04       1.06 f
+  U7166/ZN (INV_X1)                                       0.03       1.08 r
+  U7159/ZN (AND4_X2)                                      0.08       1.16 r
+  U7245/ZN (NAND4_X1)                                     0.05       1.21 f
+  U7244/Z (MUX2_X1)                                       0.07       1.28 r
+  U5794/ZN (OAI211_X1)                                    0.03       1.32 f
+  U7193/ZN (NAND2_X1)                                     0.04       1.36 r
+  U7309/ZN (NAND2_X1)                                     0.03       1.39 f
+  U7374/ZN (NAND4_X1)                                     0.03       1.42 r
+  U5291/ZN (AND3_X2)                                      0.06       1.48 r
+  U7313/Z (MUX2_X1)                                       0.08       1.56 f
+  U7176/ZN (AND3_X1)                                      0.04       1.60 f
+  U5763/ZN (OR2_X2)                                       0.06       1.67 f
+  U12199/Z (CLKBUF_X3)                                    0.05       1.72 f
+  U6607/ZN (OR2_X1)                                       0.06       1.78 f
+  U6994/ZN (NAND4_X1)                                     0.03       1.81 r
+  if_stage_inst/predicted_target_reg/reg_data_reg[1]/D (DFF_X2)
+                                                          0.01       1.82 r
+  data arrival time                                                  1.82
+
+  clock clk (rise edge)                                   1.60       1.60
+  clock network delay (ideal)                             0.00       1.60
+  if_stage_inst/predicted_target_reg/reg_data_reg[1]/CK (DFF_X2)
+                                                          0.00       1.60 r
+  library setup time                                     -0.03       1.57
+  data required time                                                 1.57
+  --------------------------------------------------------------------------
+  data required time                                                 1.57
+  data arrival time                                                 -1.82
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.26
+
+
+  Startpoint: ex_stage_inst/rd_addr_reg/reg_data_reg[2]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: if_stage_inst/predicted_target_reg/reg_data_reg[28]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  dlx                5K_hvratio_1_1        NangateOpenCellLibrary
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  ex_stage_inst/rd_addr_reg/reg_data_reg[2]/CK (DFF_X1)
+                                                          0.00       0.00 r
+  ex_stage_inst/rd_addr_reg/reg_data_reg[2]/Q (DFF_X1)
+                                                          0.09       0.09 r
+  U13409/ZN (XNOR2_X1)                                    0.06       0.14 r
+  U8388/ZN (AND2_X1)                                      0.05       0.19 r
+  U13410/ZN (AND4_X1)                                     0.07       0.26 r
+  U8536/ZN (OR2_X1)                                       0.04       0.30 r
+  U13753/ZN (NOR2_X1)                                     0.03       0.32 f
+  U8547/ZN (NAND2_X1)                                     0.03       0.35 r
+  U8549/ZN (OAI211_X1)                                    0.05       0.40 f
+  U5219/ZN (OR3_X2)                                       0.09       0.49 f
+  U5728/ZN (NAND3_X1)                                     0.04       0.53 r
+  U8771/ZN (XNOR2_X1)                                     0.07       0.60 r
+  U8772/ZN (NOR2_X1)                                      0.03       0.63 f
+  U8784/ZN (OAI21_X1)                                     0.05       0.68 r
+  U6936/ZN (OR2_X1)                                       0.04       0.72 r
+  U8788/ZN (NAND2_X1)                                     0.02       0.74 f
+  U5665/ZN (AND2_X1)                                      0.04       0.78 f
+  U13728/ZN (OAI211_X1)                                   0.04       0.82 r
+  U7147/ZN (NAND2_X1)                                     0.03       0.85 f
+  U7271/ZN (AND2_X2)                                      0.05       0.90 f
+  U7167/ZN (OR2_X1)                                       0.06       0.96 f
+  U7188/ZN (OAI21_X1)                                     0.05       1.01 r
+  U7305/ZN (XNOR2_X1)                                     0.04       1.06 f
+  U7166/ZN (INV_X1)                                       0.03       1.08 r
+  U7159/ZN (AND4_X2)                                      0.08       1.16 r
+  U7245/ZN (NAND4_X1)                                     0.05       1.21 f
+  U7244/Z (MUX2_X1)                                       0.07       1.28 r
+  U5794/ZN (OAI211_X1)                                    0.03       1.32 f
+  U7193/ZN (NAND2_X1)                                     0.04       1.36 r
+  U7309/ZN (NAND2_X1)                                     0.03       1.39 f
+  U7374/ZN (NAND4_X1)                                     0.03       1.42 r
+  U5291/ZN (AND3_X2)                                      0.06       1.48 r
+  U7313/Z (MUX2_X1)                                       0.08       1.56 f
+  U7176/ZN (AND3_X1)                                      0.04       1.60 f
+  U5763/ZN (OR2_X2)                                       0.06       1.67 f
+  U12199/Z (CLKBUF_X3)                                    0.05       1.72 f
+  U6996/ZN (OR2_X1)                                       0.06       1.78 f
+  U6995/ZN (NAND4_X1)                                     0.03       1.81 r
+  if_stage_inst/predicted_target_reg/reg_data_reg[28]/D (DFF_X2)
+                                                          0.01       1.82 r
+  data arrival time                                                  1.82
+
+  clock clk (rise edge)                                   1.60       1.60
+  clock network delay (ideal)                             0.00       1.60
+  if_stage_inst/predicted_target_reg/reg_data_reg[28]/CK (DFF_X2)
+                                                          0.00       1.60 r
+  library setup time                                     -0.03       1.57
+  data required time                                                 1.57
+  --------------------------------------------------------------------------
+  data required time                                                 1.57
+  data arrival time                                                 -1.82
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.26
+
+
+  Startpoint: ex_stage_inst/rd_addr_reg/reg_data_reg[2]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: if_stage_inst/pc_reg_inst/reg_data_reg[1]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  dlx                5K_hvratio_1_1        NangateOpenCellLibrary
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  ex_stage_inst/rd_addr_reg/reg_data_reg[2]/CK (DFF_X1)
+                                                          0.00       0.00 r
+  ex_stage_inst/rd_addr_reg/reg_data_reg[2]/Q (DFF_X1)
+                                                          0.09       0.09 r
+  U13409/ZN (XNOR2_X1)                                    0.06       0.14 r
+  U8388/ZN (AND2_X1)                                      0.05       0.19 r
+  U13410/ZN (AND4_X1)                                     0.07       0.26 r
+  U8536/ZN (OR2_X1)                                       0.04       0.30 r
+  U13753/ZN (NOR2_X1)                                     0.03       0.32 f
+  U8547/ZN (NAND2_X1)                                     0.03       0.35 r
+  U8549/ZN (OAI211_X1)                                    0.05       0.40 f
+  U5219/ZN (OR3_X2)                                       0.09       0.49 f
+  U5728/ZN (NAND3_X1)                                     0.04       0.53 r
+  U8771/ZN (XNOR2_X1)                                     0.07       0.60 r
+  U8772/ZN (NOR2_X1)                                      0.03       0.63 f
+  U8784/ZN (OAI21_X1)                                     0.05       0.68 r
+  U6936/ZN (OR2_X1)                                       0.04       0.72 r
+  U8788/ZN (NAND2_X1)                                     0.02       0.74 f
+  U5665/ZN (AND2_X1)                                      0.04       0.78 f
+  U13728/ZN (OAI211_X1)                                   0.04       0.82 r
+  U7147/ZN (NAND2_X1)                                     0.03       0.85 f
+  U7271/ZN (AND2_X2)                                      0.05       0.90 f
+  U7167/ZN (OR2_X1)                                       0.06       0.96 f
+  U7188/ZN (OAI21_X1)                                     0.05       1.01 r
+  U7305/ZN (XNOR2_X1)                                     0.04       1.06 f
+  U7166/ZN (INV_X1)                                       0.03       1.08 r
+  U7159/ZN (AND4_X2)                                      0.08       1.16 r
+  U7245/ZN (NAND4_X1)                                     0.05       1.21 f
+  U7244/Z (MUX2_X1)                                       0.07       1.28 r
+  U5794/ZN (OAI211_X1)                                    0.03       1.32 f
+  U7193/ZN (NAND2_X1)                                     0.04       1.36 r
+  U7309/ZN (NAND2_X1)                                     0.03       1.39 f
+  U7374/ZN (NAND4_X1)                                     0.03       1.42 r
+  U5291/ZN (AND3_X2)                                      0.06       1.48 r
+  U7313/Z (MUX2_X1)                                       0.08       1.56 f
+  U7176/ZN (AND3_X1)                                      0.04       1.60 f
+  U5763/ZN (OR2_X2)                                       0.06       1.67 f
+  U12199/Z (CLKBUF_X3)                                    0.05       1.72 f
+  U6607/ZN (OR2_X1)                                       0.06       1.78 f
+  U6994/ZN (NAND4_X1)                                     0.03       1.81 r
+  if_stage_inst/pc_reg_inst/reg_data_reg[1]/D (DFF_X2)
+                                                          0.01       1.82 r
+  data arrival time                                                  1.82
+
+  clock clk (rise edge)                                   1.60       1.60
+  clock network delay (ideal)                             0.00       1.60
+  if_stage_inst/pc_reg_inst/reg_data_reg[1]/CK (DFF_X2)
+                                                          0.00       1.60 r
+  library setup time                                     -0.03       1.57
+  data required time                                                 1.57
+  --------------------------------------------------------------------------
+  data required time                                                 1.57
+  data arrival time                                                 -1.82
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.26
+
+
+  Startpoint: ex_stage_inst/rd_addr_reg/reg_data_reg[2]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: if_stage_inst/pc_reg_inst/reg_data_reg[28]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  dlx                5K_hvratio_1_1        NangateOpenCellLibrary
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  ex_stage_inst/rd_addr_reg/reg_data_reg[2]/CK (DFF_X1)
+                                                          0.00       0.00 r
+  ex_stage_inst/rd_addr_reg/reg_data_reg[2]/Q (DFF_X1)
+                                                          0.09       0.09 r
+  U13409/ZN (XNOR2_X1)                                    0.06       0.14 r
+  U8388/ZN (AND2_X1)                                      0.05       0.19 r
+  U13410/ZN (AND4_X1)                                     0.07       0.26 r
+  U8536/ZN (OR2_X1)                                       0.04       0.30 r
+  U13753/ZN (NOR2_X1)                                     0.03       0.32 f
+  U8547/ZN (NAND2_X1)                                     0.03       0.35 r
+  U8549/ZN (OAI211_X1)                                    0.05       0.40 f
+  U5219/ZN (OR3_X2)                                       0.09       0.49 f
+  U5728/ZN (NAND3_X1)                                     0.04       0.53 r
+  U8771/ZN (XNOR2_X1)                                     0.07       0.60 r
+  U8772/ZN (NOR2_X1)                                      0.03       0.63 f
+  U8784/ZN (OAI21_X1)                                     0.05       0.68 r
+  U6936/ZN (OR2_X1)                                       0.04       0.72 r
+  U8788/ZN (NAND2_X1)                                     0.02       0.74 f
+  U5665/ZN (AND2_X1)                                      0.04       0.78 f
+  U13728/ZN (OAI211_X1)                                   0.04       0.82 r
+  U7147/ZN (NAND2_X1)                                     0.03       0.85 f
+  U7271/ZN (AND2_X2)                                      0.05       0.90 f
+  U7167/ZN (OR2_X1)                                       0.06       0.96 f
+  U7188/ZN (OAI21_X1)                                     0.05       1.01 r
+  U7305/ZN (XNOR2_X1)                                     0.04       1.06 f
+  U7166/ZN (INV_X1)                                       0.03       1.08 r
+  U7159/ZN (AND4_X2)                                      0.08       1.16 r
+  U7245/ZN (NAND4_X1)                                     0.05       1.21 f
+  U7244/Z (MUX2_X1)                                       0.07       1.28 r
+  U5794/ZN (OAI211_X1)                                    0.03       1.32 f
+  U7193/ZN (NAND2_X1)                                     0.04       1.36 r
+  U7309/ZN (NAND2_X1)                                     0.03       1.39 f
+  U7374/ZN (NAND4_X1)                                     0.03       1.42 r
+  U5291/ZN (AND3_X2)                                      0.06       1.48 r
+  U7313/Z (MUX2_X1)                                       0.08       1.56 f
+  U7176/ZN (AND3_X1)                                      0.04       1.60 f
+  U5763/ZN (OR2_X2)                                       0.06       1.67 f
+  U12199/Z (CLKBUF_X3)                                    0.05       1.72 f
+  U6996/ZN (OR2_X1)                                       0.06       1.78 f
+  U6995/ZN (NAND4_X1)                                     0.03       1.81 r
+  if_stage_inst/pc_reg_inst/reg_data_reg[28]/D (DFF_X2)
+                                                          0.01       1.82 r
+  data arrival time                                                  1.82
+
+  clock clk (rise edge)                                   1.60       1.60
+  clock network delay (ideal)                             0.00       1.60
+  if_stage_inst/pc_reg_inst/reg_data_reg[28]/CK (DFF_X2)
+                                                          0.00       1.60 r
+  library setup time                                     -0.03       1.57
+  data required time                                                 1.57
+  --------------------------------------------------------------------------
+  data required time                                                 1.57
+  data arrival time                                                 -1.82
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.26
+
+
+  Startpoint: ex_stage_inst/rd_addr_reg/reg_data_reg[2]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: if_stage_inst/pc_reg_inst/reg_data_reg[31]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  dlx                5K_hvratio_1_1        NangateOpenCellLibrary
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  ex_stage_inst/rd_addr_reg/reg_data_reg[2]/CK (DFF_X1)
+                                                          0.00       0.00 r
+  ex_stage_inst/rd_addr_reg/reg_data_reg[2]/Q (DFF_X1)
+                                                          0.09       0.09 r
+  U13409/ZN (XNOR2_X1)                                    0.06       0.14 r
+  U8388/ZN (AND2_X1)                                      0.05       0.19 r
+  U13410/ZN (AND4_X1)                                     0.07       0.26 r
+  U8536/ZN (OR2_X1)                                       0.04       0.30 r
+  U13753/ZN (NOR2_X1)                                     0.03       0.32 f
+  U8547/ZN (NAND2_X1)                                     0.03       0.35 r
+  U8549/ZN (OAI211_X1)                                    0.05       0.40 f
+  U5219/ZN (OR3_X2)                                       0.09       0.49 f
+  U5728/ZN (NAND3_X1)                                     0.04       0.53 r
+  U8771/ZN (XNOR2_X1)                                     0.07       0.60 r
+  U8772/ZN (NOR2_X1)                                      0.03       0.63 f
+  U8784/ZN (OAI21_X1)                                     0.05       0.68 r
+  U6936/ZN (OR2_X1)                                       0.04       0.72 r
+  U8788/ZN (NAND2_X1)                                     0.02       0.74 f
+  U5665/ZN (AND2_X1)                                      0.04       0.78 f
+  U13728/ZN (OAI211_X1)                                   0.04       0.82 r
+  U7147/ZN (NAND2_X1)                                     0.03       0.85 f
+  U7271/ZN (AND2_X2)                                      0.05       0.90 f
+  U7167/ZN (OR2_X1)                                       0.06       0.96 f
+  U7188/ZN (OAI21_X1)                                     0.05       1.01 r
+  U7305/ZN (XNOR2_X1)                                     0.04       1.06 f
+  U7166/ZN (INV_X1)                                       0.03       1.08 r
+  U7159/ZN (AND4_X2)                                      0.08       1.16 r
+  U7245/ZN (NAND4_X1)                                     0.05       1.21 f
+  U7244/Z (MUX2_X1)                                       0.07       1.28 r
+  U5794/ZN (OAI211_X1)                                    0.03       1.32 f
+  U7193/ZN (NAND2_X1)                                     0.04       1.36 r
+  U7309/ZN (NAND2_X1)                                     0.03       1.39 f
+  U7374/ZN (NAND4_X1)                                     0.03       1.42 r
+  U5291/ZN (AND3_X2)                                      0.06       1.48 r
+  U7313/Z (MUX2_X1)                                       0.08       1.56 f
+  U7176/ZN (AND3_X1)                                      0.04       1.60 f
+  U5763/ZN (OR2_X2)                                       0.06       1.67 f
+  U12199/Z (CLKBUF_X3)                                    0.05       1.72 f
+  U6624/ZN (OR2_X1)                                       0.06       1.78 f
+  U7180/ZN (NAND4_X1)                                     0.03       1.81 r
+  if_stage_inst/pc_reg_inst/reg_data_reg[31]/D (DFF_X2)
+                                                          0.01       1.82 r
+  data arrival time                                                  1.82
+
+  clock clk (rise edge)                                   1.60       1.60
+  clock network delay (ideal)                             0.00       1.60
+  if_stage_inst/pc_reg_inst/reg_data_reg[31]/CK (DFF_X2)
+                                                          0.00       1.60 r
+  library setup time                                     -0.03       1.57
+  data required time                                                 1.57
+  --------------------------------------------------------------------------
+  data required time                                                 1.57
+  data arrival time                                                 -1.82
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.26
+
+
+  Startpoint: ex_stage_inst/rd_addr_reg/reg_data_reg[2]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: if_stage_inst/predicted_target_reg/reg_data_reg[31]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  dlx                5K_hvratio_1_1        NangateOpenCellLibrary
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  ex_stage_inst/rd_addr_reg/reg_data_reg[2]/CK (DFF_X1)
+                                                          0.00       0.00 r
+  ex_stage_inst/rd_addr_reg/reg_data_reg[2]/Q (DFF_X1)
+                                                          0.09       0.09 r
+  U13409/ZN (XNOR2_X1)                                    0.06       0.14 r
+  U8388/ZN (AND2_X1)                                      0.05       0.19 r
+  U13410/ZN (AND4_X1)                                     0.07       0.26 r
+  U8536/ZN (OR2_X1)                                       0.04       0.30 r
+  U13753/ZN (NOR2_X1)                                     0.03       0.32 f
+  U8547/ZN (NAND2_X1)                                     0.03       0.35 r
+  U8549/ZN (OAI211_X1)                                    0.05       0.40 f
+  U5219/ZN (OR3_X2)                                       0.09       0.49 f
+  U5728/ZN (NAND3_X1)                                     0.04       0.53 r
+  U8771/ZN (XNOR2_X1)                                     0.07       0.60 r
+  U8772/ZN (NOR2_X1)                                      0.03       0.63 f
+  U8784/ZN (OAI21_X1)                                     0.05       0.68 r
+  U6936/ZN (OR2_X1)                                       0.04       0.72 r
+  U8788/ZN (NAND2_X1)                                     0.02       0.74 f
+  U5665/ZN (AND2_X1)                                      0.04       0.78 f
+  U13728/ZN (OAI211_X1)                                   0.04       0.82 r
+  U7147/ZN (NAND2_X1)                                     0.03       0.85 f
+  U7271/ZN (AND2_X2)                                      0.05       0.90 f
+  U7167/ZN (OR2_X1)                                       0.06       0.96 f
+  U7188/ZN (OAI21_X1)                                     0.05       1.01 r
+  U7305/ZN (XNOR2_X1)                                     0.04       1.06 f
+  U7166/ZN (INV_X1)                                       0.03       1.08 r
+  U7159/ZN (AND4_X2)                                      0.08       1.16 r
+  U7245/ZN (NAND4_X1)                                     0.05       1.21 f
+  U7244/Z (MUX2_X1)                                       0.07       1.28 r
+  U5794/ZN (OAI211_X1)                                    0.03       1.32 f
+  U7193/ZN (NAND2_X1)                                     0.04       1.36 r
+  U7309/ZN (NAND2_X1)                                     0.03       1.39 f
+  U7374/ZN (NAND4_X1)                                     0.03       1.42 r
+  U5291/ZN (AND3_X2)                                      0.06       1.48 r
+  U7313/Z (MUX2_X1)                                       0.08       1.56 f
+  U7176/ZN (AND3_X1)                                      0.04       1.60 f
+  U5763/ZN (OR2_X2)                                       0.06       1.67 f
+  U12199/Z (CLKBUF_X3)                                    0.05       1.72 f
+  U6624/ZN (OR2_X1)                                       0.06       1.78 f
+  U7180/ZN (NAND4_X1)                                     0.03       1.81 r
+  if_stage_inst/predicted_target_reg/reg_data_reg[31]/D (DFF_X2)
+                                                          0.01       1.82 r
+  data arrival time                                                  1.82
+
+  clock clk (rise edge)                                   1.60       1.60
+  clock network delay (ideal)                             0.00       1.60
+  if_stage_inst/predicted_target_reg/reg_data_reg[31]/CK (DFF_X2)
+                                                          0.00       1.60 r
+  library setup time                                     -0.03       1.57
+  data required time                                                 1.57
+  --------------------------------------------------------------------------
+  data required time                                                 1.57
+  data arrival time                                                 -1.82
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.26
+
+
+  Startpoint: ex_stage_inst/rd_addr_reg/reg_data_reg[2]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: if_stage_inst/predicted_target_reg/reg_data_reg[0]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  dlx                5K_hvratio_1_1        NangateOpenCellLibrary
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  ex_stage_inst/rd_addr_reg/reg_data_reg[2]/CK (DFF_X1)
+                                                          0.00       0.00 r
+  ex_stage_inst/rd_addr_reg/reg_data_reg[2]/Q (DFF_X1)
+                                                          0.09       0.09 r
+  U13409/ZN (XNOR2_X1)                                    0.06       0.14 r
+  U8388/ZN (AND2_X1)                                      0.05       0.19 r
+  U13410/ZN (AND4_X1)                                     0.07       0.26 r
+  U8536/ZN (OR2_X1)                                       0.04       0.30 r
+  U13753/ZN (NOR2_X1)                                     0.03       0.32 f
+  U8547/ZN (NAND2_X1)                                     0.03       0.35 r
+  U8549/ZN (OAI211_X1)                                    0.05       0.40 f
+  U5219/ZN (OR3_X2)                                       0.09       0.49 f
+  U5728/ZN (NAND3_X1)                                     0.04       0.53 r
+  U8771/ZN (XNOR2_X1)                                     0.07       0.60 r
+  U8772/ZN (NOR2_X1)                                      0.03       0.63 f
+  U8784/ZN (OAI21_X1)                                     0.05       0.68 r
+  U6936/ZN (OR2_X1)                                       0.04       0.72 r
+  U8788/ZN (NAND2_X1)                                     0.02       0.74 f
+  U5665/ZN (AND2_X1)                                      0.04       0.78 f
+  U13728/ZN (OAI211_X1)                                   0.04       0.82 r
+  U7147/ZN (NAND2_X1)                                     0.03       0.85 f
+  U7271/ZN (AND2_X2)                                      0.05       0.90 f
+  U7167/ZN (OR2_X1)                                       0.06       0.96 f
+  U7188/ZN (OAI21_X1)                                     0.05       1.01 r
+  U7305/ZN (XNOR2_X1)                                     0.04       1.06 f
+  U7166/ZN (INV_X1)                                       0.03       1.08 r
+  U7159/ZN (AND4_X2)                                      0.08       1.16 r
+  U7245/ZN (NAND4_X1)                                     0.05       1.21 f
+  U7244/Z (MUX2_X1)                                       0.07       1.28 r
+  U5794/ZN (OAI211_X1)                                    0.03       1.32 f
+  U7193/ZN (NAND2_X1)                                     0.04       1.36 r
+  U7309/ZN (NAND2_X1)                                     0.03       1.39 f
+  U7374/ZN (NAND4_X1)                                     0.03       1.42 r
+  U5291/ZN (AND3_X2)                                      0.06       1.48 r
+  U7313/Z (MUX2_X1)                                       0.08       1.56 f
+  U7176/ZN (AND3_X1)                                      0.04       1.60 f
+  U5763/ZN (OR2_X2)                                       0.06       1.67 f
+  U12199/Z (CLKBUF_X3)                                    0.05       1.72 f
+  U6238/ZN (OR2_X1)                                       0.06       1.78 f
+  U6762/ZN (NAND4_X1)                                     0.03       1.81 r
+  if_stage_inst/predicted_target_reg/reg_data_reg[0]/D (DFF_X2)
+                                                          0.01       1.82 r
+  data arrival time                                                  1.82
+
+  clock clk (rise edge)                                   1.60       1.60
+  clock network delay (ideal)                             0.00       1.60
+  if_stage_inst/predicted_target_reg/reg_data_reg[0]/CK (DFF_X2)
+                                                          0.00       1.60 r
+  library setup time                                     -0.03       1.57
+  data required time                                                 1.57
+  --------------------------------------------------------------------------
+  data required time                                                 1.57
+  data arrival time                                                 -1.82
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.26
+
+
+  Startpoint: ex_stage_inst/rd_addr_reg/reg_data_reg[2]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: if_stage_inst/pc_reg_inst/reg_data_reg[0]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  dlx                5K_hvratio_1_1        NangateOpenCellLibrary
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  ex_stage_inst/rd_addr_reg/reg_data_reg[2]/CK (DFF_X1)
+                                                          0.00       0.00 r
+  ex_stage_inst/rd_addr_reg/reg_data_reg[2]/Q (DFF_X1)
+                                                          0.09       0.09 r
+  U13409/ZN (XNOR2_X1)                                    0.06       0.14 r
+  U8388/ZN (AND2_X1)                                      0.05       0.19 r
+  U13410/ZN (AND4_X1)                                     0.07       0.26 r
+  U8536/ZN (OR2_X1)                                       0.04       0.30 r
+  U13753/ZN (NOR2_X1)                                     0.03       0.32 f
+  U8547/ZN (NAND2_X1)                                     0.03       0.35 r
+  U8549/ZN (OAI211_X1)                                    0.05       0.40 f
+  U5219/ZN (OR3_X2)                                       0.09       0.49 f
+  U5728/ZN (NAND3_X1)                                     0.04       0.53 r
+  U8771/ZN (XNOR2_X1)                                     0.07       0.60 r
+  U8772/ZN (NOR2_X1)                                      0.03       0.63 f
+  U8784/ZN (OAI21_X1)                                     0.05       0.68 r
+  U6936/ZN (OR2_X1)                                       0.04       0.72 r
+  U8788/ZN (NAND2_X1)                                     0.02       0.74 f
+  U5665/ZN (AND2_X1)                                      0.04       0.78 f
+  U13728/ZN (OAI211_X1)                                   0.04       0.82 r
+  U7147/ZN (NAND2_X1)                                     0.03       0.85 f
+  U7271/ZN (AND2_X2)                                      0.05       0.90 f
+  U7167/ZN (OR2_X1)                                       0.06       0.96 f
+  U7188/ZN (OAI21_X1)                                     0.05       1.01 r
+  U7305/ZN (XNOR2_X1)                                     0.04       1.06 f
+  U7166/ZN (INV_X1)                                       0.03       1.08 r
+  U7159/ZN (AND4_X2)                                      0.08       1.16 r
+  U7245/ZN (NAND4_X1)                                     0.05       1.21 f
+  U7244/Z (MUX2_X1)                                       0.07       1.28 r
+  U5794/ZN (OAI211_X1)                                    0.03       1.32 f
+  U7193/ZN (NAND2_X1)                                     0.04       1.36 r
+  U7309/ZN (NAND2_X1)                                     0.03       1.39 f
+  U7374/ZN (NAND4_X1)                                     0.03       1.42 r
+  U5291/ZN (AND3_X2)                                      0.06       1.48 r
+  U7313/Z (MUX2_X1)                                       0.08       1.56 f
+  U7176/ZN (AND3_X1)                                      0.04       1.60 f
+  U5763/ZN (OR2_X2)                                       0.06       1.67 f
+  U12199/Z (CLKBUF_X3)                                    0.05       1.72 f
+  U6238/ZN (OR2_X1)                                       0.06       1.78 f
+  U6762/ZN (NAND4_X1)                                     0.03       1.81 r
+  if_stage_inst/pc_reg_inst/reg_data_reg[0]/D (DFF_X2)
+                                                          0.01       1.82 r
+  data arrival time                                                  1.82
+
+  clock clk (rise edge)                                   1.60       1.60
+  clock network delay (ideal)                             0.00       1.60
+  if_stage_inst/pc_reg_inst/reg_data_reg[0]/CK (DFF_X2)
+                                                          0.00       1.60 r
+  library setup time                                     -0.03       1.57
+  data required time                                                 1.57
+  --------------------------------------------------------------------------
+  data required time                                                 1.57
+  data arrival time                                                 -1.82
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.26
+
+
+  Startpoint: ex_stage_inst/rd_addr_reg/reg_data_reg[2]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: if_stage_inst/predicted_target_reg/reg_data_reg[30]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  dlx                5K_hvratio_1_1        NangateOpenCellLibrary
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  ex_stage_inst/rd_addr_reg/reg_data_reg[2]/CK (DFF_X1)
+                                                          0.00       0.00 r
+  ex_stage_inst/rd_addr_reg/reg_data_reg[2]/Q (DFF_X1)
+                                                          0.09       0.09 r
+  U13409/ZN (XNOR2_X1)                                    0.06       0.14 r
+  U8388/ZN (AND2_X1)                                      0.05       0.19 r
+  U13410/ZN (AND4_X1)                                     0.07       0.26 r
+  U8536/ZN (OR2_X1)                                       0.04       0.30 r
+  U13753/ZN (NOR2_X1)                                     0.03       0.32 f
+  U8547/ZN (NAND2_X1)                                     0.03       0.35 r
+  U8549/ZN (OAI211_X1)                                    0.05       0.40 f
+  U5219/ZN (OR3_X2)                                       0.09       0.49 f
+  U5728/ZN (NAND3_X1)                                     0.04       0.53 r
+  U8771/ZN (XNOR2_X1)                                     0.07       0.60 r
+  U8772/ZN (NOR2_X1)                                      0.03       0.63 f
+  U8784/ZN (OAI21_X1)                                     0.05       0.68 r
+  U6936/ZN (OR2_X1)                                       0.04       0.72 r
+  U8788/ZN (NAND2_X1)                                     0.02       0.74 f
+  U5665/ZN (AND2_X1)                                      0.04       0.78 f
+  U13728/ZN (OAI211_X1)                                   0.04       0.82 r
+  U7147/ZN (NAND2_X1)                                     0.03       0.85 f
+  U7271/ZN (AND2_X2)                                      0.05       0.90 f
+  U7167/ZN (OR2_X1)                                       0.06       0.96 f
+  U7188/ZN (OAI21_X1)                                     0.05       1.01 r
+  U7305/ZN (XNOR2_X1)                                     0.04       1.06 f
+  U7166/ZN (INV_X1)                                       0.03       1.08 r
+  U7159/ZN (AND4_X2)                                      0.08       1.16 r
+  U7245/ZN (NAND4_X1)                                     0.05       1.21 f
+  U7244/Z (MUX2_X1)                                       0.07       1.28 r
+  U5794/ZN (OAI211_X1)                                    0.03       1.32 f
+  U7193/ZN (NAND2_X1)                                     0.04       1.36 r
+  U7309/ZN (NAND2_X1)                                     0.03       1.39 f
+  U7374/ZN (NAND4_X1)                                     0.03       1.42 r
+  U5291/ZN (AND3_X2)                                      0.06       1.48 r
+  U7313/Z (MUX2_X1)                                       0.08       1.56 f
+  U7176/ZN (AND3_X1)                                      0.04       1.60 f
+  U5763/ZN (OR2_X2)                                       0.06       1.67 f
+  U12199/Z (CLKBUF_X3)                                    0.05       1.72 f
+  U6998/ZN (OR2_X1)                                       0.06       1.78 f
+  U6997/ZN (NAND4_X1)                                     0.03       1.81 r
+  if_stage_inst/predicted_target_reg/reg_data_reg[30]/D (DFF_X2)
+                                                          0.01       1.82 r
+  data arrival time                                                  1.82
+
+  clock clk (rise edge)                                   1.60       1.60
+  clock network delay (ideal)                             0.00       1.60
+  if_stage_inst/predicted_target_reg/reg_data_reg[30]/CK (DFF_X2)
+                                                          0.00       1.60 r
+  library setup time                                     -0.03       1.57
+  data required time                                                 1.57
+  --------------------------------------------------------------------------
+  data required time                                                 1.57
+  data arrival time                                                 -1.82
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.26
+
+
+  Startpoint: ex_stage_inst/rd_addr_reg/reg_data_reg[2]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: if_stage_inst/pc_reg_inst/reg_data_reg[30]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  dlx                5K_hvratio_1_1        NangateOpenCellLibrary
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  ex_stage_inst/rd_addr_reg/reg_data_reg[2]/CK (DFF_X1)
+                                                          0.00       0.00 r
+  ex_stage_inst/rd_addr_reg/reg_data_reg[2]/Q (DFF_X1)
+                                                          0.09       0.09 r
+  U13409/ZN (XNOR2_X1)                                    0.06       0.14 r
+  U8388/ZN (AND2_X1)                                      0.05       0.19 r
+  U13410/ZN (AND4_X1)                                     0.07       0.26 r
+  U8536/ZN (OR2_X1)                                       0.04       0.30 r
+  U13753/ZN (NOR2_X1)                                     0.03       0.32 f
+  U8547/ZN (NAND2_X1)                                     0.03       0.35 r
+  U8549/ZN (OAI211_X1)                                    0.05       0.40 f
+  U5219/ZN (OR3_X2)                                       0.09       0.49 f
+  U5728/ZN (NAND3_X1)                                     0.04       0.53 r
+  U8771/ZN (XNOR2_X1)                                     0.07       0.60 r
+  U8772/ZN (NOR2_X1)                                      0.03       0.63 f
+  U8784/ZN (OAI21_X1)                                     0.05       0.68 r
+  U6936/ZN (OR2_X1)                                       0.04       0.72 r
+  U8788/ZN (NAND2_X1)                                     0.02       0.74 f
+  U5665/ZN (AND2_X1)                                      0.04       0.78 f
+  U13728/ZN (OAI211_X1)                                   0.04       0.82 r
+  U7147/ZN (NAND2_X1)                                     0.03       0.85 f
+  U7271/ZN (AND2_X2)                                      0.05       0.90 f
+  U7167/ZN (OR2_X1)                                       0.06       0.96 f
+  U7188/ZN (OAI21_X1)                                     0.05       1.01 r
+  U7305/ZN (XNOR2_X1)                                     0.04       1.06 f
+  U7166/ZN (INV_X1)                                       0.03       1.08 r
+  U7159/ZN (AND4_X2)                                      0.08       1.16 r
+  U7245/ZN (NAND4_X1)                                     0.05       1.21 f
+  U7244/Z (MUX2_X1)                                       0.07       1.28 r
+  U5794/ZN (OAI211_X1)                                    0.03       1.32 f
+  U7193/ZN (NAND2_X1)                                     0.04       1.36 r
+  U7309/ZN (NAND2_X1)                                     0.03       1.39 f
+  U7374/ZN (NAND4_X1)                                     0.03       1.42 r
+  U5291/ZN (AND3_X2)                                      0.06       1.48 r
+  U7313/Z (MUX2_X1)                                       0.08       1.56 f
+  U7176/ZN (AND3_X1)                                      0.04       1.60 f
+  U5763/ZN (OR2_X2)                                       0.06       1.67 f
+  U12199/Z (CLKBUF_X3)                                    0.05       1.72 f
+  U6998/ZN (OR2_X1)                                       0.06       1.78 f
+  U6997/ZN (NAND4_X1)                                     0.03       1.81 r
+  if_stage_inst/pc_reg_inst/reg_data_reg[30]/D (DFF_X2)
+                                                          0.01       1.82 r
+  data arrival time                                                  1.82
+
+  clock clk (rise edge)                                   1.60       1.60
+  clock network delay (ideal)                             0.00       1.60
+  if_stage_inst/pc_reg_inst/reg_data_reg[30]/CK (DFF_X2)
+                                                          0.00       1.60 r
+  library setup time                                     -0.03       1.57
+  data required time                                                 1.57
+  --------------------------------------------------------------------------
+  data required time                                                 1.57
+  data arrival time                                                 -1.82
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.26
+
+
+  Startpoint: ex_stage_inst/rd_addr_reg/reg_data_reg[2]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: if_stage_inst/predicted_target_reg/reg_data_reg[22]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  dlx                5K_hvratio_1_1        NangateOpenCellLibrary
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  ex_stage_inst/rd_addr_reg/reg_data_reg[2]/CK (DFF_X1)
+                                                          0.00       0.00 r
+  ex_stage_inst/rd_addr_reg/reg_data_reg[2]/Q (DFF_X1)
+                                                          0.09       0.09 r
+  U13409/ZN (XNOR2_X1)                                    0.06       0.14 r
+  U8388/ZN (AND2_X1)                                      0.05       0.19 r
+  U13410/ZN (AND4_X1)                                     0.07       0.26 r
+  U8536/ZN (OR2_X1)                                       0.04       0.30 r
+  U13753/ZN (NOR2_X1)                                     0.03       0.32 f
+  U8547/ZN (NAND2_X1)                                     0.03       0.35 r
+  U8549/ZN (OAI211_X1)                                    0.05       0.40 f
+  U5219/ZN (OR3_X2)                                       0.09       0.49 f
+  U5728/ZN (NAND3_X1)                                     0.04       0.53 r
+  U8771/ZN (XNOR2_X1)                                     0.07       0.60 r
+  U8772/ZN (NOR2_X1)                                      0.03       0.63 f
+  U8784/ZN (OAI21_X1)                                     0.05       0.68 r
+  U6936/ZN (OR2_X1)                                       0.04       0.72 r
+  U8788/ZN (NAND2_X1)                                     0.02       0.74 f
+  U5665/ZN (AND2_X1)                                      0.04       0.78 f
+  U13728/ZN (OAI211_X1)                                   0.04       0.82 r
+  U7147/ZN (NAND2_X1)                                     0.03       0.85 f
+  U7271/ZN (AND2_X2)                                      0.05       0.90 f
+  U7167/ZN (OR2_X1)                                       0.06       0.96 f
+  U7188/ZN (OAI21_X1)                                     0.05       1.01 r
+  U7305/ZN (XNOR2_X1)                                     0.04       1.06 f
+  U7166/ZN (INV_X1)                                       0.03       1.08 r
+  U7159/ZN (AND4_X2)                                      0.08       1.16 r
+  U7245/ZN (NAND4_X1)                                     0.05       1.21 f
+  U7244/Z (MUX2_X1)                                       0.07       1.28 r
+  U5794/ZN (OAI211_X1)                                    0.03       1.32 f
+  U7193/ZN (NAND2_X1)                                     0.04       1.36 r
+  U7309/ZN (NAND2_X1)                                     0.03       1.39 f
+  U7374/ZN (NAND4_X1)                                     0.03       1.42 r
+  U5291/ZN (AND3_X2)                                      0.06       1.48 r
+  U7313/Z (MUX2_X1)                                       0.08       1.56 f
+  U7176/ZN (AND3_X1)                                      0.04       1.60 f
+  U5763/ZN (OR2_X2)                                       0.06       1.67 f
+  U12199/Z (CLKBUF_X3)                                    0.05       1.72 f
+  U6625/ZN (OR2_X1)                                       0.06       1.78 f
+  U7181/ZN (NAND4_X1)                                     0.03       1.81 r
+  if_stage_inst/predicted_target_reg/reg_data_reg[22]/D (DFF_X2)
+                                                          0.01       1.82 r
+  data arrival time                                                  1.82
+
+  clock clk (rise edge)                                   1.60       1.60
+  clock network delay (ideal)                             0.00       1.60
+  if_stage_inst/predicted_target_reg/reg_data_reg[22]/CK (DFF_X2)
+                                                          0.00       1.60 r
+  library setup time                                     -0.03       1.57
+  data required time                                                 1.57
+  --------------------------------------------------------------------------
+  data required time                                                 1.57
+  data arrival time                                                 -1.82
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.26
+
+
+  Startpoint: ex_stage_inst/rd_addr_reg/reg_data_reg[2]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: if_stage_inst/pc_reg_inst/reg_data_reg[22]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  dlx                5K_hvratio_1_1        NangateOpenCellLibrary
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  ex_stage_inst/rd_addr_reg/reg_data_reg[2]/CK (DFF_X1)
+                                                          0.00       0.00 r
+  ex_stage_inst/rd_addr_reg/reg_data_reg[2]/Q (DFF_X1)
+                                                          0.09       0.09 r
+  U13409/ZN (XNOR2_X1)                                    0.06       0.14 r
+  U8388/ZN (AND2_X1)                                      0.05       0.19 r
+  U13410/ZN (AND4_X1)                                     0.07       0.26 r
+  U8536/ZN (OR2_X1)                                       0.04       0.30 r
+  U13753/ZN (NOR2_X1)                                     0.03       0.32 f
+  U8547/ZN (NAND2_X1)                                     0.03       0.35 r
+  U8549/ZN (OAI211_X1)                                    0.05       0.40 f
+  U5219/ZN (OR3_X2)                                       0.09       0.49 f
+  U5728/ZN (NAND3_X1)                                     0.04       0.53 r
+  U8771/ZN (XNOR2_X1)                                     0.07       0.60 r
+  U8772/ZN (NOR2_X1)                                      0.03       0.63 f
+  U8784/ZN (OAI21_X1)                                     0.05       0.68 r
+  U6936/ZN (OR2_X1)                                       0.04       0.72 r
+  U8788/ZN (NAND2_X1)                                     0.02       0.74 f
+  U5665/ZN (AND2_X1)                                      0.04       0.78 f
+  U13728/ZN (OAI211_X1)                                   0.04       0.82 r
+  U7147/ZN (NAND2_X1)                                     0.03       0.85 f
+  U7271/ZN (AND2_X2)                                      0.05       0.90 f
+  U7167/ZN (OR2_X1)                                       0.06       0.96 f
+  U7188/ZN (OAI21_X1)                                     0.05       1.01 r
+  U7305/ZN (XNOR2_X1)                                     0.04       1.06 f
+  U7166/ZN (INV_X1)                                       0.03       1.08 r
+  U7159/ZN (AND4_X2)                                      0.08       1.16 r
+  U7245/ZN (NAND4_X1)                                     0.05       1.21 f
+  U7244/Z (MUX2_X1)                                       0.07       1.28 r
+  U5794/ZN (OAI211_X1)                                    0.03       1.32 f
+  U7193/ZN (NAND2_X1)                                     0.04       1.36 r
+  U7309/ZN (NAND2_X1)                                     0.03       1.39 f
+  U7374/ZN (NAND4_X1)                                     0.03       1.42 r
+  U5291/ZN (AND3_X2)                                      0.06       1.48 r
+  U7313/Z (MUX2_X1)                                       0.08       1.56 f
+  U7176/ZN (AND3_X1)                                      0.04       1.60 f
+  U5763/ZN (OR2_X2)                                       0.06       1.67 f
+  U12199/Z (CLKBUF_X3)                                    0.05       1.72 f
+  U6625/ZN (OR2_X1)                                       0.06       1.78 f
+  U7181/ZN (NAND4_X1)                                     0.03       1.81 r
+  if_stage_inst/pc_reg_inst/reg_data_reg[22]/D (DFF_X2)
+                                                          0.01       1.82 r
+  data arrival time                                                  1.82
+
+  clock clk (rise edge)                                   1.60       1.60
+  clock network delay (ideal)                             0.00       1.60
+  if_stage_inst/pc_reg_inst/reg_data_reg[22]/CK (DFF_X2)
+                                                          0.00       1.60 r
+  library setup time                                     -0.03       1.57
+  data required time                                                 1.57
+  --------------------------------------------------------------------------
+  data required time                                                 1.57
+  data arrival time                                                 -1.82
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.26
+
+
+  Startpoint: ex_stage_inst/rd_addr_reg/reg_data_reg[2]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: if_stage_inst/predicted_target_reg/reg_data_reg[15]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  dlx                5K_hvratio_1_1        NangateOpenCellLibrary
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  ex_stage_inst/rd_addr_reg/reg_data_reg[2]/CK (DFF_X1)
+                                                          0.00       0.00 r
+  ex_stage_inst/rd_addr_reg/reg_data_reg[2]/Q (DFF_X1)
+                                                          0.09       0.09 r
+  U13409/ZN (XNOR2_X1)                                    0.06       0.14 r
+  U8388/ZN (AND2_X1)                                      0.05       0.19 r
+  U13410/ZN (AND4_X1)                                     0.07       0.26 r
+  U8536/ZN (OR2_X1)                                       0.04       0.30 r
+  U13753/ZN (NOR2_X1)                                     0.03       0.32 f
+  U8547/ZN (NAND2_X1)                                     0.03       0.35 r
+  U8549/ZN (OAI211_X1)                                    0.05       0.40 f
+  U5219/ZN (OR3_X2)                                       0.09       0.49 f
+  U5728/ZN (NAND3_X1)                                     0.04       0.53 r
+  U8771/ZN (XNOR2_X1)                                     0.07       0.60 r
+  U8772/ZN (NOR2_X1)                                      0.03       0.63 f
+  U8784/ZN (OAI21_X1)                                     0.05       0.68 r
+  U6936/ZN (OR2_X1)                                       0.04       0.72 r
+  U8788/ZN (NAND2_X1)                                     0.02       0.74 f
+  U5665/ZN (AND2_X1)                                      0.04       0.78 f
+  U13728/ZN (OAI211_X1)                                   0.04       0.82 r
+  U7147/ZN (NAND2_X1)                                     0.03       0.85 f
+  U7271/ZN (AND2_X2)                                      0.05       0.90 f
+  U7167/ZN (OR2_X1)                                       0.06       0.96 f
+  U7188/ZN (OAI21_X1)                                     0.05       1.01 r
+  U7305/ZN (XNOR2_X1)                                     0.04       1.06 f
+  U7166/ZN (INV_X1)                                       0.03       1.08 r
+  U7159/ZN (AND4_X2)                                      0.08       1.16 r
+  U7245/ZN (NAND4_X1)                                     0.05       1.21 f
+  U7244/Z (MUX2_X1)                                       0.07       1.28 r
+  U5794/ZN (OAI211_X1)                                    0.03       1.32 f
+  U7193/ZN (NAND2_X1)                                     0.04       1.36 r
+  U7309/ZN (NAND2_X1)                                     0.03       1.39 f
+  U7374/ZN (NAND4_X1)                                     0.03       1.42 r
+  U5291/ZN (AND3_X2)                                      0.06       1.48 r
+  U7313/Z (MUX2_X1)                                       0.08       1.56 f
+  U7176/ZN (AND3_X1)                                      0.04       1.60 f
+  U5763/ZN (OR2_X2)                                       0.06       1.67 f
+  U12199/Z (CLKBUF_X3)                                    0.05       1.72 f
+  U7107/ZN (OR2_X1)                                       0.06       1.78 f
+  U7106/ZN (NAND4_X1)                                     0.03       1.81 r
+  if_stage_inst/predicted_target_reg/reg_data_reg[15]/D (DFF_X2)
+                                                          0.01       1.82 r
+  data arrival time                                                  1.82
+
+  clock clk (rise edge)                                   1.60       1.60
+  clock network delay (ideal)                             0.00       1.60
+  if_stage_inst/predicted_target_reg/reg_data_reg[15]/CK (DFF_X2)
+                                                          0.00       1.60 r
+  library setup time                                     -0.03       1.57
+  data required time                                                 1.57
+  --------------------------------------------------------------------------
+  data required time                                                 1.57
+  data arrival time                                                 -1.82
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.26
+
+
+  Startpoint: ex_stage_inst/rd_addr_reg/reg_data_reg[2]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: if_stage_inst/pc_reg_inst/reg_data_reg[15]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  dlx                5K_hvratio_1_1        NangateOpenCellLibrary
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  ex_stage_inst/rd_addr_reg/reg_data_reg[2]/CK (DFF_X1)
+                                                          0.00       0.00 r
+  ex_stage_inst/rd_addr_reg/reg_data_reg[2]/Q (DFF_X1)
+                                                          0.09       0.09 r
+  U13409/ZN (XNOR2_X1)                                    0.06       0.14 r
+  U8388/ZN (AND2_X1)                                      0.05       0.19 r
+  U13410/ZN (AND4_X1)                                     0.07       0.26 r
+  U8536/ZN (OR2_X1)                                       0.04       0.30 r
+  U13753/ZN (NOR2_X1)                                     0.03       0.32 f
+  U8547/ZN (NAND2_X1)                                     0.03       0.35 r
+  U8549/ZN (OAI211_X1)                                    0.05       0.40 f
+  U5219/ZN (OR3_X2)                                       0.09       0.49 f
+  U5728/ZN (NAND3_X1)                                     0.04       0.53 r
+  U8771/ZN (XNOR2_X1)                                     0.07       0.60 r
+  U8772/ZN (NOR2_X1)                                      0.03       0.63 f
+  U8784/ZN (OAI21_X1)                                     0.05       0.68 r
+  U6936/ZN (OR2_X1)                                       0.04       0.72 r
+  U8788/ZN (NAND2_X1)                                     0.02       0.74 f
+  U5665/ZN (AND2_X1)                                      0.04       0.78 f
+  U13728/ZN (OAI211_X1)                                   0.04       0.82 r
+  U7147/ZN (NAND2_X1)                                     0.03       0.85 f
+  U7271/ZN (AND2_X2)                                      0.05       0.90 f
+  U7167/ZN (OR2_X1)                                       0.06       0.96 f
+  U7188/ZN (OAI21_X1)                                     0.05       1.01 r
+  U7305/ZN (XNOR2_X1)                                     0.04       1.06 f
+  U7166/ZN (INV_X1)                                       0.03       1.08 r
+  U7159/ZN (AND4_X2)                                      0.08       1.16 r
+  U7245/ZN (NAND4_X1)                                     0.05       1.21 f
+  U7244/Z (MUX2_X1)                                       0.07       1.28 r
+  U5794/ZN (OAI211_X1)                                    0.03       1.32 f
+  U7193/ZN (NAND2_X1)                                     0.04       1.36 r
+  U7309/ZN (NAND2_X1)                                     0.03       1.39 f
+  U7374/ZN (NAND4_X1)                                     0.03       1.42 r
+  U5291/ZN (AND3_X2)                                      0.06       1.48 r
+  U7313/Z (MUX2_X1)                                       0.08       1.56 f
+  U7176/ZN (AND3_X1)                                      0.04       1.60 f
+  U5763/ZN (OR2_X2)                                       0.06       1.67 f
+  U12199/Z (CLKBUF_X3)                                    0.05       1.72 f
+  U7107/ZN (OR2_X1)                                       0.06       1.78 f
+  U7106/ZN (NAND4_X1)                                     0.03       1.81 r
+  if_stage_inst/pc_reg_inst/reg_data_reg[15]/D (DFF_X2)
+                                                          0.01       1.82 r
+  data arrival time                                                  1.82
+
+  clock clk (rise edge)                                   1.60       1.60
+  clock network delay (ideal)                             0.00       1.60
+  if_stage_inst/pc_reg_inst/reg_data_reg[15]/CK (DFF_X2)
+                                                          0.00       1.60 r
+  library setup time                                     -0.03       1.57
+  data required time                                                 1.57
+  --------------------------------------------------------------------------
+  data required time                                                 1.57
+  data arrival time                                                 -1.82
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.26
+
+
+  Startpoint: ex_stage_inst/rd_addr_reg/reg_data_reg[2]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: if_stage_inst/predicted_target_reg/reg_data_reg[29]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  dlx                5K_hvratio_1_1        NangateOpenCellLibrary
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  ex_stage_inst/rd_addr_reg/reg_data_reg[2]/CK (DFF_X1)
+                                                          0.00       0.00 r
+  ex_stage_inst/rd_addr_reg/reg_data_reg[2]/Q (DFF_X1)
+                                                          0.09       0.09 r
+  U13409/ZN (XNOR2_X1)                                    0.06       0.14 r
+  U8388/ZN (AND2_X1)                                      0.05       0.19 r
+  U13410/ZN (AND4_X1)                                     0.07       0.26 r
+  U8536/ZN (OR2_X1)                                       0.04       0.30 r
+  U13753/ZN (NOR2_X1)                                     0.03       0.32 f
+  U8547/ZN (NAND2_X1)                                     0.03       0.35 r
+  U8549/ZN (OAI211_X1)                                    0.05       0.40 f
+  U5219/ZN (OR3_X2)                                       0.09       0.49 f
+  U5728/ZN (NAND3_X1)                                     0.04       0.53 r
+  U8771/ZN (XNOR2_X1)                                     0.07       0.60 r
+  U8772/ZN (NOR2_X1)                                      0.03       0.63 f
+  U8784/ZN (OAI21_X1)                                     0.05       0.68 r
+  U6936/ZN (OR2_X1)                                       0.04       0.72 r
+  U8788/ZN (NAND2_X1)                                     0.02       0.74 f
+  U5665/ZN (AND2_X1)                                      0.04       0.78 f
+  U13728/ZN (OAI211_X1)                                   0.04       0.82 r
+  U7147/ZN (NAND2_X1)                                     0.03       0.85 f
+  U7271/ZN (AND2_X2)                                      0.05       0.90 f
+  U7167/ZN (OR2_X1)                                       0.06       0.96 f
+  U7188/ZN (OAI21_X1)                                     0.05       1.01 r
+  U7305/ZN (XNOR2_X1)                                     0.04       1.06 f
+  U7166/ZN (INV_X1)                                       0.03       1.08 r
+  U7159/ZN (AND4_X2)                                      0.08       1.16 r
+  U7245/ZN (NAND4_X1)                                     0.05       1.21 f
+  U7244/Z (MUX2_X1)                                       0.07       1.28 r
+  U5794/ZN (OAI211_X1)                                    0.03       1.32 f
+  U7193/ZN (NAND2_X1)                                     0.04       1.36 r
+  U7309/ZN (NAND2_X1)                                     0.03       1.39 f
+  U7374/ZN (NAND4_X1)                                     0.03       1.42 r
+  U5291/ZN (AND3_X2)                                      0.06       1.48 r
+  U7313/Z (MUX2_X1)                                       0.08       1.56 f
+  U7176/ZN (AND3_X1)                                      0.04       1.60 f
+  U5763/ZN (OR2_X2)                                       0.06       1.67 f
+  U12199/Z (CLKBUF_X3)                                    0.05       1.72 f
+  U6193/ZN (OR2_X1)                                       0.06       1.78 f
+  U6699/ZN (NAND4_X1)                                     0.03       1.81 r
+  if_stage_inst/predicted_target_reg/reg_data_reg[29]/D (DFF_X2)
+                                                          0.01       1.82 r
+  data arrival time                                                  1.82
+
+  clock clk (rise edge)                                   1.60       1.60
+  clock network delay (ideal)                             0.00       1.60
+  if_stage_inst/predicted_target_reg/reg_data_reg[29]/CK (DFF_X2)
+                                                          0.00       1.60 r
+  library setup time                                     -0.03       1.57
+  data required time                                                 1.57
+  --------------------------------------------------------------------------
+  data required time                                                 1.57
+  data arrival time                                                 -1.82
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.26
+
+
+  Startpoint: ex_stage_inst/rd_addr_reg/reg_data_reg[2]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: if_stage_inst/pc_reg_inst/reg_data_reg[29]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  dlx                5K_hvratio_1_1        NangateOpenCellLibrary
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  ex_stage_inst/rd_addr_reg/reg_data_reg[2]/CK (DFF_X1)
+                                                          0.00       0.00 r
+  ex_stage_inst/rd_addr_reg/reg_data_reg[2]/Q (DFF_X1)
+                                                          0.09       0.09 r
+  U13409/ZN (XNOR2_X1)                                    0.06       0.14 r
+  U8388/ZN (AND2_X1)                                      0.05       0.19 r
+  U13410/ZN (AND4_X1)                                     0.07       0.26 r
+  U8536/ZN (OR2_X1)                                       0.04       0.30 r
+  U13753/ZN (NOR2_X1)                                     0.03       0.32 f
+  U8547/ZN (NAND2_X1)                                     0.03       0.35 r
+  U8549/ZN (OAI211_X1)                                    0.05       0.40 f
+  U5219/ZN (OR3_X2)                                       0.09       0.49 f
+  U5728/ZN (NAND3_X1)                                     0.04       0.53 r
+  U8771/ZN (XNOR2_X1)                                     0.07       0.60 r
+  U8772/ZN (NOR2_X1)                                      0.03       0.63 f
+  U8784/ZN (OAI21_X1)                                     0.05       0.68 r
+  U6936/ZN (OR2_X1)                                       0.04       0.72 r
+  U8788/ZN (NAND2_X1)                                     0.02       0.74 f
+  U5665/ZN (AND2_X1)                                      0.04       0.78 f
+  U13728/ZN (OAI211_X1)                                   0.04       0.82 r
+  U7147/ZN (NAND2_X1)                                     0.03       0.85 f
+  U7271/ZN (AND2_X2)                                      0.05       0.90 f
+  U7167/ZN (OR2_X1)                                       0.06       0.96 f
+  U7188/ZN (OAI21_X1)                                     0.05       1.01 r
+  U7305/ZN (XNOR2_X1)                                     0.04       1.06 f
+  U7166/ZN (INV_X1)                                       0.03       1.08 r
+  U7159/ZN (AND4_X2)                                      0.08       1.16 r
+  U7245/ZN (NAND4_X1)                                     0.05       1.21 f
+  U7244/Z (MUX2_X1)                                       0.07       1.28 r
+  U5794/ZN (OAI211_X1)                                    0.03       1.32 f
+  U7193/ZN (NAND2_X1)                                     0.04       1.36 r
+  U7309/ZN (NAND2_X1)                                     0.03       1.39 f
+  U7374/ZN (NAND4_X1)                                     0.03       1.42 r
+  U5291/ZN (AND3_X2)                                      0.06       1.48 r
+  U7313/Z (MUX2_X1)                                       0.08       1.56 f
+  U7176/ZN (AND3_X1)                                      0.04       1.60 f
+  U5763/ZN (OR2_X2)                                       0.06       1.67 f
+  U12199/Z (CLKBUF_X3)                                    0.05       1.72 f
+  U6193/ZN (OR2_X1)                                       0.06       1.78 f
+  U6699/ZN (NAND4_X1)                                     0.03       1.81 r
+  if_stage_inst/pc_reg_inst/reg_data_reg[29]/D (DFF_X2)
+                                                          0.01       1.82 r
+  data arrival time                                                  1.82
+
+  clock clk (rise edge)                                   1.60       1.60
+  clock network delay (ideal)                             0.00       1.60
+  if_stage_inst/pc_reg_inst/reg_data_reg[29]/CK (DFF_X2)
+                                                          0.00       1.60 r
+  library setup time                                     -0.03       1.57
+  data required time                                                 1.57
+  --------------------------------------------------------------------------
+  data required time                                                 1.57
+  data arrival time                                                 -1.82
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.26
+
+
+  Startpoint: ex_stage_inst/rd_addr_reg/reg_data_reg[2]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: if_stage_inst/pc_reg_inst/reg_data_reg[9]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  dlx                5K_hvratio_1_1        NangateOpenCellLibrary
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  ex_stage_inst/rd_addr_reg/reg_data_reg[2]/CK (DFF_X1)
+                                                          0.00       0.00 r
+  ex_stage_inst/rd_addr_reg/reg_data_reg[2]/Q (DFF_X1)
+                                                          0.09       0.09 r
+  U13409/ZN (XNOR2_X1)                                    0.06       0.14 r
+  U8388/ZN (AND2_X1)                                      0.05       0.19 r
+  U13410/ZN (AND4_X1)                                     0.07       0.26 r
+  U8536/ZN (OR2_X1)                                       0.04       0.30 r
+  U13753/ZN (NOR2_X1)                                     0.03       0.32 f
+  U8547/ZN (NAND2_X1)                                     0.03       0.35 r
+  U8549/ZN (OAI211_X1)                                    0.05       0.40 f
+  U5219/ZN (OR3_X2)                                       0.09       0.49 f
+  U5728/ZN (NAND3_X1)                                     0.04       0.53 r
+  U8771/ZN (XNOR2_X1)                                     0.07       0.60 r
+  U8772/ZN (NOR2_X1)                                      0.03       0.63 f
+  U8784/ZN (OAI21_X1)                                     0.05       0.68 r
+  U6936/ZN (OR2_X1)                                       0.04       0.72 r
+  U8788/ZN (NAND2_X1)                                     0.02       0.74 f
+  U5665/ZN (AND2_X1)                                      0.04       0.78 f
+  U13728/ZN (OAI211_X1)                                   0.04       0.82 r
+  U7147/ZN (NAND2_X1)                                     0.03       0.85 f
+  U7271/ZN (AND2_X2)                                      0.05       0.90 f
+  U7167/ZN (OR2_X1)                                       0.06       0.96 f
+  U7188/ZN (OAI21_X1)                                     0.05       1.01 r
+  U7305/ZN (XNOR2_X1)                                     0.04       1.06 f
+  U7166/ZN (INV_X1)                                       0.03       1.08 r
+  U7159/ZN (AND4_X2)                                      0.08       1.16 r
+  U7245/ZN (NAND4_X1)                                     0.05       1.21 f
+  U7244/Z (MUX2_X1)                                       0.07       1.28 r
+  U5794/ZN (OAI211_X1)                                    0.03       1.32 f
+  U7193/ZN (NAND2_X1)                                     0.04       1.36 r
+  U7309/ZN (NAND2_X1)                                     0.03       1.39 f
+  U7374/ZN (NAND4_X1)                                     0.03       1.42 r
+  U5291/ZN (AND3_X2)                                      0.06       1.48 r
+  U7313/Z (MUX2_X1)                                       0.08       1.56 f
+  U7176/ZN (AND3_X1)                                      0.04       1.60 f
+  U5763/ZN (OR2_X2)                                       0.06       1.67 f
+  U10174/Z (BUF_X2)                                       0.05       1.72 f
+  U6944/ZN (OR2_X1)                                       0.06       1.78 f
+  U6702/ZN (NAND4_X1)                                     0.03       1.81 r
+  if_stage_inst/pc_reg_inst/reg_data_reg[9]/D (DFF_X2)
+                                                          0.01       1.82 r
+  data arrival time                                                  1.82
+
+  clock clk (rise edge)                                   1.60       1.60
+  clock network delay (ideal)                             0.00       1.60
+  if_stage_inst/pc_reg_inst/reg_data_reg[9]/CK (DFF_X2)
+                                                          0.00       1.60 r
+  library setup time                                     -0.03       1.57
+  data required time                                                 1.57
+  --------------------------------------------------------------------------
+  data required time                                                 1.57
+  data arrival time                                                 -1.82
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.26
+
+
+  Startpoint: ex_stage_inst/rd_addr_reg/reg_data_reg[2]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: if_stage_inst/predicted_target_reg/reg_data_reg[9]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  dlx                5K_hvratio_1_1        NangateOpenCellLibrary
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  ex_stage_inst/rd_addr_reg/reg_data_reg[2]/CK (DFF_X1)
+                                                          0.00       0.00 r
+  ex_stage_inst/rd_addr_reg/reg_data_reg[2]/Q (DFF_X1)
+                                                          0.09       0.09 r
+  U13409/ZN (XNOR2_X1)                                    0.06       0.14 r
+  U8388/ZN (AND2_X1)                                      0.05       0.19 r
+  U13410/ZN (AND4_X1)                                     0.07       0.26 r
+  U8536/ZN (OR2_X1)                                       0.04       0.30 r
+  U13753/ZN (NOR2_X1)                                     0.03       0.32 f
+  U8547/ZN (NAND2_X1)                                     0.03       0.35 r
+  U8549/ZN (OAI211_X1)                                    0.05       0.40 f
+  U5219/ZN (OR3_X2)                                       0.09       0.49 f
+  U5728/ZN (NAND3_X1)                                     0.04       0.53 r
+  U8771/ZN (XNOR2_X1)                                     0.07       0.60 r
+  U8772/ZN (NOR2_X1)                                      0.03       0.63 f
+  U8784/ZN (OAI21_X1)                                     0.05       0.68 r
+  U6936/ZN (OR2_X1)                                       0.04       0.72 r
+  U8788/ZN (NAND2_X1)                                     0.02       0.74 f
+  U5665/ZN (AND2_X1)                                      0.04       0.78 f
+  U13728/ZN (OAI211_X1)                                   0.04       0.82 r
+  U7147/ZN (NAND2_X1)                                     0.03       0.85 f
+  U7271/ZN (AND2_X2)                                      0.05       0.90 f
+  U7167/ZN (OR2_X1)                                       0.06       0.96 f
+  U7188/ZN (OAI21_X1)                                     0.05       1.01 r
+  U7305/ZN (XNOR2_X1)                                     0.04       1.06 f
+  U7166/ZN (INV_X1)                                       0.03       1.08 r
+  U7159/ZN (AND4_X2)                                      0.08       1.16 r
+  U7245/ZN (NAND4_X1)                                     0.05       1.21 f
+  U7244/Z (MUX2_X1)                                       0.07       1.28 r
+  U5794/ZN (OAI211_X1)                                    0.03       1.32 f
+  U7193/ZN (NAND2_X1)                                     0.04       1.36 r
+  U7309/ZN (NAND2_X1)                                     0.03       1.39 f
+  U7374/ZN (NAND4_X1)                                     0.03       1.42 r
+  U5291/ZN (AND3_X2)                                      0.06       1.48 r
+  U7313/Z (MUX2_X1)                                       0.08       1.56 f
+  U7176/ZN (AND3_X1)                                      0.04       1.60 f
+  U5763/ZN (OR2_X2)                                       0.06       1.67 f
+  U10174/Z (BUF_X2)                                       0.05       1.72 f
+  U6944/ZN (OR2_X1)                                       0.06       1.78 f
+  U6702/ZN (NAND4_X1)                                     0.03       1.81 r
+  if_stage_inst/predicted_target_reg/reg_data_reg[9]/D (DFF_X2)
+                                                          0.01       1.82 r
+  data arrival time                                                  1.82
+
+  clock clk (rise edge)                                   1.60       1.60
+  clock network delay (ideal)                             0.00       1.60
+  if_stage_inst/predicted_target_reg/reg_data_reg[9]/CK (DFF_X2)
+                                                          0.00       1.60 r
+  library setup time                                     -0.03       1.57
+  data required time                                                 1.57
+  --------------------------------------------------------------------------
+  data required time                                                 1.57
+  data arrival time                                                 -1.82
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.26
+
+
+  Startpoint: ex_stage_inst/rd_addr_reg/reg_data_reg[2]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: if_stage_inst/predicted_target_reg/reg_data_reg[6]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  dlx                5K_hvratio_1_1        NangateOpenCellLibrary
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  ex_stage_inst/rd_addr_reg/reg_data_reg[2]/CK (DFF_X1)
+                                                          0.00       0.00 r
+  ex_stage_inst/rd_addr_reg/reg_data_reg[2]/Q (DFF_X1)
+                                                          0.09       0.09 r
+  U13409/ZN (XNOR2_X1)                                    0.06       0.14 r
+  U8388/ZN (AND2_X1)                                      0.05       0.19 r
+  U13410/ZN (AND4_X1)                                     0.07       0.26 r
+  U8536/ZN (OR2_X1)                                       0.04       0.30 r
+  U13753/ZN (NOR2_X1)                                     0.03       0.32 f
+  U8547/ZN (NAND2_X1)                                     0.03       0.35 r
+  U8549/ZN (OAI211_X1)                                    0.05       0.40 f
+  U5219/ZN (OR3_X2)                                       0.09       0.49 f
+  U5728/ZN (NAND3_X1)                                     0.04       0.53 r
+  U8771/ZN (XNOR2_X1)                                     0.07       0.60 r
+  U8772/ZN (NOR2_X1)                                      0.03       0.63 f
+  U8784/ZN (OAI21_X1)                                     0.05       0.68 r
+  U6936/ZN (OR2_X1)                                       0.04       0.72 r
+  U8788/ZN (NAND2_X1)                                     0.02       0.74 f
+  U5665/ZN (AND2_X1)                                      0.04       0.78 f
+  U13728/ZN (OAI211_X1)                                   0.04       0.82 r
+  U7147/ZN (NAND2_X1)                                     0.03       0.85 f
+  U7271/ZN (AND2_X2)                                      0.05       0.90 f
+  U7167/ZN (OR2_X1)                                       0.06       0.96 f
+  U7188/ZN (OAI21_X1)                                     0.05       1.01 r
+  U7305/ZN (XNOR2_X1)                                     0.04       1.06 f
+  U7166/ZN (INV_X1)                                       0.03       1.08 r
+  U7159/ZN (AND4_X2)                                      0.08       1.16 r
+  U7245/ZN (NAND4_X1)                                     0.05       1.21 f
+  U7244/Z (MUX2_X1)                                       0.07       1.28 r
+  U5794/ZN (OAI211_X1)                                    0.03       1.32 f
+  U7193/ZN (NAND2_X1)                                     0.04       1.36 r
+  U7309/ZN (NAND2_X1)                                     0.03       1.39 f
+  U7374/ZN (NAND4_X1)                                     0.03       1.42 r
+  U5291/ZN (AND3_X2)                                      0.06       1.48 r
+  U7313/Z (MUX2_X1)                                       0.08       1.56 f
+  U7176/ZN (AND3_X1)                                      0.04       1.60 f
+  U5763/ZN (OR2_X2)                                       0.06       1.67 f
+  U10174/Z (BUF_X2)                                       0.05       1.72 f
+  U6943/ZN (OR2_X1)                                       0.06       1.78 f
+  U6703/ZN (NAND4_X1)                                     0.03       1.81 r
+  if_stage_inst/predicted_target_reg/reg_data_reg[6]/D (DFF_X2)
+                                                          0.01       1.82 r
+  data arrival time                                                  1.82
+
+  clock clk (rise edge)                                   1.60       1.60
+  clock network delay (ideal)                             0.00       1.60
+  if_stage_inst/predicted_target_reg/reg_data_reg[6]/CK (DFF_X2)
+                                                          0.00       1.60 r
+  library setup time                                     -0.03       1.57
+  data required time                                                 1.57
+  --------------------------------------------------------------------------
+  data required time                                                 1.57
+  data arrival time                                                 -1.82
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.26
+
+
+  Startpoint: ex_stage_inst/rd_addr_reg/reg_data_reg[2]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: if_stage_inst/pc_reg_inst/reg_data_reg[6]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  dlx                5K_hvratio_1_1        NangateOpenCellLibrary
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  ex_stage_inst/rd_addr_reg/reg_data_reg[2]/CK (DFF_X1)
+                                                          0.00       0.00 r
+  ex_stage_inst/rd_addr_reg/reg_data_reg[2]/Q (DFF_X1)
+                                                          0.09       0.09 r
+  U13409/ZN (XNOR2_X1)                                    0.06       0.14 r
+  U8388/ZN (AND2_X1)                                      0.05       0.19 r
+  U13410/ZN (AND4_X1)                                     0.07       0.26 r
+  U8536/ZN (OR2_X1)                                       0.04       0.30 r
+  U13753/ZN (NOR2_X1)                                     0.03       0.32 f
+  U8547/ZN (NAND2_X1)                                     0.03       0.35 r
+  U8549/ZN (OAI211_X1)                                    0.05       0.40 f
+  U5219/ZN (OR3_X2)                                       0.09       0.49 f
+  U5728/ZN (NAND3_X1)                                     0.04       0.53 r
+  U8771/ZN (XNOR2_X1)                                     0.07       0.60 r
+  U8772/ZN (NOR2_X1)                                      0.03       0.63 f
+  U8784/ZN (OAI21_X1)                                     0.05       0.68 r
+  U6936/ZN (OR2_X1)                                       0.04       0.72 r
+  U8788/ZN (NAND2_X1)                                     0.02       0.74 f
+  U5665/ZN (AND2_X1)                                      0.04       0.78 f
+  U13728/ZN (OAI211_X1)                                   0.04       0.82 r
+  U7147/ZN (NAND2_X1)                                     0.03       0.85 f
+  U7271/ZN (AND2_X2)                                      0.05       0.90 f
+  U7167/ZN (OR2_X1)                                       0.06       0.96 f
+  U7188/ZN (OAI21_X1)                                     0.05       1.01 r
+  U7305/ZN (XNOR2_X1)                                     0.04       1.06 f
+  U7166/ZN (INV_X1)                                       0.03       1.08 r
+  U7159/ZN (AND4_X2)                                      0.08       1.16 r
+  U7245/ZN (NAND4_X1)                                     0.05       1.21 f
+  U7244/Z (MUX2_X1)                                       0.07       1.28 r
+  U5794/ZN (OAI211_X1)                                    0.03       1.32 f
+  U7193/ZN (NAND2_X1)                                     0.04       1.36 r
+  U7309/ZN (NAND2_X1)                                     0.03       1.39 f
+  U7374/ZN (NAND4_X1)                                     0.03       1.42 r
+  U5291/ZN (AND3_X2)                                      0.06       1.48 r
+  U7313/Z (MUX2_X1)                                       0.08       1.56 f
+  U7176/ZN (AND3_X1)                                      0.04       1.60 f
+  U5763/ZN (OR2_X2)                                       0.06       1.67 f
+  U10174/Z (BUF_X2)                                       0.05       1.72 f
+  U6943/ZN (OR2_X1)                                       0.06       1.78 f
+  U6703/ZN (NAND4_X1)                                     0.03       1.81 r
+  if_stage_inst/pc_reg_inst/reg_data_reg[6]/D (DFF_X2)
+                                                          0.01       1.82 r
+  data arrival time                                                  1.82
+
+  clock clk (rise edge)                                   1.60       1.60
+  clock network delay (ideal)                             0.00       1.60
+  if_stage_inst/pc_reg_inst/reg_data_reg[6]/CK (DFF_X2)
+                                                          0.00       1.60 r
+  library setup time                                     -0.03       1.57
+  data required time                                                 1.57
+  --------------------------------------------------------------------------
+  data required time                                                 1.57
+  data arrival time                                                 -1.82
+  --------------------------------------------------------------------------
+  slack (VIOLATED)                                                  -0.26
+
+
+1

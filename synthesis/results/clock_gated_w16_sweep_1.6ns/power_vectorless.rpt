@@ -1,0 +1,42 @@
+ 
+****************************************
+Report : power
+        -hier
+        -analysis_effort low
+Design : dlx
+Version: W-2024.09-SP2
+Date   : Wed Sep 16 05:46:52 2026
+****************************************
+
+
+Library(s) Used:
+
+    NangateOpenCellLibrary (File: /home/repository/do/libnandgate/NangateOpenCellLibrary_typical_ecsm.db)
+
+
+Operating Conditions: typical   Library: NangateOpenCellLibrary
+Wire Load Model Mode: top
+
+Design        Wire Load Model            Library
+------------------------------------------------
+dlx                    5K_hvratio_1_1    NangateOpenCellLibrary
+
+
+Global Operating Voltage = 1.1  
+Power-specific unit information :
+    Voltage Units = 1V
+    Capacitance Units = 1.000000ff
+    Time Units = 1ns
+    Dynamic Power Units = 1uW    (derived from V,C,T units)
+    Leakage Power Units = 1nW
+
+
+--------------------------------------------------------------------------------
+                                       Switch   Int      Leak     Total
+Hierarchy                              Power    Power    Power    Power    %
+--------------------------------------------------------------------------------
+dlx                                    1.84e+03 5.13e+03 4.60e+05 7.42e+03 100.0
+  id_stage_inst/reg_file_inst (reg_file_id_1)
+                                        692.126 2.35e+03 1.18e+05 3.16e+03  42.6
+  mem_if_inst (mem_if_1)                  0.698    0.302  875.024    1.875   0.0
+1

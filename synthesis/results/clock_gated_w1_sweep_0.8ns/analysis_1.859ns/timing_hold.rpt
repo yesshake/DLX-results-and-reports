@@ -1,0 +1,736 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay min
+        -nworst 5
+        -max_paths 20
+Design : dlx
+Version: W-2024.09-SP2
+Date   : Wed Sep 16 14:12:15 2026
+****************************************
+
+Operating Conditions: typical   Library: NangateOpenCellLibrary
+Wire Load Model Mode: top
+
+  Startpoint: hazard_unit_inst/clk_gate_status_table_reg[18]/latch
+              (negative level-sensitive latch clocked by clk)
+  Endpoint: hazard_unit_inst/clk_gate_status_table_reg[18]/main_gate
+            (gating element for clock clk)
+  Path Group: clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  dlx                5K_hvratio_1_1        NangateOpenCellLibrary
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (fall edge)                                   0.93       0.93
+  clock network delay (ideal)                             0.00       0.93
+  hazard_unit_inst/clk_gate_status_table_reg[18]/latch/GN (DLL_X1)
+                                                          0.00       0.93 f
+  hazard_unit_inst/clk_gate_status_table_reg[18]/latch/Q (DLL_X1)
+                                                          0.05       0.98 r
+  hazard_unit_inst/clk_gate_status_table_reg[18]/main_gate/A1 (AND2_X1)
+                                                          0.01       0.98 r
+  data arrival time                                                  0.98
+
+  clock clk (fall edge)                                   0.93       0.93
+  clock network delay (ideal)                             0.00       0.93
+  hazard_unit_inst/clk_gate_status_table_reg[18]/main_gate/A2 (AND2_X1)
+                                                          0.00       0.93 f
+  clock gating hold time                                  0.00       0.93
+  data required time                                                 0.93
+  --------------------------------------------------------------------------
+  data required time                                                 0.93
+  data arrival time                                                 -0.98
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.05
+
+
+  Startpoint: hazard_unit_inst/clk_gate_status_table_reg[17]/latch
+              (negative level-sensitive latch clocked by clk)
+  Endpoint: hazard_unit_inst/clk_gate_status_table_reg[17]/main_gate
+            (gating element for clock clk)
+  Path Group: clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  dlx                5K_hvratio_1_1        NangateOpenCellLibrary
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (fall edge)                                   0.93       0.93
+  clock network delay (ideal)                             0.00       0.93
+  hazard_unit_inst/clk_gate_status_table_reg[17]/latch/GN (DLL_X1)
+                                                          0.00       0.93 f
+  hazard_unit_inst/clk_gate_status_table_reg[17]/latch/Q (DLL_X1)
+                                                          0.05       0.98 r
+  hazard_unit_inst/clk_gate_status_table_reg[17]/main_gate/A1 (AND2_X1)
+                                                          0.01       0.98 r
+  data arrival time                                                  0.98
+
+  clock clk (fall edge)                                   0.93       0.93
+  clock network delay (ideal)                             0.00       0.93
+  hazard_unit_inst/clk_gate_status_table_reg[17]/main_gate/A2 (AND2_X1)
+                                                          0.00       0.93 f
+  clock gating hold time                                  0.00       0.93
+  data required time                                                 0.93
+  --------------------------------------------------------------------------
+  data required time                                                 0.93
+  data arrival time                                                 -0.98
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.05
+
+
+  Startpoint: hazard_unit_inst/clk_gate_status_table_reg[16]/latch
+              (negative level-sensitive latch clocked by clk)
+  Endpoint: hazard_unit_inst/clk_gate_status_table_reg[16]/main_gate
+            (gating element for clock clk)
+  Path Group: clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  dlx                5K_hvratio_1_1        NangateOpenCellLibrary
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (fall edge)                                   0.93       0.93
+  clock network delay (ideal)                             0.00       0.93
+  hazard_unit_inst/clk_gate_status_table_reg[16]/latch/GN (DLL_X1)
+                                                          0.00       0.93 f
+  hazard_unit_inst/clk_gate_status_table_reg[16]/latch/Q (DLL_X1)
+                                                          0.05       0.98 r
+  hazard_unit_inst/clk_gate_status_table_reg[16]/main_gate/A1 (AND2_X1)
+                                                          0.01       0.98 r
+  data arrival time                                                  0.98
+
+  clock clk (fall edge)                                   0.93       0.93
+  clock network delay (ideal)                             0.00       0.93
+  hazard_unit_inst/clk_gate_status_table_reg[16]/main_gate/A2 (AND2_X1)
+                                                          0.00       0.93 f
+  clock gating hold time                                  0.00       0.93
+  data required time                                                 0.93
+  --------------------------------------------------------------------------
+  data required time                                                 0.93
+  data arrival time                                                 -0.98
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.05
+
+
+  Startpoint: hazard_unit_inst/clk_gate_status_table_reg[15]/latch
+              (negative level-sensitive latch clocked by clk)
+  Endpoint: hazard_unit_inst/clk_gate_status_table_reg[15]/main_gate
+            (gating element for clock clk)
+  Path Group: clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  dlx                5K_hvratio_1_1        NangateOpenCellLibrary
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (fall edge)                                   0.93       0.93
+  clock network delay (ideal)                             0.00       0.93
+  hazard_unit_inst/clk_gate_status_table_reg[15]/latch/GN (DLL_X1)
+                                                          0.00       0.93 f
+  hazard_unit_inst/clk_gate_status_table_reg[15]/latch/Q (DLL_X1)
+                                                          0.05       0.98 r
+  hazard_unit_inst/clk_gate_status_table_reg[15]/main_gate/A1 (AND2_X1)
+                                                          0.01       0.98 r
+  data arrival time                                                  0.98
+
+  clock clk (fall edge)                                   0.93       0.93
+  clock network delay (ideal)                             0.00       0.93
+  hazard_unit_inst/clk_gate_status_table_reg[15]/main_gate/A2 (AND2_X1)
+                                                          0.00       0.93 f
+  clock gating hold time                                  0.00       0.93
+  data required time                                                 0.93
+  --------------------------------------------------------------------------
+  data required time                                                 0.93
+  data arrival time                                                 -0.98
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.05
+
+
+  Startpoint: hazard_unit_inst/clk_gate_status_table_reg[14]/latch
+              (negative level-sensitive latch clocked by clk)
+  Endpoint: hazard_unit_inst/clk_gate_status_table_reg[14]/main_gate
+            (gating element for clock clk)
+  Path Group: clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  dlx                5K_hvratio_1_1        NangateOpenCellLibrary
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (fall edge)                                   0.93       0.93
+  clock network delay (ideal)                             0.00       0.93
+  hazard_unit_inst/clk_gate_status_table_reg[14]/latch/GN (DLL_X1)
+                                                          0.00       0.93 f
+  hazard_unit_inst/clk_gate_status_table_reg[14]/latch/Q (DLL_X1)
+                                                          0.05       0.98 r
+  hazard_unit_inst/clk_gate_status_table_reg[14]/main_gate/A1 (AND2_X1)
+                                                          0.01       0.98 r
+  data arrival time                                                  0.98
+
+  clock clk (fall edge)                                   0.93       0.93
+  clock network delay (ideal)                             0.00       0.93
+  hazard_unit_inst/clk_gate_status_table_reg[14]/main_gate/A2 (AND2_X1)
+                                                          0.00       0.93 f
+  clock gating hold time                                  0.00       0.93
+  data required time                                                 0.93
+  --------------------------------------------------------------------------
+  data required time                                                 0.93
+  data arrival time                                                 -0.98
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.05
+
+
+  Startpoint: hazard_unit_inst/clk_gate_status_table_reg[13]/latch
+              (negative level-sensitive latch clocked by clk)
+  Endpoint: hazard_unit_inst/clk_gate_status_table_reg[13]/main_gate
+            (gating element for clock clk)
+  Path Group: clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  dlx                5K_hvratio_1_1        NangateOpenCellLibrary
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (fall edge)                                   0.93       0.93
+  clock network delay (ideal)                             0.00       0.93
+  hazard_unit_inst/clk_gate_status_table_reg[13]/latch/GN (DLL_X1)
+                                                          0.00       0.93 f
+  hazard_unit_inst/clk_gate_status_table_reg[13]/latch/Q (DLL_X1)
+                                                          0.05       0.98 r
+  hazard_unit_inst/clk_gate_status_table_reg[13]/main_gate/A1 (AND2_X1)
+                                                          0.01       0.98 r
+  data arrival time                                                  0.98
+
+  clock clk (fall edge)                                   0.93       0.93
+  clock network delay (ideal)                             0.00       0.93
+  hazard_unit_inst/clk_gate_status_table_reg[13]/main_gate/A2 (AND2_X1)
+                                                          0.00       0.93 f
+  clock gating hold time                                  0.00       0.93
+  data required time                                                 0.93
+  --------------------------------------------------------------------------
+  data required time                                                 0.93
+  data arrival time                                                 -0.98
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.05
+
+
+  Startpoint: hazard_unit_inst/clk_gate_status_table_reg[12]/latch
+              (negative level-sensitive latch clocked by clk)
+  Endpoint: hazard_unit_inst/clk_gate_status_table_reg[12]/main_gate
+            (gating element for clock clk)
+  Path Group: clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  dlx                5K_hvratio_1_1        NangateOpenCellLibrary
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (fall edge)                                   0.93       0.93
+  clock network delay (ideal)                             0.00       0.93
+  hazard_unit_inst/clk_gate_status_table_reg[12]/latch/GN (DLL_X1)
+                                                          0.00       0.93 f
+  hazard_unit_inst/clk_gate_status_table_reg[12]/latch/Q (DLL_X1)
+                                                          0.05       0.98 r
+  hazard_unit_inst/clk_gate_status_table_reg[12]/main_gate/A1 (AND2_X1)
+                                                          0.01       0.98 r
+  data arrival time                                                  0.98
+
+  clock clk (fall edge)                                   0.93       0.93
+  clock network delay (ideal)                             0.00       0.93
+  hazard_unit_inst/clk_gate_status_table_reg[12]/main_gate/A2 (AND2_X1)
+                                                          0.00       0.93 f
+  clock gating hold time                                  0.00       0.93
+  data required time                                                 0.93
+  --------------------------------------------------------------------------
+  data required time                                                 0.93
+  data arrival time                                                 -0.98
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.05
+
+
+  Startpoint: hazard_unit_inst/clk_gate_status_table_reg[11]/latch
+              (negative level-sensitive latch clocked by clk)
+  Endpoint: hazard_unit_inst/clk_gate_status_table_reg[11]/main_gate
+            (gating element for clock clk)
+  Path Group: clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  dlx                5K_hvratio_1_1        NangateOpenCellLibrary
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (fall edge)                                   0.93       0.93
+  clock network delay (ideal)                             0.00       0.93
+  hazard_unit_inst/clk_gate_status_table_reg[11]/latch/GN (DLL_X1)
+                                                          0.00       0.93 f
+  hazard_unit_inst/clk_gate_status_table_reg[11]/latch/Q (DLL_X1)
+                                                          0.05       0.98 r
+  hazard_unit_inst/clk_gate_status_table_reg[11]/main_gate/A1 (AND2_X1)
+                                                          0.01       0.98 r
+  data arrival time                                                  0.98
+
+  clock clk (fall edge)                                   0.93       0.93
+  clock network delay (ideal)                             0.00       0.93
+  hazard_unit_inst/clk_gate_status_table_reg[11]/main_gate/A2 (AND2_X1)
+                                                          0.00       0.93 f
+  clock gating hold time                                  0.00       0.93
+  data required time                                                 0.93
+  --------------------------------------------------------------------------
+  data required time                                                 0.93
+  data arrival time                                                 -0.98
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.05
+
+
+  Startpoint: hazard_unit_inst/clk_gate_status_table_reg[10]/latch
+              (negative level-sensitive latch clocked by clk)
+  Endpoint: hazard_unit_inst/clk_gate_status_table_reg[10]/main_gate
+            (gating element for clock clk)
+  Path Group: clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  dlx                5K_hvratio_1_1        NangateOpenCellLibrary
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (fall edge)                                   0.93       0.93
+  clock network delay (ideal)                             0.00       0.93
+  hazard_unit_inst/clk_gate_status_table_reg[10]/latch/GN (DLL_X1)
+                                                          0.00       0.93 f
+  hazard_unit_inst/clk_gate_status_table_reg[10]/latch/Q (DLL_X1)
+                                                          0.05       0.98 r
+  hazard_unit_inst/clk_gate_status_table_reg[10]/main_gate/A1 (AND2_X1)
+                                                          0.01       0.98 r
+  data arrival time                                                  0.98
+
+  clock clk (fall edge)                                   0.93       0.93
+  clock network delay (ideal)                             0.00       0.93
+  hazard_unit_inst/clk_gate_status_table_reg[10]/main_gate/A2 (AND2_X1)
+                                                          0.00       0.93 f
+  clock gating hold time                                  0.00       0.93
+  data required time                                                 0.93
+  --------------------------------------------------------------------------
+  data required time                                                 0.93
+  data arrival time                                                 -0.98
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.05
+
+
+  Startpoint: hazard_unit_inst/clk_gate_status_table_reg[9]/latch
+              (negative level-sensitive latch clocked by clk)
+  Endpoint: hazard_unit_inst/clk_gate_status_table_reg[9]/main_gate
+            (gating element for clock clk)
+  Path Group: clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  dlx                5K_hvratio_1_1        NangateOpenCellLibrary
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (fall edge)                                   0.93       0.93
+  clock network delay (ideal)                             0.00       0.93
+  hazard_unit_inst/clk_gate_status_table_reg[9]/latch/GN (DLL_X1)
+                                                          0.00       0.93 f
+  hazard_unit_inst/clk_gate_status_table_reg[9]/latch/Q (DLL_X1)
+                                                          0.05       0.98 r
+  hazard_unit_inst/clk_gate_status_table_reg[9]/main_gate/A1 (AND2_X1)
+                                                          0.01       0.98 r
+  data arrival time                                                  0.98
+
+  clock clk (fall edge)                                   0.93       0.93
+  clock network delay (ideal)                             0.00       0.93
+  hazard_unit_inst/clk_gate_status_table_reg[9]/main_gate/A2 (AND2_X1)
+                                                          0.00       0.93 f
+  clock gating hold time                                  0.00       0.93
+  data required time                                                 0.93
+  --------------------------------------------------------------------------
+  data required time                                                 0.93
+  data arrival time                                                 -0.98
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.05
+
+
+  Startpoint: hazard_unit_inst/clk_gate_status_table_reg[8]/latch
+              (negative level-sensitive latch clocked by clk)
+  Endpoint: hazard_unit_inst/clk_gate_status_table_reg[8]/main_gate
+            (gating element for clock clk)
+  Path Group: clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  dlx                5K_hvratio_1_1        NangateOpenCellLibrary
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (fall edge)                                   0.93       0.93
+  clock network delay (ideal)                             0.00       0.93
+  hazard_unit_inst/clk_gate_status_table_reg[8]/latch/GN (DLL_X1)
+                                                          0.00       0.93 f
+  hazard_unit_inst/clk_gate_status_table_reg[8]/latch/Q (DLL_X1)
+                                                          0.05       0.98 r
+  hazard_unit_inst/clk_gate_status_table_reg[8]/main_gate/A1 (AND2_X1)
+                                                          0.01       0.98 r
+  data arrival time                                                  0.98
+
+  clock clk (fall edge)                                   0.93       0.93
+  clock network delay (ideal)                             0.00       0.93
+  hazard_unit_inst/clk_gate_status_table_reg[8]/main_gate/A2 (AND2_X1)
+                                                          0.00       0.93 f
+  clock gating hold time                                  0.00       0.93
+  data required time                                                 0.93
+  --------------------------------------------------------------------------
+  data required time                                                 0.93
+  data arrival time                                                 -0.98
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.05
+
+
+  Startpoint: hazard_unit_inst/clk_gate_status_table_reg[7]/latch
+              (negative level-sensitive latch clocked by clk)
+  Endpoint: hazard_unit_inst/clk_gate_status_table_reg[7]/main_gate
+            (gating element for clock clk)
+  Path Group: clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  dlx                5K_hvratio_1_1        NangateOpenCellLibrary
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (fall edge)                                   0.93       0.93
+  clock network delay (ideal)                             0.00       0.93
+  hazard_unit_inst/clk_gate_status_table_reg[7]/latch/GN (DLL_X1)
+                                                          0.00       0.93 f
+  hazard_unit_inst/clk_gate_status_table_reg[7]/latch/Q (DLL_X1)
+                                                          0.05       0.98 r
+  hazard_unit_inst/clk_gate_status_table_reg[7]/main_gate/A1 (AND2_X1)
+                                                          0.01       0.98 r
+  data arrival time                                                  0.98
+
+  clock clk (fall edge)                                   0.93       0.93
+  clock network delay (ideal)                             0.00       0.93
+  hazard_unit_inst/clk_gate_status_table_reg[7]/main_gate/A2 (AND2_X1)
+                                                          0.00       0.93 f
+  clock gating hold time                                  0.00       0.93
+  data required time                                                 0.93
+  --------------------------------------------------------------------------
+  data required time                                                 0.93
+  data arrival time                                                 -0.98
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.05
+
+
+  Startpoint: hazard_unit_inst/clk_gate_status_table_reg[6]/latch
+              (negative level-sensitive latch clocked by clk)
+  Endpoint: hazard_unit_inst/clk_gate_status_table_reg[6]/main_gate
+            (gating element for clock clk)
+  Path Group: clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  dlx                5K_hvratio_1_1        NangateOpenCellLibrary
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (fall edge)                                   0.93       0.93
+  clock network delay (ideal)                             0.00       0.93
+  hazard_unit_inst/clk_gate_status_table_reg[6]/latch/GN (DLL_X1)
+                                                          0.00       0.93 f
+  hazard_unit_inst/clk_gate_status_table_reg[6]/latch/Q (DLL_X1)
+                                                          0.05       0.98 r
+  hazard_unit_inst/clk_gate_status_table_reg[6]/main_gate/A1 (AND2_X1)
+                                                          0.01       0.98 r
+  data arrival time                                                  0.98
+
+  clock clk (fall edge)                                   0.93       0.93
+  clock network delay (ideal)                             0.00       0.93
+  hazard_unit_inst/clk_gate_status_table_reg[6]/main_gate/A2 (AND2_X1)
+                                                          0.00       0.93 f
+  clock gating hold time                                  0.00       0.93
+  data required time                                                 0.93
+  --------------------------------------------------------------------------
+  data required time                                                 0.93
+  data arrival time                                                 -0.98
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.05
+
+
+  Startpoint: hazard_unit_inst/clk_gate_status_table_reg[5]/latch
+              (negative level-sensitive latch clocked by clk)
+  Endpoint: hazard_unit_inst/clk_gate_status_table_reg[5]/main_gate
+            (gating element for clock clk)
+  Path Group: clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  dlx                5K_hvratio_1_1        NangateOpenCellLibrary
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (fall edge)                                   0.93       0.93
+  clock network delay (ideal)                             0.00       0.93
+  hazard_unit_inst/clk_gate_status_table_reg[5]/latch/GN (DLL_X1)
+                                                          0.00       0.93 f
+  hazard_unit_inst/clk_gate_status_table_reg[5]/latch/Q (DLL_X1)
+                                                          0.05       0.98 r
+  hazard_unit_inst/clk_gate_status_table_reg[5]/main_gate/A1 (AND2_X1)
+                                                          0.01       0.98 r
+  data arrival time                                                  0.98
+
+  clock clk (fall edge)                                   0.93       0.93
+  clock network delay (ideal)                             0.00       0.93
+  hazard_unit_inst/clk_gate_status_table_reg[5]/main_gate/A2 (AND2_X1)
+                                                          0.00       0.93 f
+  clock gating hold time                                  0.00       0.93
+  data required time                                                 0.93
+  --------------------------------------------------------------------------
+  data required time                                                 0.93
+  data arrival time                                                 -0.98
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.05
+
+
+  Startpoint: hazard_unit_inst/clk_gate_status_table_reg[4]/latch
+              (negative level-sensitive latch clocked by clk)
+  Endpoint: hazard_unit_inst/clk_gate_status_table_reg[4]/main_gate
+            (gating element for clock clk)
+  Path Group: clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  dlx                5K_hvratio_1_1        NangateOpenCellLibrary
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (fall edge)                                   0.93       0.93
+  clock network delay (ideal)                             0.00       0.93
+  hazard_unit_inst/clk_gate_status_table_reg[4]/latch/GN (DLL_X1)
+                                                          0.00       0.93 f
+  hazard_unit_inst/clk_gate_status_table_reg[4]/latch/Q (DLL_X1)
+                                                          0.05       0.98 r
+  hazard_unit_inst/clk_gate_status_table_reg[4]/main_gate/A1 (AND2_X1)
+                                                          0.01       0.98 r
+  data arrival time                                                  0.98
+
+  clock clk (fall edge)                                   0.93       0.93
+  clock network delay (ideal)                             0.00       0.93
+  hazard_unit_inst/clk_gate_status_table_reg[4]/main_gate/A2 (AND2_X1)
+                                                          0.00       0.93 f
+  clock gating hold time                                  0.00       0.93
+  data required time                                                 0.93
+  --------------------------------------------------------------------------
+  data required time                                                 0.93
+  data arrival time                                                 -0.98
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.05
+
+
+  Startpoint: hazard_unit_inst/clk_gate_status_table_reg[3]/latch
+              (negative level-sensitive latch clocked by clk)
+  Endpoint: hazard_unit_inst/clk_gate_status_table_reg[3]/main_gate
+            (gating element for clock clk)
+  Path Group: clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  dlx                5K_hvratio_1_1        NangateOpenCellLibrary
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (fall edge)                                   0.93       0.93
+  clock network delay (ideal)                             0.00       0.93
+  hazard_unit_inst/clk_gate_status_table_reg[3]/latch/GN (DLL_X1)
+                                                          0.00       0.93 f
+  hazard_unit_inst/clk_gate_status_table_reg[3]/latch/Q (DLL_X1)
+                                                          0.05       0.98 r
+  hazard_unit_inst/clk_gate_status_table_reg[3]/main_gate/A1 (AND2_X1)
+                                                          0.01       0.98 r
+  data arrival time                                                  0.98
+
+  clock clk (fall edge)                                   0.93       0.93
+  clock network delay (ideal)                             0.00       0.93
+  hazard_unit_inst/clk_gate_status_table_reg[3]/main_gate/A2 (AND2_X1)
+                                                          0.00       0.93 f
+  clock gating hold time                                  0.00       0.93
+  data required time                                                 0.93
+  --------------------------------------------------------------------------
+  data required time                                                 0.93
+  data arrival time                                                 -0.98
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.05
+
+
+  Startpoint: hazard_unit_inst/clk_gate_status_table_reg[2]/latch
+              (negative level-sensitive latch clocked by clk)
+  Endpoint: hazard_unit_inst/clk_gate_status_table_reg[2]/main_gate
+            (gating element for clock clk)
+  Path Group: clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  dlx                5K_hvratio_1_1        NangateOpenCellLibrary
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (fall edge)                                   0.93       0.93
+  clock network delay (ideal)                             0.00       0.93
+  hazard_unit_inst/clk_gate_status_table_reg[2]/latch/GN (DLL_X1)
+                                                          0.00       0.93 f
+  hazard_unit_inst/clk_gate_status_table_reg[2]/latch/Q (DLL_X1)
+                                                          0.05       0.98 r
+  hazard_unit_inst/clk_gate_status_table_reg[2]/main_gate/A1 (AND2_X1)
+                                                          0.01       0.98 r
+  data arrival time                                                  0.98
+
+  clock clk (fall edge)                                   0.93       0.93
+  clock network delay (ideal)                             0.00       0.93
+  hazard_unit_inst/clk_gate_status_table_reg[2]/main_gate/A2 (AND2_X1)
+                                                          0.00       0.93 f
+  clock gating hold time                                  0.00       0.93
+  data required time                                                 0.93
+  --------------------------------------------------------------------------
+  data required time                                                 0.93
+  data arrival time                                                 -0.98
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.05
+
+
+  Startpoint: hazard_unit_inst/clk_gate_status_table_reg[1]/latch
+              (negative level-sensitive latch clocked by clk)
+  Endpoint: hazard_unit_inst/clk_gate_status_table_reg[1]/main_gate
+            (gating element for clock clk)
+  Path Group: clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  dlx                5K_hvratio_1_1        NangateOpenCellLibrary
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (fall edge)                                   0.93       0.93
+  clock network delay (ideal)                             0.00       0.93
+  hazard_unit_inst/clk_gate_status_table_reg[1]/latch/GN (DLL_X1)
+                                                          0.00       0.93 f
+  hazard_unit_inst/clk_gate_status_table_reg[1]/latch/Q (DLL_X1)
+                                                          0.05       0.98 r
+  hazard_unit_inst/clk_gate_status_table_reg[1]/main_gate/A1 (AND2_X1)
+                                                          0.01       0.98 r
+  data arrival time                                                  0.98
+
+  clock clk (fall edge)                                   0.93       0.93
+  clock network delay (ideal)                             0.00       0.93
+  hazard_unit_inst/clk_gate_status_table_reg[1]/main_gate/A2 (AND2_X1)
+                                                          0.00       0.93 f
+  clock gating hold time                                  0.00       0.93
+  data required time                                                 0.93
+  --------------------------------------------------------------------------
+  data required time                                                 0.93
+  data arrival time                                                 -0.98
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.05
+
+
+  Startpoint: hazard_unit_inst/clk_gate_status_table_reg[0]/latch
+              (negative level-sensitive latch clocked by clk)
+  Endpoint: hazard_unit_inst/clk_gate_status_table_reg[0]/main_gate
+            (gating element for clock clk)
+  Path Group: clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  dlx                5K_hvratio_1_1        NangateOpenCellLibrary
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (fall edge)                                   0.93       0.93
+  clock network delay (ideal)                             0.00       0.93
+  hazard_unit_inst/clk_gate_status_table_reg[0]/latch/GN (DLL_X1)
+                                                          0.00       0.93 f
+  hazard_unit_inst/clk_gate_status_table_reg[0]/latch/Q (DLL_X1)
+                                                          0.05       0.98 r
+  hazard_unit_inst/clk_gate_status_table_reg[0]/main_gate/A1 (AND2_X1)
+                                                          0.01       0.98 r
+  data arrival time                                                  0.98
+
+  clock clk (fall edge)                                   0.93       0.93
+  clock network delay (ideal)                             0.00       0.93
+  hazard_unit_inst/clk_gate_status_table_reg[0]/main_gate/A2 (AND2_X1)
+                                                          0.00       0.93 f
+  clock gating hold time                                  0.00       0.93
+  data required time                                                 0.93
+  --------------------------------------------------------------------------
+  data required time                                                 0.93
+  data arrival time                                                 -0.98
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.05
+
+
+  Startpoint: ex_stage_inst/mult_pp_inst/tree_i/clk_gate_valid_o_reg/latch
+              (negative level-sensitive latch clocked by clk)
+  Endpoint: ex_stage_inst/mult_pp_inst/tree_i/clk_gate_valid_o_reg/main_gate
+            (gating element for clock clk)
+  Path Group: clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  dlx                5K_hvratio_1_1        NangateOpenCellLibrary
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (fall edge)                                   0.93       0.93
+  clock network delay (ideal)                             0.00       0.93
+  ex_stage_inst/mult_pp_inst/tree_i/clk_gate_valid_o_reg/latch/GN (DLL_X1)
+                                                          0.00       0.93 f
+  ex_stage_inst/mult_pp_inst/tree_i/clk_gate_valid_o_reg/latch/Q (DLL_X1)
+                                                          0.05       0.98 r
+  ex_stage_inst/mult_pp_inst/tree_i/clk_gate_valid_o_reg/main_gate/A1 (AND2_X1)
+                                                          0.01       0.98 r
+  data arrival time                                                  0.98
+
+  clock clk (fall edge)                                   0.93       0.93
+  clock network delay (ideal)                             0.00       0.93
+  ex_stage_inst/mult_pp_inst/tree_i/clk_gate_valid_o_reg/main_gate/A2 (AND2_X1)
+                                                          0.00       0.93 f
+  clock gating hold time                                  0.00       0.93
+  data required time                                                 0.93
+  --------------------------------------------------------------------------
+  data required time                                                 0.93
+  data arrival time                                                 -0.98
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.05
+
+
+1

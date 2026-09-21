@@ -1,0 +1,46 @@
+ 
+****************************************
+Report : area
+Design : dlx
+Version: W-2024.09-SP2
+Date   : Wed Sep 16 04:25:05 2026
+****************************************
+
+Library(s) Used:
+
+    NangateOpenCellLibrary (File: /home/repository/do/libnandgate/NangateOpenCellLibrary_typical_ecsm.db)
+
+Number of ports:                          720
+Number of nets:                         19719
+Number of cells:                        17747
+Number of combinational cells:          14570
+Number of sequential cells:              3167
+Number of macros/black boxes:               0
+Number of buf/inv:                       1971
+Number of references:                      60
+
+Combinational area:              16393.580083
+Buf/Inv area:                     1154.174004
+Noncombinational area:           14262.653489
+Macro/Black Box area:                0.000000
+Net Interconnect area:      undefined  (Wire load has zero net area)
+
+Total cell area:                 30656.233572
+Total area:                 undefined
+
+Hierarchical area distribution
+------------------------------
+
+                                  Global cell area            Local cell area
+                                  -------------------  ------------------------------ 
+Hierarchical cell                 Absolute    Percent  Combi-      Noncombi-   Black-
+                                  Total       Total    national    national    boxes   Design
+--------------------------------  ----------  -------  ----------  ----------  ------  -------------
+dlx                               30656.2336    100.0   9322.7680   4203.5978  0.0000  dlx
+id_stage_inst/reg_file_inst        8552.9639     27.9   3506.4121   5046.5518  0.0000  reg_file_id_1
+if_stage_inst/btb_inst             8501.8918     27.7   3557.4840   4944.4078  0.0000  BTB_if_1
+mem_if_inst                          75.0120      0.2      6.9160     68.0960  0.0000  mem_if_1
+--------------------------------  ----------  -------  ----------  ----------  ------  -------------
+Total                                                  16393.5801  14262.6535  0.0000
+
+1

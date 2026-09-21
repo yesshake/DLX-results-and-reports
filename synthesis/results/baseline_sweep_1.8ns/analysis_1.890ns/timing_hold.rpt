@@ -1,0 +1,730 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay min
+        -nworst 5
+        -max_paths 20
+Design : dlx
+Version: W-2024.09-SP2
+Date   : Thu Sep 17 15:14:39 2026
+****************************************
+
+ # A fanout number of 1000 was used for high fanout net computations.
+
+Operating Conditions: typical   Library: NangateOpenCellLibrary
+Wire Load Model Mode: top
+
+  Startpoint: if_stage_inst/current_pc_reg/reg_data_reg[1]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: R_1132 (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  dlx                5K_hvratio_1_1        NangateOpenCellLibrary
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  if_stage_inst/current_pc_reg/reg_data_reg[1]/CK (DFF_X1)
+                                                          0.00 #     0.00 r
+  if_stage_inst/current_pc_reg/reg_data_reg[1]/QN (DFF_X1)
+                                                          0.06       0.06 r
+  R_1132/D (DFF_X1)                                       0.01       0.07 r
+  data arrival time                                                  0.07
+
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  R_1132/CK (DFF_X1)                                      0.00       0.00 r
+  library hold time                                       0.01       0.01
+  data required time                                                 0.01
+  --------------------------------------------------------------------------
+  data required time                                                 0.01
+  data arrival time                                                 -0.07
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.06
+
+
+  Startpoint: if_stage_inst/current_pc_reg/reg_data_reg[0]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: R_1185 (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  dlx                5K_hvratio_1_1        NangateOpenCellLibrary
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  if_stage_inst/current_pc_reg/reg_data_reg[0]/CK (DFF_X1)
+                                                          0.00 #     0.00 r
+  if_stage_inst/current_pc_reg/reg_data_reg[0]/QN (DFF_X1)
+                                                          0.06       0.06 r
+  R_1185/D (DFF_X1)                                       0.01       0.07 r
+  data arrival time                                                  0.07
+
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  R_1185/CK (DFF_X1)                                      0.00       0.00 r
+  library hold time                                       0.01       0.01
+  data required time                                                 0.01
+  --------------------------------------------------------------------------
+  data required time                                                 0.01
+  data arrival time                                                 -0.07
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.06
+
+
+  Startpoint: add_x_2/R_331
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: R_1267 (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  dlx                5K_hvratio_1_1        NangateOpenCellLibrary
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  add_x_2/R_331/CK (DFF_X1)                0.00 #     0.00 r
+  add_x_2/R_331/QN (DFF_X1)                0.06       0.06 r
+  R_1267/D (DFF_X1)                        0.01       0.07 r
+  data arrival time                                   0.07
+
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  R_1267/CK (DFF_X1)                       0.00       0.00 r
+  library hold time                        0.01       0.01
+  data required time                                  0.01
+  -----------------------------------------------------------
+  data required time                                  0.01
+  data arrival time                                  -0.07
+  -----------------------------------------------------------
+  slack (MET)                                         0.06
+
+
+  Startpoint: if_stage_inst/current_pc_reg/reg_data_reg[1]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: R_1132 (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  dlx                5K_hvratio_1_1        NangateOpenCellLibrary
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  if_stage_inst/current_pc_reg/reg_data_reg[1]/CK (DFF_X1)
+                                                          0.00 #     0.00 r
+  if_stage_inst/current_pc_reg/reg_data_reg[1]/QN (DFF_X1)
+                                                          0.06       0.06 f
+  R_1132/D (DFF_X1)                                       0.01       0.07 f
+  data arrival time                                                  0.07
+
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  R_1132/CK (DFF_X1)                                      0.00       0.00 r
+  library hold time                                       0.00       0.00
+  data required time                                                 0.00
+  --------------------------------------------------------------------------
+  data required time                                                 0.00
+  data arrival time                                                 -0.07
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.07
+
+
+  Startpoint: if_stage_inst/current_pc_reg/reg_data_reg[0]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: R_1185 (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  dlx                5K_hvratio_1_1        NangateOpenCellLibrary
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  if_stage_inst/current_pc_reg/reg_data_reg[0]/CK (DFF_X1)
+                                                          0.00 #     0.00 r
+  if_stage_inst/current_pc_reg/reg_data_reg[0]/QN (DFF_X1)
+                                                          0.06       0.06 f
+  R_1185/D (DFF_X1)                                       0.01       0.07 f
+  data arrival time                                                  0.07
+
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  R_1185/CK (DFF_X1)                                      0.00       0.00 r
+  library hold time                                       0.00       0.00
+  data required time                                                 0.00
+  --------------------------------------------------------------------------
+  data required time                                                 0.00
+  data arrival time                                                 -0.07
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.07
+
+
+  Startpoint: add_x_2/R_331
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: R_1267 (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  dlx                5K_hvratio_1_1        NangateOpenCellLibrary
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  add_x_2/R_331/CK (DFF_X1)                0.00 #     0.00 r
+  add_x_2/R_331/QN (DFF_X1)                0.06       0.06 f
+  R_1267/D (DFF_X1)                        0.01       0.07 f
+  data arrival time                                   0.07
+
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  R_1267/CK (DFF_X1)                       0.00       0.00 r
+  library hold time                        0.00       0.00
+  data required time                                  0.00
+  -----------------------------------------------------------
+  data required time                                  0.00
+  data arrival time                                  -0.07
+  -----------------------------------------------------------
+  slack (MET)                                         0.07
+
+
+  Startpoint: id_stage_inst/reg_file_inst/reg_file_reg[2][16]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: id_stage_inst/reg_file_inst/reg_file_reg[2][16]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  dlx                5K_hvratio_1_1        NangateOpenCellLibrary
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  id_stage_inst/reg_file_inst/reg_file_reg[2][16]/CK (DFF_X1)
+                                                          0.00 #     0.00 r
+  id_stage_inst/reg_file_inst/reg_file_reg[2][16]/QN (DFF_X1)
+                                                          0.06       0.06 r
+  id_stage_inst/reg_file_inst/U1754/ZN (OAI22_X1)         0.02       0.09 f
+  id_stage_inst/reg_file_inst/reg_file_reg[2][16]/D (DFF_X1)
+                                                          0.01       0.09 f
+  data arrival time                                                  0.09
+
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  id_stage_inst/reg_file_inst/reg_file_reg[2][16]/CK (DFF_X1)
+                                                          0.00       0.00 r
+  library hold time                                       0.00       0.00
+  data required time                                                 0.00
+  --------------------------------------------------------------------------
+  data required time                                                 0.00
+  data arrival time                                                 -0.09
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.09
+
+
+  Startpoint: id_stage_inst/reg_file_inst/reg_file_reg[2][15]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: id_stage_inst/reg_file_inst/reg_file_reg[2][15]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  dlx                5K_hvratio_1_1        NangateOpenCellLibrary
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  id_stage_inst/reg_file_inst/reg_file_reg[2][15]/CK (DFF_X1)
+                                                          0.00 #     0.00 r
+  id_stage_inst/reg_file_inst/reg_file_reg[2][15]/QN (DFF_X1)
+                                                          0.06       0.06 r
+  id_stage_inst/reg_file_inst/U1755/ZN (OAI22_X1)         0.02       0.09 f
+  id_stage_inst/reg_file_inst/reg_file_reg[2][15]/D (DFF_X1)
+                                                          0.01       0.09 f
+  data arrival time                                                  0.09
+
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  id_stage_inst/reg_file_inst/reg_file_reg[2][15]/CK (DFF_X1)
+                                                          0.00       0.00 r
+  library hold time                                       0.00       0.00
+  data required time                                                 0.00
+  --------------------------------------------------------------------------
+  data required time                                                 0.00
+  data arrival time                                                 -0.09
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.09
+
+
+  Startpoint: id_stage_inst/reg_file_inst/reg_file_reg[2][14]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: id_stage_inst/reg_file_inst/reg_file_reg[2][14]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  dlx                5K_hvratio_1_1        NangateOpenCellLibrary
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  id_stage_inst/reg_file_inst/reg_file_reg[2][14]/CK (DFF_X1)
+                                                          0.00 #     0.00 r
+  id_stage_inst/reg_file_inst/reg_file_reg[2][14]/QN (DFF_X1)
+                                                          0.06       0.06 r
+  id_stage_inst/reg_file_inst/U1756/ZN (OAI22_X1)         0.02       0.09 f
+  id_stage_inst/reg_file_inst/reg_file_reg[2][14]/D (DFF_X1)
+                                                          0.01       0.09 f
+  data arrival time                                                  0.09
+
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  id_stage_inst/reg_file_inst/reg_file_reg[2][14]/CK (DFF_X1)
+                                                          0.00       0.00 r
+  library hold time                                       0.00       0.00
+  data required time                                                 0.00
+  --------------------------------------------------------------------------
+  data required time                                                 0.00
+  data arrival time                                                 -0.09
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.09
+
+
+  Startpoint: id_stage_inst/reg_file_inst/reg_file_reg[2][13]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: id_stage_inst/reg_file_inst/reg_file_reg[2][13]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  dlx                5K_hvratio_1_1        NangateOpenCellLibrary
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  id_stage_inst/reg_file_inst/reg_file_reg[2][13]/CK (DFF_X1)
+                                                          0.00 #     0.00 r
+  id_stage_inst/reg_file_inst/reg_file_reg[2][13]/QN (DFF_X1)
+                                                          0.06       0.06 r
+  id_stage_inst/reg_file_inst/U1757/ZN (OAI22_X1)         0.02       0.09 f
+  id_stage_inst/reg_file_inst/reg_file_reg[2][13]/D (DFF_X1)
+                                                          0.01       0.09 f
+  data arrival time                                                  0.09
+
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  id_stage_inst/reg_file_inst/reg_file_reg[2][13]/CK (DFF_X1)
+                                                          0.00       0.00 r
+  library hold time                                       0.00       0.00
+  data required time                                                 0.00
+  --------------------------------------------------------------------------
+  data required time                                                 0.00
+  data arrival time                                                 -0.09
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.09
+
+
+  Startpoint: id_stage_inst/reg_file_inst/reg_file_reg[2][12]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: id_stage_inst/reg_file_inst/reg_file_reg[2][12]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  dlx                5K_hvratio_1_1        NangateOpenCellLibrary
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  id_stage_inst/reg_file_inst/reg_file_reg[2][12]/CK (DFF_X1)
+                                                          0.00 #     0.00 r
+  id_stage_inst/reg_file_inst/reg_file_reg[2][12]/QN (DFF_X1)
+                                                          0.06       0.06 r
+  id_stage_inst/reg_file_inst/U1758/ZN (OAI22_X1)         0.02       0.09 f
+  id_stage_inst/reg_file_inst/reg_file_reg[2][12]/D (DFF_X1)
+                                                          0.01       0.09 f
+  data arrival time                                                  0.09
+
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  id_stage_inst/reg_file_inst/reg_file_reg[2][12]/CK (DFF_X1)
+                                                          0.00       0.00 r
+  library hold time                                       0.00       0.00
+  data required time                                                 0.00
+  --------------------------------------------------------------------------
+  data required time                                                 0.00
+  data arrival time                                                 -0.09
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.09
+
+
+  Startpoint: id_stage_inst/reg_file_inst/reg_file_reg[2][11]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: id_stage_inst/reg_file_inst/reg_file_reg[2][11]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  dlx                5K_hvratio_1_1        NangateOpenCellLibrary
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  id_stage_inst/reg_file_inst/reg_file_reg[2][11]/CK (DFF_X1)
+                                                          0.00 #     0.00 r
+  id_stage_inst/reg_file_inst/reg_file_reg[2][11]/QN (DFF_X1)
+                                                          0.06       0.06 r
+  id_stage_inst/reg_file_inst/U1759/ZN (OAI22_X1)         0.02       0.09 f
+  id_stage_inst/reg_file_inst/reg_file_reg[2][11]/D (DFF_X1)
+                                                          0.01       0.09 f
+  data arrival time                                                  0.09
+
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  id_stage_inst/reg_file_inst/reg_file_reg[2][11]/CK (DFF_X1)
+                                                          0.00       0.00 r
+  library hold time                                       0.00       0.00
+  data required time                                                 0.00
+  --------------------------------------------------------------------------
+  data required time                                                 0.00
+  data arrival time                                                 -0.09
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.09
+
+
+  Startpoint: id_stage_inst/reg_file_inst/reg_file_reg[2][10]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: id_stage_inst/reg_file_inst/reg_file_reg[2][10]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  dlx                5K_hvratio_1_1        NangateOpenCellLibrary
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  id_stage_inst/reg_file_inst/reg_file_reg[2][10]/CK (DFF_X1)
+                                                          0.00 #     0.00 r
+  id_stage_inst/reg_file_inst/reg_file_reg[2][10]/QN (DFF_X1)
+                                                          0.06       0.06 r
+  id_stage_inst/reg_file_inst/U1760/ZN (OAI22_X1)         0.02       0.09 f
+  id_stage_inst/reg_file_inst/reg_file_reg[2][10]/D (DFF_X1)
+                                                          0.01       0.09 f
+  data arrival time                                                  0.09
+
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  id_stage_inst/reg_file_inst/reg_file_reg[2][10]/CK (DFF_X1)
+                                                          0.00       0.00 r
+  library hold time                                       0.00       0.00
+  data required time                                                 0.00
+  --------------------------------------------------------------------------
+  data required time                                                 0.00
+  data arrival time                                                 -0.09
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.09
+
+
+  Startpoint: id_stage_inst/reg_file_inst/reg_file_reg[2][6]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: id_stage_inst/reg_file_inst/reg_file_reg[2][6]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  dlx                5K_hvratio_1_1        NangateOpenCellLibrary
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  id_stage_inst/reg_file_inst/reg_file_reg[2][6]/CK (DFF_X1)
+                                                          0.00 #     0.00 r
+  id_stage_inst/reg_file_inst/reg_file_reg[2][6]/QN (DFF_X1)
+                                                          0.06       0.06 r
+  id_stage_inst/reg_file_inst/U1764/ZN (OAI22_X1)         0.02       0.09 f
+  id_stage_inst/reg_file_inst/reg_file_reg[2][6]/D (DFF_X1)
+                                                          0.01       0.09 f
+  data arrival time                                                  0.09
+
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  id_stage_inst/reg_file_inst/reg_file_reg[2][6]/CK (DFF_X1)
+                                                          0.00       0.00 r
+  library hold time                                       0.00       0.00
+  data required time                                                 0.00
+  --------------------------------------------------------------------------
+  data required time                                                 0.00
+  data arrival time                                                 -0.09
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.09
+
+
+  Startpoint: id_stage_inst/reg_file_inst/reg_file_reg[2][5]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: id_stage_inst/reg_file_inst/reg_file_reg[2][5]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  dlx                5K_hvratio_1_1        NangateOpenCellLibrary
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  id_stage_inst/reg_file_inst/reg_file_reg[2][5]/CK (DFF_X1)
+                                                          0.00 #     0.00 r
+  id_stage_inst/reg_file_inst/reg_file_reg[2][5]/QN (DFF_X1)
+                                                          0.06       0.06 r
+  id_stage_inst/reg_file_inst/U1765/ZN (OAI22_X1)         0.02       0.09 f
+  id_stage_inst/reg_file_inst/reg_file_reg[2][5]/D (DFF_X1)
+                                                          0.01       0.09 f
+  data arrival time                                                  0.09
+
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  id_stage_inst/reg_file_inst/reg_file_reg[2][5]/CK (DFF_X1)
+                                                          0.00       0.00 r
+  library hold time                                       0.00       0.00
+  data required time                                                 0.00
+  --------------------------------------------------------------------------
+  data required time                                                 0.00
+  data arrival time                                                 -0.09
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.09
+
+
+  Startpoint: id_stage_inst/reg_file_inst/reg_file_reg[2][4]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: id_stage_inst/reg_file_inst/reg_file_reg[2][4]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  dlx                5K_hvratio_1_1        NangateOpenCellLibrary
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  id_stage_inst/reg_file_inst/reg_file_reg[2][4]/CK (DFF_X1)
+                                                          0.00 #     0.00 r
+  id_stage_inst/reg_file_inst/reg_file_reg[2][4]/QN (DFF_X1)
+                                                          0.06       0.06 r
+  id_stage_inst/reg_file_inst/U1766/ZN (OAI22_X1)         0.02       0.09 f
+  id_stage_inst/reg_file_inst/reg_file_reg[2][4]/D (DFF_X1)
+                                                          0.01       0.09 f
+  data arrival time                                                  0.09
+
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  id_stage_inst/reg_file_inst/reg_file_reg[2][4]/CK (DFF_X1)
+                                                          0.00       0.00 r
+  library hold time                                       0.00       0.00
+  data required time                                                 0.00
+  --------------------------------------------------------------------------
+  data required time                                                 0.00
+  data arrival time                                                 -0.09
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.09
+
+
+  Startpoint: id_stage_inst/reg_file_inst/reg_file_reg[2][3]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: id_stage_inst/reg_file_inst/reg_file_reg[2][3]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  dlx                5K_hvratio_1_1        NangateOpenCellLibrary
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  id_stage_inst/reg_file_inst/reg_file_reg[2][3]/CK (DFF_X1)
+                                                          0.00 #     0.00 r
+  id_stage_inst/reg_file_inst/reg_file_reg[2][3]/QN (DFF_X1)
+                                                          0.06       0.06 r
+  id_stage_inst/reg_file_inst/U1767/ZN (OAI22_X1)         0.02       0.09 f
+  id_stage_inst/reg_file_inst/reg_file_reg[2][3]/D (DFF_X1)
+                                                          0.01       0.09 f
+  data arrival time                                                  0.09
+
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  id_stage_inst/reg_file_inst/reg_file_reg[2][3]/CK (DFF_X1)
+                                                          0.00       0.00 r
+  library hold time                                       0.00       0.00
+  data required time                                                 0.00
+  --------------------------------------------------------------------------
+  data required time                                                 0.00
+  data arrival time                                                 -0.09
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.09
+
+
+  Startpoint: id_stage_inst/reg_file_inst/reg_file_reg[2][2]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: id_stage_inst/reg_file_inst/reg_file_reg[2][2]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  dlx                5K_hvratio_1_1        NangateOpenCellLibrary
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  id_stage_inst/reg_file_inst/reg_file_reg[2][2]/CK (DFF_X1)
+                                                          0.00 #     0.00 r
+  id_stage_inst/reg_file_inst/reg_file_reg[2][2]/QN (DFF_X1)
+                                                          0.06       0.06 r
+  id_stage_inst/reg_file_inst/U1768/ZN (OAI22_X1)         0.02       0.09 f
+  id_stage_inst/reg_file_inst/reg_file_reg[2][2]/D (DFF_X1)
+                                                          0.01       0.09 f
+  data arrival time                                                  0.09
+
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  id_stage_inst/reg_file_inst/reg_file_reg[2][2]/CK (DFF_X1)
+                                                          0.00       0.00 r
+  library hold time                                       0.00       0.00
+  data required time                                                 0.00
+  --------------------------------------------------------------------------
+  data required time                                                 0.00
+  data arrival time                                                 -0.09
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.09
+
+
+  Startpoint: id_stage_inst/reg_file_inst/reg_file_reg[2][1]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: id_stage_inst/reg_file_inst/reg_file_reg[2][1]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  dlx                5K_hvratio_1_1        NangateOpenCellLibrary
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  id_stage_inst/reg_file_inst/reg_file_reg[2][1]/CK (DFF_X1)
+                                                          0.00 #     0.00 r
+  id_stage_inst/reg_file_inst/reg_file_reg[2][1]/QN (DFF_X1)
+                                                          0.06       0.06 r
+  id_stage_inst/reg_file_inst/U1769/ZN (OAI22_X1)         0.02       0.09 f
+  id_stage_inst/reg_file_inst/reg_file_reg[2][1]/D (DFF_X1)
+                                                          0.01       0.09 f
+  data arrival time                                                  0.09
+
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  id_stage_inst/reg_file_inst/reg_file_reg[2][1]/CK (DFF_X1)
+                                                          0.00       0.00 r
+  library hold time                                       0.00       0.00
+  data required time                                                 0.00
+  --------------------------------------------------------------------------
+  data required time                                                 0.00
+  data arrival time                                                 -0.09
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.09
+
+
+  Startpoint: id_stage_inst/reg_file_inst/reg_file_reg[2][0]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: id_stage_inst/reg_file_inst/reg_file_reg[2][0]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  dlx                5K_hvratio_1_1        NangateOpenCellLibrary
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  id_stage_inst/reg_file_inst/reg_file_reg[2][0]/CK (DFF_X1)
+                                                          0.00 #     0.00 r
+  id_stage_inst/reg_file_inst/reg_file_reg[2][0]/QN (DFF_X1)
+                                                          0.06       0.06 r
+  id_stage_inst/reg_file_inst/U1770/ZN (OAI22_X1)         0.02       0.09 f
+  id_stage_inst/reg_file_inst/reg_file_reg[2][0]/D (DFF_X1)
+                                                          0.01       0.09 f
+  data arrival time                                                  0.09
+
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  id_stage_inst/reg_file_inst/reg_file_reg[2][0]/CK (DFF_X1)
+                                                          0.00       0.00 r
+  library hold time                                       0.00       0.00
+  data required time                                                 0.00
+  --------------------------------------------------------------------------
+  data required time                                                 0.00
+  data arrival time                                                 -0.09
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.09
+
+
+1

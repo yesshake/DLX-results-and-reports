@@ -1,0 +1,957 @@
+ 
+****************************************
+Report : reference
+Design : dlx
+Version: W-2024.09-SP2
+Date   : Wed Sep 16 04:41:17 2026
+****************************************
+
+Attributes:
+    b - black box (unknown)
+   bo - allows boundary optimization
+    d - dont_touch
+   mo - map_only
+    h - hierarchical
+    n - noncombinational
+    r - removable
+    s - synthetic operator
+    u - contains unmapped logic
+
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+AND2_X1            NangateOpenCellLibrary
+                                  1.064000    1111   1182.104012  
+AND2_X2            NangateOpenCellLibrary
+                                  1.330000      30     39.900001  
+AND2_X4            NangateOpenCellLibrary
+                                  2.394000       5     11.970000  
+AND3_X1            NangateOpenCellLibrary
+                                  1.330000     128    170.240005  
+AND3_X2            NangateOpenCellLibrary
+                                  1.596000      23     36.707999  
+AND4_X1            NangateOpenCellLibrary
+                                  1.596000     495    790.019978  
+AND4_X2            NangateOpenCellLibrary
+                                  1.862000      26     48.412000  
+AND4_X4            NangateOpenCellLibrary
+                                  3.458000       1      3.458000  
+AOI21_X1           NangateOpenCellLibrary
+                                  1.064000      75     79.800001  
+AOI22_X1           NangateOpenCellLibrary
+                                  1.330000     221    293.930009  
+AOI211_X1          NangateOpenCellLibrary
+                                  1.330000       9     11.970000  
+BUF_X1             NangateOpenCellLibrary
+                                  0.798000      33     26.333999  
+BUF_X2             NangateOpenCellLibrary
+                                  1.064000      22     23.408000  
+BUF_X4             NangateOpenCellLibrary
+                                  1.862000       1      1.862000  
+CLKBUF_X1          NangateOpenCellLibrary
+                                  0.798000      46     36.707999  
+CLKBUF_X2          NangateOpenCellLibrary
+                                  1.064000       7      7.448000  
+CLKBUF_X3          NangateOpenCellLibrary
+                                  1.330000       3      3.990000  
+DFFRS_X1           NangateOpenCellLibrary
+                                  6.384000       5     31.919999  n
+DFFS_X1            NangateOpenCellLibrary
+                                  5.320000       1      5.320000  n
+DFF_X1             NangateOpenCellLibrary
+                                  4.522000    1469   6642.817759  n
+DFF_X2             NangateOpenCellLibrary
+                                  5.054000      82    414.427992  n
+FA_X1              NangateOpenCellLibrary
+                                  4.256000     207    880.992009  r
+HA_X1              NangateOpenCellLibrary
+                                  2.660000       3      7.980000  r
+INV_X1             NangateOpenCellLibrary
+                                  0.532000     997    530.404005  
+INV_X2             NangateOpenCellLibrary
+                                  0.798000      22     17.556000  
+INV_X4             NangateOpenCellLibrary
+                                  1.330000       1      1.330000  
+MUX2_X1            NangateOpenCellLibrary
+                                  1.862000     207    385.433998  
+MUX2_X2            NangateOpenCellLibrary
+                                  2.394000       3      7.182000  
+NAND2_X1           NangateOpenCellLibrary
+                                  0.798000    2773   2212.853939  
+NAND2_X2           NangateOpenCellLibrary
+                                  1.330000       4      5.320000  
+NAND2_X4           NangateOpenCellLibrary
+                                  2.394000       1      2.394000  
+NAND3_X1           NangateOpenCellLibrary
+                                  1.064000      51     54.264001  
+NAND4_X1           NangateOpenCellLibrary
+                                  1.330000     172    228.760007  
+NAND4_X2           NangateOpenCellLibrary
+                                  2.394000       2      4.788000  
+NOR2_X1            NangateOpenCellLibrary
+                                  0.798000     384    306.431992  
+NOR2_X2            NangateOpenCellLibrary
+                                  1.330000       5      6.650000  
+NOR2_X4            NangateOpenCellLibrary
+                                  2.394000       2      4.788000  
+NOR3_X1            NangateOpenCellLibrary
+                                  1.064000      24     25.536000  
+NOR4_X1            NangateOpenCellLibrary
+                                  1.330000      23     30.590001  
+NOR4_X2            NangateOpenCellLibrary
+                                  2.394000       1      2.394000  
+OAI21_X1           NangateOpenCellLibrary
+                                  1.064000     151    160.664002  
+OAI21_X2           NangateOpenCellLibrary
+                                  1.862000       1      1.862000  
+OAI21_X4           NangateOpenCellLibrary
+                                  3.458000       1      3.458000  
+OAI22_X1           NangateOpenCellLibrary
+                                  1.330000      84    111.720004  
+OAI211_X1          NangateOpenCellLibrary
+                                  1.330000     112    148.960005  
+OAI211_X2          NangateOpenCellLibrary
+                                  2.394000       1      2.394000  
+OAI222_X1          NangateOpenCellLibrary
+                                  2.128000      41     87.248001  
+OR2_X1             NangateOpenCellLibrary
+                                  1.064000    1234   1312.976013  
+OR2_X2             NangateOpenCellLibrary
+                                  1.330000      14     18.620001  
+OR2_X4             NangateOpenCellLibrary
+                                  2.394000       2      4.788000  
+OR3_X1             NangateOpenCellLibrary
+                                  1.330000      81    107.730003  
+OR3_X2             NangateOpenCellLibrary
+                                  1.596000       5      7.980000  
+OR4_X1             NangateOpenCellLibrary
+                                  1.596000       9     14.364000  
+OR4_X2             NangateOpenCellLibrary
+                                  1.862000       1      1.862000  
+SDFF_X1            NangateOpenCellLibrary
+                                  6.118000      21    128.478001  n
+SNPS_CLOCK_GATE_HIGH_BTB_if_1_0
+                                  3.724000       1      3.724000  h, n
+SNPS_CLOCK_GATE_HIGH_BTB_if_1_1
+                                  3.724000       1      3.724000  h, n
+SNPS_CLOCK_GATE_HIGH_BTB_if_1_2
+                                  3.724000       1      3.724000  h, n
+SNPS_CLOCK_GATE_HIGH_BTB_if_1_3
+                                  3.724000       1      3.724000  h, n
+SNPS_CLOCK_GATE_HIGH_BTB_if_1_4
+                                  3.724000       1      3.724000  h, n
+SNPS_CLOCK_GATE_HIGH_BTB_if_1_5
+                                  3.724000       1      3.724000  h, n
+SNPS_CLOCK_GATE_HIGH_BTB_if_1_6
+                                  3.724000       1      3.724000  h, n
+SNPS_CLOCK_GATE_HIGH_BTB_if_1_7
+                                  3.724000       1      3.724000  h, n
+SNPS_CLOCK_GATE_HIGH_BTB_if_1_8
+                                  3.724000       1      3.724000  h, n
+SNPS_CLOCK_GATE_HIGH_BTB_if_1_9
+                                  3.724000       1      3.724000  h, n
+SNPS_CLOCK_GATE_HIGH_BTB_if_1_10
+                                  3.724000       1      3.724000  h, n
+SNPS_CLOCK_GATE_HIGH_BTB_if_1_11
+                                  3.724000       1      3.724000  h, n
+SNPS_CLOCK_GATE_HIGH_BTB_if_1_12
+                                  3.724000       1      3.724000  h, n
+SNPS_CLOCK_GATE_HIGH_BTB_if_1_13
+                                  3.724000       1      3.724000  h, n
+SNPS_CLOCK_GATE_HIGH_BTB_if_1_14
+                                  3.724000       1      3.724000  h, n
+SNPS_CLOCK_GATE_HIGH_BTB_if_1_15
+                                  3.724000       1      3.724000  h, n
+SNPS_CLOCK_GATE_HIGH_BTB_if_1_16
+                                  3.724000       1      3.724000  h, n
+SNPS_CLOCK_GATE_HIGH_dadda_tree_1
+                                  3.724000       1      3.724000  h, n
+SNPS_CLOCK_GATE_HIGH_gen_register_DATA_WIDTH32_12_1
+                                  3.724000       1      3.724000  h, n
+SNPS_CLOCK_GATE_HIGH_gen_register_DATA_WIDTH32_12_5
+                                  3.724000       1      3.724000  h, n
+SNPS_CLOCK_GATE_HIGH_gen_register_DATA_WIDTH32_12_9
+                                  3.724000       1      3.724000  h, n
+TBUF_X1            NangateOpenCellLibrary
+                                  2.128000      32     68.096001  n
+XNOR2_X1           NangateOpenCellLibrary
+                                  1.596000     787   1256.051965  
+XNOR2_X2           NangateOpenCellLibrary
+                                  2.660000       4     10.640000  
+XOR2_X1            NangateOpenCellLibrary
+                                  1.596000      63    100.547997  
+reg_file_id_1                  7839.285823       1   7839.285823  h, n
+-----------------------------------------------------------------------------
+Total 81 references                                 26044.325524
+
+****************************************
+Design: SNPS_CLOCK_GATE_HIGH_BTB_if_1_0 
+****************************************
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+AND2_X1            NangateOpenCellLibrary
+                                  1.064000       1      1.064000  
+DLL_X1             NangateOpenCellLibrary
+                                  2.660000       1      2.660000  n
+-----------------------------------------------------------------------------
+Total 2 references                                      3.724000
+
+****************************************
+Design: SNPS_CLOCK_GATE_HIGH_BTB_if_1_1 
+****************************************
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+AND2_X1            NangateOpenCellLibrary
+                                  1.064000       1      1.064000  
+DLL_X1             NangateOpenCellLibrary
+                                  2.660000       1      2.660000  n
+-----------------------------------------------------------------------------
+Total 2 references                                      3.724000
+
+****************************************
+Design: SNPS_CLOCK_GATE_HIGH_BTB_if_1_2 
+****************************************
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+AND2_X1            NangateOpenCellLibrary
+                                  1.064000       1      1.064000  
+DLL_X1             NangateOpenCellLibrary
+                                  2.660000       1      2.660000  n
+-----------------------------------------------------------------------------
+Total 2 references                                      3.724000
+
+****************************************
+Design: SNPS_CLOCK_GATE_HIGH_BTB_if_1_3 
+****************************************
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+AND2_X1            NangateOpenCellLibrary
+                                  1.064000       1      1.064000  
+DLL_X1             NangateOpenCellLibrary
+                                  2.660000       1      2.660000  n
+-----------------------------------------------------------------------------
+Total 2 references                                      3.724000
+
+****************************************
+Design: SNPS_CLOCK_GATE_HIGH_BTB_if_1_4 
+****************************************
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+AND2_X1            NangateOpenCellLibrary
+                                  1.064000       1      1.064000  
+DLL_X1             NangateOpenCellLibrary
+                                  2.660000       1      2.660000  n
+-----------------------------------------------------------------------------
+Total 2 references                                      3.724000
+
+****************************************
+Design: SNPS_CLOCK_GATE_HIGH_BTB_if_1_5 
+****************************************
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+AND2_X1            NangateOpenCellLibrary
+                                  1.064000       1      1.064000  
+DLL_X1             NangateOpenCellLibrary
+                                  2.660000       1      2.660000  n
+-----------------------------------------------------------------------------
+Total 2 references                                      3.724000
+
+****************************************
+Design: SNPS_CLOCK_GATE_HIGH_BTB_if_1_6 
+****************************************
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+AND2_X1            NangateOpenCellLibrary
+                                  1.064000       1      1.064000  
+DLL_X1             NangateOpenCellLibrary
+                                  2.660000       1      2.660000  n
+-----------------------------------------------------------------------------
+Total 2 references                                      3.724000
+
+****************************************
+Design: SNPS_CLOCK_GATE_HIGH_BTB_if_1_7 
+****************************************
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+AND2_X1            NangateOpenCellLibrary
+                                  1.064000       1      1.064000  
+DLL_X1             NangateOpenCellLibrary
+                                  2.660000       1      2.660000  n
+-----------------------------------------------------------------------------
+Total 2 references                                      3.724000
+
+****************************************
+Design: SNPS_CLOCK_GATE_HIGH_BTB_if_1_8 
+****************************************
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+AND2_X1            NangateOpenCellLibrary
+                                  1.064000       1      1.064000  
+DLL_X1             NangateOpenCellLibrary
+                                  2.660000       1      2.660000  n
+-----------------------------------------------------------------------------
+Total 2 references                                      3.724000
+
+****************************************
+Design: SNPS_CLOCK_GATE_HIGH_BTB_if_1_9 
+****************************************
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+AND2_X1            NangateOpenCellLibrary
+                                  1.064000       1      1.064000  
+DLL_X1             NangateOpenCellLibrary
+                                  2.660000       1      2.660000  n
+-----------------------------------------------------------------------------
+Total 2 references                                      3.724000
+
+****************************************
+Design: SNPS_CLOCK_GATE_HIGH_BTB_if_1_10 
+****************************************
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+AND2_X1            NangateOpenCellLibrary
+                                  1.064000       1      1.064000  
+DLL_X1             NangateOpenCellLibrary
+                                  2.660000       1      2.660000  n
+-----------------------------------------------------------------------------
+Total 2 references                                      3.724000
+
+****************************************
+Design: SNPS_CLOCK_GATE_HIGH_BTB_if_1_11 
+****************************************
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+AND2_X1            NangateOpenCellLibrary
+                                  1.064000       1      1.064000  
+DLL_X1             NangateOpenCellLibrary
+                                  2.660000       1      2.660000  n
+-----------------------------------------------------------------------------
+Total 2 references                                      3.724000
+
+****************************************
+Design: SNPS_CLOCK_GATE_HIGH_BTB_if_1_12 
+****************************************
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+AND2_X1            NangateOpenCellLibrary
+                                  1.064000       1      1.064000  
+DLL_X1             NangateOpenCellLibrary
+                                  2.660000       1      2.660000  n
+-----------------------------------------------------------------------------
+Total 2 references                                      3.724000
+
+****************************************
+Design: SNPS_CLOCK_GATE_HIGH_BTB_if_1_13 
+****************************************
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+AND2_X1            NangateOpenCellLibrary
+                                  1.064000       1      1.064000  
+DLL_X1             NangateOpenCellLibrary
+                                  2.660000       1      2.660000  n
+-----------------------------------------------------------------------------
+Total 2 references                                      3.724000
+
+****************************************
+Design: SNPS_CLOCK_GATE_HIGH_BTB_if_1_14 
+****************************************
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+AND2_X1            NangateOpenCellLibrary
+                                  1.064000       1      1.064000  
+DLL_X1             NangateOpenCellLibrary
+                                  2.660000       1      2.660000  n
+-----------------------------------------------------------------------------
+Total 2 references                                      3.724000
+
+****************************************
+Design: SNPS_CLOCK_GATE_HIGH_BTB_if_1_15 
+****************************************
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+AND2_X1            NangateOpenCellLibrary
+                                  1.064000       1      1.064000  
+DLL_X1             NangateOpenCellLibrary
+                                  2.660000       1      2.660000  n
+-----------------------------------------------------------------------------
+Total 2 references                                      3.724000
+
+****************************************
+Design: SNPS_CLOCK_GATE_HIGH_BTB_if_1_16 
+****************************************
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+AND2_X1            NangateOpenCellLibrary
+                                  1.064000       1      1.064000  
+DLL_X1             NangateOpenCellLibrary
+                                  2.660000       1      2.660000  n
+-----------------------------------------------------------------------------
+Total 2 references                                      3.724000
+
+****************************************
+Design: SNPS_CLOCK_GATE_HIGH_dadda_tree_1 
+****************************************
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+AND2_X1            NangateOpenCellLibrary
+                                  1.064000       1      1.064000  
+DLL_X1             NangateOpenCellLibrary
+                                  2.660000       1      2.660000  n
+-----------------------------------------------------------------------------
+Total 2 references                                      3.724000
+
+****************************************
+Design: SNPS_CLOCK_GATE_HIGH_gen_register_DATA_WIDTH32_12_1 
+****************************************
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+AND2_X1            NangateOpenCellLibrary
+                                  1.064000       1      1.064000  
+DLL_X1             NangateOpenCellLibrary
+                                  2.660000       1      2.660000  n
+-----------------------------------------------------------------------------
+Total 2 references                                      3.724000
+
+****************************************
+Design: SNPS_CLOCK_GATE_HIGH_gen_register_DATA_WIDTH32_12_5 
+****************************************
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+AND2_X1            NangateOpenCellLibrary
+                                  1.064000       1      1.064000  
+DLL_X1             NangateOpenCellLibrary
+                                  2.660000       1      2.660000  n
+-----------------------------------------------------------------------------
+Total 2 references                                      3.724000
+
+****************************************
+Design: SNPS_CLOCK_GATE_HIGH_gen_register_DATA_WIDTH32_12_9 
+****************************************
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+AND2_X1            NangateOpenCellLibrary
+                                  1.064000       1      1.064000  
+DLL_X1             NangateOpenCellLibrary
+                                  2.660000       1      2.660000  n
+-----------------------------------------------------------------------------
+Total 2 references                                      3.724000
+
+****************************************
+Design: reg_file_id_1 
+****************************************
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+AND2_X1            NangateOpenCellLibrary
+                                  1.064000      56     59.584001  
+AND2_X2            NangateOpenCellLibrary
+                                  1.330000      11     14.630000  
+AND3_X1            NangateOpenCellLibrary
+                                  1.330000      66     87.780003  
+AND4_X1            NangateOpenCellLibrary
+                                  1.596000     196    312.815991  
+AND4_X2            NangateOpenCellLibrary
+                                  1.862000       1      1.862000  
+AOI22_X1           NangateOpenCellLibrary
+                                  1.330000     128    170.240005  
+BUF_X1             NangateOpenCellLibrary
+                                  0.798000      22     17.556000  
+BUF_X2             NangateOpenCellLibrary
+                                  1.064000       1      1.064000  
+CLKBUF_X1          NangateOpenCellLibrary
+                                  0.798000       3      2.394000  
+CLKBUF_X2          NangateOpenCellLibrary
+                                  1.064000      13     13.832000  
+CLKBUF_X3          NangateOpenCellLibrary
+                                  1.330000       1      1.330000  
+DFF_X1             NangateOpenCellLibrary
+                                  4.522000    1021   4616.961833  n
+INV_X1             NangateOpenCellLibrary
+                                  0.532000      88     46.816000  
+INV_X2             NangateOpenCellLibrary
+                                  0.798000      11      8.778000  
+MUX2_X1            NangateOpenCellLibrary
+                                  1.862000       1      1.862000  
+NAND2_X1           NangateOpenCellLibrary
+                                  0.798000    1234    984.731973  
+NAND2_X2           NangateOpenCellLibrary
+                                  1.330000       3      3.990000  
+NAND3_X1           NangateOpenCellLibrary
+                                  1.064000       8      8.512000  
+NAND4_X1           NangateOpenCellLibrary
+                                  1.330000     222    295.260010  
+NOR2_X1            NangateOpenCellLibrary
+                                  0.798000     237    189.125995  
+NOR2_X2            NangateOpenCellLibrary
+                                  1.330000       1      1.330000  
+NOR3_X1            NangateOpenCellLibrary
+                                  1.064000      64     68.096001  
+NOR4_X1            NangateOpenCellLibrary
+                                  1.330000       5      6.650000  
+OAI21_X1           NangateOpenCellLibrary
+                                  1.064000      20     21.280000  
+OAI22_X1           NangateOpenCellLibrary
+                                  1.330000      59     78.470003  
+OR2_X1             NangateOpenCellLibrary
+                                  1.064000     543    577.752006  
+OR2_X2             NangateOpenCellLibrary
+                                  1.330000       2      2.660000  
+OR3_X1             NangateOpenCellLibrary
+                                  1.330000      27     35.910001  
+OR4_X1             NangateOpenCellLibrary
+                                  1.596000      34     54.263999  
+OR4_X2             NangateOpenCellLibrary
+                                  1.862000       1      1.862000  
+SDFF_X1            NangateOpenCellLibrary
+                                  6.118000       3     18.354000  n
+SNPS_CLOCK_GATE_HIGH_reg_file_id_1_0
+                                  3.724000       1      3.724000  h, n
+SNPS_CLOCK_GATE_HIGH_reg_file_id_1_1
+                                  3.724000       1      3.724000  h, n
+SNPS_CLOCK_GATE_HIGH_reg_file_id_1_2
+                                  3.724000       1      3.724000  h, n
+SNPS_CLOCK_GATE_HIGH_reg_file_id_1_3
+                                  3.724000       1      3.724000  h, n
+SNPS_CLOCK_GATE_HIGH_reg_file_id_1_4
+                                  3.724000       1      3.724000  h, n
+SNPS_CLOCK_GATE_HIGH_reg_file_id_1_5
+                                  3.724000       1      3.724000  h, n
+SNPS_CLOCK_GATE_HIGH_reg_file_id_1_6
+                                  3.724000       1      3.724000  h, n
+SNPS_CLOCK_GATE_HIGH_reg_file_id_1_7
+                                  3.724000       1      3.724000  h, n
+SNPS_CLOCK_GATE_HIGH_reg_file_id_1_8
+                                  3.724000       1      3.724000  h, n
+SNPS_CLOCK_GATE_HIGH_reg_file_id_1_9
+                                  3.724000       1      3.724000  h, n
+SNPS_CLOCK_GATE_HIGH_reg_file_id_1_10
+                                  3.724000       1      3.724000  h, n
+SNPS_CLOCK_GATE_HIGH_reg_file_id_1_11
+                                  3.724000       1      3.724000  h, n
+SNPS_CLOCK_GATE_HIGH_reg_file_id_1_12
+                                  3.724000       1      3.724000  h, n
+SNPS_CLOCK_GATE_HIGH_reg_file_id_1_13
+                                  3.724000       1      3.724000  h, n
+SNPS_CLOCK_GATE_HIGH_reg_file_id_1_14
+                                  3.724000       1      3.724000  h, n
+SNPS_CLOCK_GATE_HIGH_reg_file_id_1_15
+                                  3.724000       1      3.724000  h, n
+SNPS_CLOCK_GATE_HIGH_reg_file_id_1_16
+                                  3.724000       1      3.724000  h, n
+SNPS_CLOCK_GATE_HIGH_reg_file_id_1_17
+                                  3.724000       1      3.724000  h, n
+SNPS_CLOCK_GATE_HIGH_reg_file_id_1_18
+                                  3.724000       1      3.724000  h, n
+SNPS_CLOCK_GATE_HIGH_reg_file_id_1_19
+                                  3.724000       1      3.724000  h, n
+SNPS_CLOCK_GATE_HIGH_reg_file_id_1_20
+                                  3.724000       1      3.724000  h, n
+SNPS_CLOCK_GATE_HIGH_reg_file_id_1_21
+                                  3.724000       1      3.724000  h, n
+SNPS_CLOCK_GATE_HIGH_reg_file_id_1_22
+                                  3.724000       1      3.724000  h, n
+SNPS_CLOCK_GATE_HIGH_reg_file_id_1_23
+                                  3.724000       1      3.724000  h, n
+SNPS_CLOCK_GATE_HIGH_reg_file_id_1_24
+                                  3.724000       1      3.724000  h, n
+SNPS_CLOCK_GATE_HIGH_reg_file_id_1_25
+                                  3.724000       1      3.724000  h, n
+SNPS_CLOCK_GATE_HIGH_reg_file_id_1_26
+                                  3.724000       1      3.724000  h, n
+SNPS_CLOCK_GATE_HIGH_reg_file_id_1_27
+                                  3.724000       1      3.724000  h, n
+SNPS_CLOCK_GATE_HIGH_reg_file_id_1_28
+                                  3.724000       1      3.724000  h, n
+SNPS_CLOCK_GATE_HIGH_reg_file_id_1_29
+                                  3.724000       1      3.724000  h, n
+SNPS_CLOCK_GATE_HIGH_reg_file_id_1_30
+                                  3.724000       1      3.724000  h, n
+SNPS_CLOCK_GATE_HIGH_reg_file_id_1_31
+                                  3.724000       1      3.724000  h, n
+XNOR2_X1           NangateOpenCellLibrary
+                                  1.596000       9     14.364000  
+-----------------------------------------------------------------------------
+Total 64 references                                  7839.285823
+
+****************************************
+Design: SNPS_CLOCK_GATE_HIGH_reg_file_id_1_0 
+****************************************
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+AND2_X1            NangateOpenCellLibrary
+                                  1.064000       1      1.064000  
+DLL_X1             NangateOpenCellLibrary
+                                  2.660000       1      2.660000  n
+-----------------------------------------------------------------------------
+Total 2 references                                      3.724000
+
+****************************************
+Design: SNPS_CLOCK_GATE_HIGH_reg_file_id_1_1 
+****************************************
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+AND2_X1            NangateOpenCellLibrary
+                                  1.064000       1      1.064000  
+DLL_X1             NangateOpenCellLibrary
+                                  2.660000       1      2.660000  n
+-----------------------------------------------------------------------------
+Total 2 references                                      3.724000
+
+****************************************
+Design: SNPS_CLOCK_GATE_HIGH_reg_file_id_1_2 
+****************************************
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+AND2_X1            NangateOpenCellLibrary
+                                  1.064000       1      1.064000  
+DLL_X1             NangateOpenCellLibrary
+                                  2.660000       1      2.660000  n
+-----------------------------------------------------------------------------
+Total 2 references                                      3.724000
+
+****************************************
+Design: SNPS_CLOCK_GATE_HIGH_reg_file_id_1_3 
+****************************************
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+AND2_X1            NangateOpenCellLibrary
+                                  1.064000       1      1.064000  
+DLL_X1             NangateOpenCellLibrary
+                                  2.660000       1      2.660000  n
+-----------------------------------------------------------------------------
+Total 2 references                                      3.724000
+
+****************************************
+Design: SNPS_CLOCK_GATE_HIGH_reg_file_id_1_4 
+****************************************
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+AND2_X1            NangateOpenCellLibrary
+                                  1.064000       1      1.064000  
+DLL_X1             NangateOpenCellLibrary
+                                  2.660000       1      2.660000  n
+-----------------------------------------------------------------------------
+Total 2 references                                      3.724000
+
+****************************************
+Design: SNPS_CLOCK_GATE_HIGH_reg_file_id_1_5 
+****************************************
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+AND2_X1            NangateOpenCellLibrary
+                                  1.064000       1      1.064000  
+DLL_X1             NangateOpenCellLibrary
+                                  2.660000       1      2.660000  n
+-----------------------------------------------------------------------------
+Total 2 references                                      3.724000
+
+****************************************
+Design: SNPS_CLOCK_GATE_HIGH_reg_file_id_1_6 
+****************************************
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+AND2_X1            NangateOpenCellLibrary
+                                  1.064000       1      1.064000  
+DLL_X1             NangateOpenCellLibrary
+                                  2.660000       1      2.660000  n
+-----------------------------------------------------------------------------
+Total 2 references                                      3.724000
+
+****************************************
+Design: SNPS_CLOCK_GATE_HIGH_reg_file_id_1_7 
+****************************************
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+AND2_X1            NangateOpenCellLibrary
+                                  1.064000       1      1.064000  
+DLL_X1             NangateOpenCellLibrary
+                                  2.660000       1      2.660000  n
+-----------------------------------------------------------------------------
+Total 2 references                                      3.724000
+
+****************************************
+Design: SNPS_CLOCK_GATE_HIGH_reg_file_id_1_8 
+****************************************
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+AND2_X1            NangateOpenCellLibrary
+                                  1.064000       1      1.064000  
+DLL_X1             NangateOpenCellLibrary
+                                  2.660000       1      2.660000  n
+-----------------------------------------------------------------------------
+Total 2 references                                      3.724000
+
+****************************************
+Design: SNPS_CLOCK_GATE_HIGH_reg_file_id_1_9 
+****************************************
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+AND2_X1            NangateOpenCellLibrary
+                                  1.064000       1      1.064000  
+DLL_X1             NangateOpenCellLibrary
+                                  2.660000       1      2.660000  n
+-----------------------------------------------------------------------------
+Total 2 references                                      3.724000
+
+****************************************
+Design: SNPS_CLOCK_GATE_HIGH_reg_file_id_1_10 
+****************************************
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+AND2_X1            NangateOpenCellLibrary
+                                  1.064000       1      1.064000  
+DLL_X1             NangateOpenCellLibrary
+                                  2.660000       1      2.660000  n
+-----------------------------------------------------------------------------
+Total 2 references                                      3.724000
+
+****************************************
+Design: SNPS_CLOCK_GATE_HIGH_reg_file_id_1_11 
+****************************************
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+AND2_X1            NangateOpenCellLibrary
+                                  1.064000       1      1.064000  
+DLL_X1             NangateOpenCellLibrary
+                                  2.660000       1      2.660000  n
+-----------------------------------------------------------------------------
+Total 2 references                                      3.724000
+
+****************************************
+Design: SNPS_CLOCK_GATE_HIGH_reg_file_id_1_12 
+****************************************
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+AND2_X1            NangateOpenCellLibrary
+                                  1.064000       1      1.064000  
+DLL_X1             NangateOpenCellLibrary
+                                  2.660000       1      2.660000  n
+-----------------------------------------------------------------------------
+Total 2 references                                      3.724000
+
+****************************************
+Design: SNPS_CLOCK_GATE_HIGH_reg_file_id_1_13 
+****************************************
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+AND2_X1            NangateOpenCellLibrary
+                                  1.064000       1      1.064000  
+DLL_X1             NangateOpenCellLibrary
+                                  2.660000       1      2.660000  n
+-----------------------------------------------------------------------------
+Total 2 references                                      3.724000
+
+****************************************
+Design: SNPS_CLOCK_GATE_HIGH_reg_file_id_1_14 
+****************************************
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+AND2_X1            NangateOpenCellLibrary
+                                  1.064000       1      1.064000  
+DLL_X1             NangateOpenCellLibrary
+                                  2.660000       1      2.660000  n
+-----------------------------------------------------------------------------
+Total 2 references                                      3.724000
+
+****************************************
+Design: SNPS_CLOCK_GATE_HIGH_reg_file_id_1_15 
+****************************************
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+AND2_X1            NangateOpenCellLibrary
+                                  1.064000       1      1.064000  
+DLL_X1             NangateOpenCellLibrary
+                                  2.660000       1      2.660000  n
+-----------------------------------------------------------------------------
+Total 2 references                                      3.724000
+
+****************************************
+Design: SNPS_CLOCK_GATE_HIGH_reg_file_id_1_16 
+****************************************
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+AND2_X1            NangateOpenCellLibrary
+                                  1.064000       1      1.064000  
+DLL_X1             NangateOpenCellLibrary
+                                  2.660000       1      2.660000  n
+-----------------------------------------------------------------------------
+Total 2 references                                      3.724000
+
+****************************************
+Design: SNPS_CLOCK_GATE_HIGH_reg_file_id_1_17 
+****************************************
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+AND2_X1            NangateOpenCellLibrary
+                                  1.064000       1      1.064000  
+DLL_X1             NangateOpenCellLibrary
+                                  2.660000       1      2.660000  n
+-----------------------------------------------------------------------------
+Total 2 references                                      3.724000
+
+****************************************
+Design: SNPS_CLOCK_GATE_HIGH_reg_file_id_1_18 
+****************************************
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+AND2_X1            NangateOpenCellLibrary
+                                  1.064000       1      1.064000  
+DLL_X1             NangateOpenCellLibrary
+                                  2.660000       1      2.660000  n
+-----------------------------------------------------------------------------
+Total 2 references                                      3.724000
+
+****************************************
+Design: SNPS_CLOCK_GATE_HIGH_reg_file_id_1_19 
+****************************************
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+AND2_X1            NangateOpenCellLibrary
+                                  1.064000       1      1.064000  
+DLL_X1             NangateOpenCellLibrary
+                                  2.660000       1      2.660000  n
+-----------------------------------------------------------------------------
+Total 2 references                                      3.724000
+
+****************************************
+Design: SNPS_CLOCK_GATE_HIGH_reg_file_id_1_20 
+****************************************
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+AND2_X1            NangateOpenCellLibrary
+                                  1.064000       1      1.064000  
+DLL_X1             NangateOpenCellLibrary
+                                  2.660000       1      2.660000  n
+-----------------------------------------------------------------------------
+Total 2 references                                      3.724000
+
+****************************************
+Design: SNPS_CLOCK_GATE_HIGH_reg_file_id_1_21 
+****************************************
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+AND2_X1            NangateOpenCellLibrary
+                                  1.064000       1      1.064000  
+DLL_X1             NangateOpenCellLibrary
+                                  2.660000       1      2.660000  n
+-----------------------------------------------------------------------------
+Total 2 references                                      3.724000
+
+****************************************
+Design: SNPS_CLOCK_GATE_HIGH_reg_file_id_1_22 
+****************************************
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+AND2_X1            NangateOpenCellLibrary
+                                  1.064000       1      1.064000  
+DLL_X1             NangateOpenCellLibrary
+                                  2.660000       1      2.660000  n
+-----------------------------------------------------------------------------
+Total 2 references                                      3.724000
+
+****************************************
+Design: SNPS_CLOCK_GATE_HIGH_reg_file_id_1_23 
+****************************************
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+AND2_X1            NangateOpenCellLibrary
+                                  1.064000       1      1.064000  
+DLL_X1             NangateOpenCellLibrary
+                                  2.660000       1      2.660000  n
+-----------------------------------------------------------------------------
+Total 2 references                                      3.724000
+
+****************************************
+Design: SNPS_CLOCK_GATE_HIGH_reg_file_id_1_24 
+****************************************
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+AND2_X1            NangateOpenCellLibrary
+                                  1.064000       1      1.064000  
+DLL_X1             NangateOpenCellLibrary
+                                  2.660000       1      2.660000  n
+-----------------------------------------------------------------------------
+Total 2 references                                      3.724000
+
+****************************************
+Design: SNPS_CLOCK_GATE_HIGH_reg_file_id_1_25 
+****************************************
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+AND2_X1            NangateOpenCellLibrary
+                                  1.064000       1      1.064000  
+DLL_X1             NangateOpenCellLibrary
+                                  2.660000       1      2.660000  n
+-----------------------------------------------------------------------------
+Total 2 references                                      3.724000
+
+****************************************
+Design: SNPS_CLOCK_GATE_HIGH_reg_file_id_1_26 
+****************************************
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+AND2_X1            NangateOpenCellLibrary
+                                  1.064000       1      1.064000  
+DLL_X1             NangateOpenCellLibrary
+                                  2.660000       1      2.660000  n
+-----------------------------------------------------------------------------
+Total 2 references                                      3.724000
+
+****************************************
+Design: SNPS_CLOCK_GATE_HIGH_reg_file_id_1_27 
+****************************************
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+AND2_X1            NangateOpenCellLibrary
+                                  1.064000       1      1.064000  
+DLL_X1             NangateOpenCellLibrary
+                                  2.660000       1      2.660000  n
+-----------------------------------------------------------------------------
+Total 2 references                                      3.724000
+
+****************************************
+Design: SNPS_CLOCK_GATE_HIGH_reg_file_id_1_28 
+****************************************
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+AND2_X1            NangateOpenCellLibrary
+                                  1.064000       1      1.064000  
+DLL_X1             NangateOpenCellLibrary
+                                  2.660000       1      2.660000  n
+-----------------------------------------------------------------------------
+Total 2 references                                      3.724000
+
+****************************************
+Design: SNPS_CLOCK_GATE_HIGH_reg_file_id_1_29 
+****************************************
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+AND2_X1            NangateOpenCellLibrary
+                                  1.064000       1      1.064000  
+DLL_X1             NangateOpenCellLibrary
+                                  2.660000       1      2.660000  n
+-----------------------------------------------------------------------------
+Total 2 references                                      3.724000
+
+****************************************
+Design: SNPS_CLOCK_GATE_HIGH_reg_file_id_1_30 
+****************************************
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+AND2_X1            NangateOpenCellLibrary
+                                  1.064000       1      1.064000  
+DLL_X1             NangateOpenCellLibrary
+                                  2.660000       1      2.660000  n
+-----------------------------------------------------------------------------
+Total 2 references                                      3.724000
+
+****************************************
+Design: SNPS_CLOCK_GATE_HIGH_reg_file_id_1_31 
+****************************************
+Reference          Library       Unit Area   Count    Total Area   Attributes
+-----------------------------------------------------------------------------
+AND2_X1            NangateOpenCellLibrary
+                                  1.064000       1      1.064000  
+DLL_X1             NangateOpenCellLibrary
+                                  2.660000       1      2.660000  n
+-----------------------------------------------------------------------------
+Total 2 references                                      3.724000
+1

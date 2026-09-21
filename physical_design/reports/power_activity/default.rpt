@@ -1,0 +1,105 @@
+*----------------------------------------------------------------------------------------
+*	Innovus 23.35-s106_1 (64bit) 07/16/2025 17:52 (Linux 3.10.0-693.el7.x86_64)
+*	
+*
+* 	Date & Time:	2026-Sep-18 20:32:22 (2026-Sep-18 18:32:22 GMT)
+*
+*----------------------------------------------------------------------------------------
+*
+*	Design: dlx
+*
+*	Liberty Libraries used: 
+*	        /eda/dk/nangate45/liberty/NangateOpenCellLibrary_typical_ecsm_nowlm.lib
+*	        /eda/dk/nangate45/liberty/NangateOpenCellLibrary_fast_ecsm.lib
+*	        /eda/dk/nangate45/liberty/NangateOpenCellLibrary_slow_ecsm.lib
+*
+*	Power Domain used: 
+*              Rail:        vdd      Voltage:        1.1 
+*
+*       Dynamic View: default
+*
+*       Leakage View: default
+*
+*       User-Defined Activity : N.A.
+*
+*	Switching Activity File used: 
+*	        ./postRoute-sim/activity.vcd
+*                    Vcd Window used(Start Time, Stop Time):   
+*                     Vcd Scale Factor: 1 
+* *                    Design annotation coverage: 22709/22709 = 100% 
+*
+*       Hierarchical Global Activity: N.A.
+*
+*       Global Activity: N.A.
+*
+*       Sequential Element Activity: 0.200000
+*
+*       Primary Input Activity: 0.200000
+*
+*       Default icg ratio: N.A.
+*
+*       Global Comb ClockGate Ratio: N.A.
+*
+*	Power Units = 1mW
+*
+*	Time Units = 1e-09 secs 
+*
+*       report_power -outfile ./reports/power_activity/default.rpt
+*
+-----------------------------------------------------------------------------------------
+
+
+Total Power 
+-----------------------------------------------------------------------------------------
+Total Internal Power:       11.63619678 	   50.3571%
+Total Switching Power:      10.54646103 	   45.6412%
+Total Leakage Power:         0.92469335 	    4.0017%
+Total Power:                23.10735116 
+-----------------------------------------------------------------------------------------
+
+
+Group                           Internal   Switching     Leakage       Total  Percentage 
+                                Power      Power         Power         Power  (%)        
+-----------------------------------------------------------------------------------------
+Sequential                         3.595      0.3058      0.2011       4.102       17.75 
+Macro                                  0           0           0           0           0 
+IO                                     0           0           0           0           0 
+Combinational                      7.044       8.857       0.702        16.6       71.85 
+Clock (Combinational)              0.997       1.384      0.0216       2.402        10.4 
+Clock (Sequential)                     0           0           0           0           0 
+-----------------------------------------------------------------------------------------
+Total                              11.64       10.55      0.9247       23.11         100 
+-----------------------------------------------------------------------------------------
+
+
+Rail                  Voltage   Internal   Switching     Leakage       Total  Percentage 
+                                Power      Power         Power         Power  (%)        
+-----------------------------------------------------------------------------------------
+vdd                       1.1      11.64       10.55      0.9247       23.11         100 
+
+
+Clock                           Internal   Switching     Leakage       Total  Percentage 
+                                Power      Power         Power         Power  (%)        
+-----------------------------------------------------------------------------------------
+clk                                0.997       1.384      0.0216       2.402        10.4 
+-----------------------------------------------------------------------------------------
+Total (excluding duplicates)       0.997       1.384      0.0216       2.402        10.4 
+-----------------------------------------------------------------------------------------
+Clock: clk
+Clock Period: 0.001796 usec 
+Clock Toggle Rate:  1112.1894 Mhz 
+Clock Static Probability:  0.4988
+
+
+
+-----------------------------------------------------------------------------------------
+*	Power Distribution Summary: 
+*                Highest Average Power: FE_OCPC1174_FE_OFN12940_n6172 (BUF_X32):          0.02875 
+*                Highest Leakage Power:      FE_OCPC771_n5845_dup (BUF_X32):        0.0007499 
+*          Total Cap:      1.31554e-10 F
+*          Total instances in design: 22343
+*          Total instances in design with no power:     0
+*          Total instances in design with no activity:     0
+*          Total Fillers and Decap:     0
+-----------------------------------------------------------------------------------------
+

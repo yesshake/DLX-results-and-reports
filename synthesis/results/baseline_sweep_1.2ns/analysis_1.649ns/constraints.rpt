@@ -1,0 +1,27 @@
+ 
+****************************************
+Report : constraint
+        -all_violators
+Design : dlx
+Version: W-2024.09-SP2
+Date   : Thu Sep 17 15:14:27 2026
+****************************************
+
+
+   max_capacitance
+
+                             Required        Actual
+   Net                      Capacitance    Capacitance       Slack
+   -----------------------------------------------------------------
+   dram_readnotwrite           59.36          82.16         -22.80  (VIOLATED)
+   id_stage_inst/reg_file_inst/n4706
+                               60.73          69.74          -9.01  (VIOLATED)
+   id_stage_inst/reg_file_inst/n1796
+                               60.73          69.47          -8.74  (VIOLATED)
+   id_stage_inst/reg_file_inst/n1822
+                               60.73          69.47          -8.74  (VIOLATED)
+
+   -----------------------------------------------------------------
+   Total                      4                 -49.30  
+
+1

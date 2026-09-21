@@ -1,0 +1,1449 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -nworst 5
+        -max_paths 20
+Design : dlx
+Version: W-2024.09-SP2
+Date   : Thu Sep 17 15:15:03 2026
+****************************************
+
+Operating Conditions: typical   Library: NangateOpenCellLibrary
+Wire Load Model Mode: top
+
+  Startpoint: id_stage_inst/rs2_addr_reg/reg_data_reg[1]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: if_stage_inst/pc_reg_inst/clk_gate_reg_data_reg/latch
+            (negative level-sensitive latch clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  dlx                5K_hvratio_1_1        NangateOpenCellLibrary
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  id_stage_inst/rs2_addr_reg/reg_data_reg[1]/CK (DFF_X1)
+                                                          0.00       0.00 r
+  id_stage_inst/rs2_addr_reg/reg_data_reg[1]/QN (DFF_X1)
+                                                          0.07       0.07 r
+  U6039/ZN (XNOR2_X1)                                     0.06       0.13 r
+  U6040/ZN (AND2_X2)                                      0.05       0.18 r
+  U6045/ZN (NAND4_X1)                                     0.04       0.22 f
+  U13901/ZN (AND2_X1)                                     0.05       0.27 f
+  U5810/ZN (NAND2_X1)                                     0.05       0.31 r
+  U6047/ZN (INV_X2)                                       0.05       0.37 f
+  U6174/ZN (NAND2_X1)                                     0.04       0.40 r
+  U11878/ZN (AND4_X2)                                     0.06       0.46 r
+  U6759/ZN (XNOR2_X1)                                     0.06       0.52 r
+  U6760/ZN (OR2_X1)                                       0.04       0.56 r
+  U6763/ZN (NAND2_X1)                                     0.03       0.60 f
+  U6820/ZN (NOR2_X1)                                      0.05       0.64 r
+  U6821/ZN (NAND2_X1)                                     0.03       0.67 f
+  U6824/ZN (OAI21_X1)                                     0.05       0.73 r
+  U5696/ZN (NAND3_X1)                                     0.04       0.76 f
+  U13886/ZN (AND4_X1)                                     0.04       0.81 f
+  U6879/ZN (AOI21_X1)                                     0.04       0.85 r
+  U6880/ZN (INV_X1)                                       0.03       0.87 f
+  U5092/Z (MUX2_X2)                                       0.07       0.94 f
+  U6903/ZN (AOI21_X1)                                     0.05       0.99 r
+  U6904/ZN (INV_X1)                                       0.03       1.03 f
+  U8384/ZN (OR3_X1)                                       0.09       1.12 f
+  U5565/ZN (NAND2_X1)                                     0.03       1.15 r
+  U5722/ZN (AND2_X1)                                      0.04       1.19 r
+  U5455/ZN (OR2_X1)                                       0.04       1.23 r
+  U5452/ZN (NOR2_X1)                                      0.02       1.25 f
+  U5413/ZN (OR2_X1)                                       0.06       1.31 f
+  U8877/ZN (NAND2_X1)                                     0.03       1.34 r
+  U5766/ZN (OAI21_X1)                                     0.03       1.37 f
+  U8878/ZN (XNOR2_X1)                                     0.05       1.42 f
+  U8969/ZN (NAND4_X1)                                     0.03       1.46 r
+  U5091/ZN (AND3_X2)                                      0.06       1.52 r
+  U12611/Z (BUF_X2)                                       0.08       1.60 r
+  U13517/ZN (OR2_X1)                                      0.06       1.66 r
+  U13537/ZN (INV_X1)                                      0.02       1.69 f
+  U13539/ZN (NAND2_X1)                                    0.02       1.71 r
+  if_stage_inst/pc_reg_inst/clk_gate_reg_data_reg/EN (SNPS_CLOCK_GATE_HIGH_gen_register_DATA_WIDTH32_12_9)
+                                                          0.00       1.71 r
+  if_stage_inst/pc_reg_inst/clk_gate_reg_data_reg/latch/D (DLL_X1)
+                                                          0.01       1.72 r
+  data arrival time                                                  1.72
+
+  clock clk (fall edge)                                   0.93       0.93
+  clock network delay (ideal)                             0.00       0.93
+  if_stage_inst/pc_reg_inst/clk_gate_reg_data_reg/latch/GN (DLL_X1)
+                                                          0.00       0.93 f
+  time borrowed from endpoint                             0.79       1.72
+  data required time                                                 1.72
+  --------------------------------------------------------------------------
+  data required time                                                 1.72
+  data arrival time                                                 -1.72
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.00
+
+  Time Borrowing Information
+  --------------------------------------------------------------
+  clk nominal pulse width                                 0.93   
+  library setup time                                     -0.03   
+  --------------------------------------------------------------
+  max time borrow                                         0.90   
+  actual time borrow                                      0.79   
+  --------------------------------------------------------------
+
+
+  Startpoint: ex_stage_inst/rd_addr_reg/reg_data_reg[2]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: if_stage_inst/pc_reg_inst/clk_gate_reg_data_reg/latch
+            (negative level-sensitive latch clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  dlx                5K_hvratio_1_1        NangateOpenCellLibrary
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  ex_stage_inst/rd_addr_reg/reg_data_reg[2]/CK (DFF_X1)
+                                                          0.00       0.00 r
+  ex_stage_inst/rd_addr_reg/reg_data_reg[2]/QN (DFF_X1)
+                                                          0.07       0.07 r
+  U6038/ZN (XNOR2_X1)                                     0.06       0.13 r
+  U6040/ZN (AND2_X2)                                      0.05       0.18 r
+  U6045/ZN (NAND4_X1)                                     0.04       0.22 f
+  U13901/ZN (AND2_X1)                                     0.05       0.27 f
+  U5810/ZN (NAND2_X1)                                     0.05       0.31 r
+  U6047/ZN (INV_X2)                                       0.05       0.37 f
+  U6174/ZN (NAND2_X1)                                     0.04       0.40 r
+  U11878/ZN (AND4_X2)                                     0.06       0.46 r
+  U6759/ZN (XNOR2_X1)                                     0.06       0.52 r
+  U6760/ZN (OR2_X1)                                       0.04       0.56 r
+  U6763/ZN (NAND2_X1)                                     0.03       0.60 f
+  U6820/ZN (NOR2_X1)                                      0.05       0.64 r
+  U6821/ZN (NAND2_X1)                                     0.03       0.67 f
+  U6824/ZN (OAI21_X1)                                     0.05       0.73 r
+  U5696/ZN (NAND3_X1)                                     0.04       0.76 f
+  U13886/ZN (AND4_X1)                                     0.04       0.81 f
+  U6879/ZN (AOI21_X1)                                     0.04       0.85 r
+  U6880/ZN (INV_X1)                                       0.03       0.87 f
+  U5092/Z (MUX2_X2)                                       0.07       0.94 f
+  U6903/ZN (AOI21_X1)                                     0.05       0.99 r
+  U6904/ZN (INV_X1)                                       0.03       1.03 f
+  U8384/ZN (OR3_X1)                                       0.09       1.12 f
+  U5565/ZN (NAND2_X1)                                     0.03       1.15 r
+  U5722/ZN (AND2_X1)                                      0.04       1.19 r
+  U5455/ZN (OR2_X1)                                       0.04       1.23 r
+  U5452/ZN (NOR2_X1)                                      0.02       1.25 f
+  U5413/ZN (OR2_X1)                                       0.06       1.30 f
+  U8877/ZN (NAND2_X1)                                     0.03       1.34 r
+  U5766/ZN (OAI21_X1)                                     0.03       1.37 f
+  U8878/ZN (XNOR2_X1)                                     0.05       1.42 f
+  U8969/ZN (NAND4_X1)                                     0.03       1.46 r
+  U5091/ZN (AND3_X2)                                      0.06       1.52 r
+  U12611/Z (BUF_X2)                                       0.08       1.60 r
+  U13517/ZN (OR2_X1)                                      0.06       1.66 r
+  U13537/ZN (INV_X1)                                      0.02       1.69 f
+  U13539/ZN (NAND2_X1)                                    0.02       1.71 r
+  if_stage_inst/pc_reg_inst/clk_gate_reg_data_reg/EN (SNPS_CLOCK_GATE_HIGH_gen_register_DATA_WIDTH32_12_9)
+                                                          0.00       1.71 r
+  if_stage_inst/pc_reg_inst/clk_gate_reg_data_reg/latch/D (DLL_X1)
+                                                          0.01       1.72 r
+  data arrival time                                                  1.72
+
+  clock clk (fall edge)                                   0.93       0.93
+  clock network delay (ideal)                             0.00       0.93
+  if_stage_inst/pc_reg_inst/clk_gate_reg_data_reg/latch/GN (DLL_X1)
+                                                          0.00       0.93 f
+  time borrowed from endpoint                             0.79       1.72
+  data required time                                                 1.72
+  --------------------------------------------------------------------------
+  data required time                                                 1.72
+  data arrival time                                                 -1.72
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.00
+
+  Time Borrowing Information
+  --------------------------------------------------------------
+  clk nominal pulse width                                 0.93   
+  library setup time                                     -0.03   
+  --------------------------------------------------------------
+  max time borrow                                         0.90   
+  actual time borrow                                      0.79   
+  --------------------------------------------------------------
+
+
+  Startpoint: if_stage_inst/instruction_reg/reg_data_reg[29]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: if_stage_inst/pc_reg_inst/clk_gate_reg_data_reg/latch
+            (negative level-sensitive latch clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  dlx                5K_hvratio_1_1        NangateOpenCellLibrary
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  if_stage_inst/instruction_reg/reg_data_reg[29]/CK (DFF_X1)
+                                                          0.00       0.00 r
+  if_stage_inst/instruction_reg/reg_data_reg[29]/Q (DFF_X1)
+                                                          0.12       0.12 r
+  U5087/ZN (AND2_X2)                                      0.07       0.18 r
+  U5965/ZN (NAND2_X1)                                     0.04       0.22 f
+  U5966/ZN (OR2_X2)                                       0.06       0.28 f
+  U5752/ZN (NAND2_X1)                                     0.03       0.31 r
+  U5751/ZN (OR3_X2)                                       0.04       0.35 r
+  U5604/ZN (NAND2_X1)                                     0.04       0.39 f
+  U5750/ZN (INV_X2)                                       0.05       0.44 r
+  U8474/ZN (NOR2_X1)                                      0.03       0.47 f
+  U8476/ZN (AND2_X1)                                      0.04       0.52 f
+  U8489/ZN (NAND2_X1)                                     0.05       0.56 r
+  U8495/ZN (OAI21_X1)                                     0.03       0.60 f
+  U8496/ZN (AOI21_X1)                                     0.06       0.66 r
+  U8522/ZN (OAI21_X1)                                     0.04       0.70 f
+  U8530/ZN (AOI21_X1)                                     0.05       0.74 r
+  U8532/ZN (OAI21_X1)                                     0.04       0.78 f
+  U8569/ZN (AOI21_X1)                                     0.06       0.84 r
+  U8600/ZN (OAI21_X1)                                     0.04       0.88 f
+  U8639/ZN (INV_X1)                                       0.04       0.92 r
+  U5746/ZN (OAI21_X1)                                     0.04       0.95 f
+  U8711/ZN (AOI21_X1)                                     0.04       1.00 r
+  U8714/ZN (XNOR2_X1)                                     0.06       1.06 r
+  U13877/ZN (NOR2_X1)                                     0.03       1.09 f
+  U8715/Z (MUX2_X1)                                       0.07       1.15 r
+  U8726/ZN (NAND4_X1)                                     0.04       1.19 f
+  U8741/ZN (NOR4_X1)                                      0.05       1.25 r
+  U8754/ZN (AND4_X1)                                      0.07       1.31 r
+  U5533/ZN (AND4_X1)                                      0.06       1.37 r
+  U5554/ZN (AND4_X1)                                      0.06       1.42 r
+  U8969/ZN (NAND4_X1)                                     0.04       1.47 f
+  U5091/ZN (AND3_X2)                                      0.05       1.52 f
+  U12611/Z (BUF_X2)                                       0.07       1.58 f
+  U13517/ZN (OR2_X1)                                      0.08       1.66 f
+  U13537/ZN (INV_X1)                                      0.03       1.69 r
+  U13539/ZN (NAND2_X1)                                    0.02       1.71 f
+  if_stage_inst/pc_reg_inst/clk_gate_reg_data_reg/EN (SNPS_CLOCK_GATE_HIGH_gen_register_DATA_WIDTH32_12_9)
+                                                          0.00       1.71 f
+  if_stage_inst/pc_reg_inst/clk_gate_reg_data_reg/latch/D (DLL_X1)
+                                                          0.01       1.72 f
+  data arrival time                                                  1.72
+
+  clock clk (fall edge)                                   0.93       0.93
+  clock network delay (ideal)                             0.00       0.93
+  if_stage_inst/pc_reg_inst/clk_gate_reg_data_reg/latch/GN (DLL_X1)
+                                                          0.00       0.93 f
+  time borrowed from endpoint                             0.79       1.72
+  data required time                                                 1.72
+  --------------------------------------------------------------------------
+  data required time                                                 1.72
+  data arrival time                                                 -1.72
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.00
+
+  Time Borrowing Information
+  --------------------------------------------------------------
+  clk nominal pulse width                                 0.93   
+  library setup time                                     -0.05   
+  --------------------------------------------------------------
+  max time borrow                                         0.88   
+  actual time borrow                                      0.79   
+  --------------------------------------------------------------
+
+
+  Startpoint: id_stage_inst/rs2_addr_reg/reg_data_reg[2]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: if_stage_inst/pc_reg_inst/clk_gate_reg_data_reg/latch
+            (negative level-sensitive latch clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  dlx                5K_hvratio_1_1        NangateOpenCellLibrary
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  id_stage_inst/rs2_addr_reg/reg_data_reg[2]/CK (DFF_X1)
+                                                          0.00       0.00 r
+  id_stage_inst/rs2_addr_reg/reg_data_reg[2]/QN (DFF_X1)
+                                                          0.07       0.07 r
+  U6038/ZN (XNOR2_X1)                                     0.06       0.13 r
+  U6040/ZN (AND2_X2)                                      0.05       0.18 r
+  U6045/ZN (NAND4_X1)                                     0.04       0.22 f
+  U13901/ZN (AND2_X1)                                     0.05       0.27 f
+  U5810/ZN (NAND2_X1)                                     0.05       0.31 r
+  U6047/ZN (INV_X2)                                       0.05       0.37 f
+  U6174/ZN (NAND2_X1)                                     0.04       0.40 r
+  U11878/ZN (AND4_X2)                                     0.06       0.46 r
+  U6759/ZN (XNOR2_X1)                                     0.06       0.52 r
+  U6760/ZN (OR2_X1)                                       0.04       0.56 r
+  U6763/ZN (NAND2_X1)                                     0.03       0.59 f
+  U6820/ZN (NOR2_X1)                                      0.05       0.64 r
+  U6821/ZN (NAND2_X1)                                     0.03       0.67 f
+  U6824/ZN (OAI21_X1)                                     0.05       0.73 r
+  U5696/ZN (NAND3_X1)                                     0.04       0.76 f
+  U13886/ZN (AND4_X1)                                     0.04       0.81 f
+  U6879/ZN (AOI21_X1)                                     0.04       0.85 r
+  U6880/ZN (INV_X1)                                       0.03       0.87 f
+  U5092/Z (MUX2_X2)                                       0.07       0.94 f
+  U6903/ZN (AOI21_X1)                                     0.05       0.99 r
+  U6904/ZN (INV_X1)                                       0.03       1.03 f
+  U8384/ZN (OR3_X1)                                       0.09       1.12 f
+  U5565/ZN (NAND2_X1)                                     0.03       1.15 r
+  U5722/ZN (AND2_X1)                                      0.04       1.19 r
+  U5455/ZN (OR2_X1)                                       0.04       1.23 r
+  U5452/ZN (NOR2_X1)                                      0.02       1.25 f
+  U5413/ZN (OR2_X1)                                       0.06       1.30 f
+  U8877/ZN (NAND2_X1)                                     0.03       1.34 r
+  U5766/ZN (OAI21_X1)                                     0.03       1.37 f
+  U8878/ZN (XNOR2_X1)                                     0.05       1.42 f
+  U8969/ZN (NAND4_X1)                                     0.03       1.46 r
+  U5091/ZN (AND3_X2)                                      0.06       1.52 r
+  U12611/Z (BUF_X2)                                       0.08       1.60 r
+  U13517/ZN (OR2_X1)                                      0.06       1.66 r
+  U13537/ZN (INV_X1)                                      0.02       1.69 f
+  U13539/ZN (NAND2_X1)                                    0.02       1.71 r
+  if_stage_inst/pc_reg_inst/clk_gate_reg_data_reg/EN (SNPS_CLOCK_GATE_HIGH_gen_register_DATA_WIDTH32_12_9)
+                                                          0.00       1.71 r
+  if_stage_inst/pc_reg_inst/clk_gate_reg_data_reg/latch/D (DLL_X1)
+                                                          0.01       1.72 r
+  data arrival time                                                  1.72
+
+  clock clk (fall edge)                                   0.93       0.93
+  clock network delay (ideal)                             0.00       0.93
+  if_stage_inst/pc_reg_inst/clk_gate_reg_data_reg/latch/GN (DLL_X1)
+                                                          0.00       0.93 f
+  time borrowed from endpoint                             0.79       1.72
+  data required time                                                 1.72
+  --------------------------------------------------------------------------
+  data required time                                                 1.72
+  data arrival time                                                 -1.72
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.00
+
+  Time Borrowing Information
+  --------------------------------------------------------------
+  clk nominal pulse width                                 0.93   
+  library setup time                                     -0.03   
+  --------------------------------------------------------------
+  max time borrow                                         0.90   
+  actual time borrow                                      0.79   
+  --------------------------------------------------------------
+
+
+  Startpoint: id_stage_inst/rs2_addr_reg/reg_data_reg[2]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: if_stage_inst/pc_reg_inst/clk_gate_reg_data_reg/latch
+            (negative level-sensitive latch clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  dlx                5K_hvratio_1_1        NangateOpenCellLibrary
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  id_stage_inst/rs2_addr_reg/reg_data_reg[2]/CK (DFF_X1)
+                                                          0.00       0.00 r
+  id_stage_inst/rs2_addr_reg/reg_data_reg[2]/QN (DFF_X1)
+                                                          0.07       0.07 r
+  U6027/ZN (AND2_X1)                                      0.05       0.12 r
+  U5757/ZN (NAND4_X1)                                     0.04       0.16 f
+  U5755/ZN (AND2_X1)                                      0.04       0.20 f
+  U6033/ZN (NAND4_X1)                                     0.04       0.24 r
+  U5729/ZN (AND2_X1)                                      0.07       0.30 r
+  U5135/ZN (AND2_X2)                                      0.09       0.40 r
+  U6142/ZN (NAND2_X1)                                     0.04       0.44 f
+  U6145/ZN (AND4_X2)                                      0.05       0.49 f
+  U6828/ZN (XNOR2_X1)                                     0.06       0.55 r
+  U6829/ZN (INV_X1)                                       0.02       0.58 f
+  U5662/ZN (NAND2_X1)                                     0.04       0.62 r
+  U6853/ZN (AND2_X1)                                      0.05       0.67 r
+  U6854/ZN (INV_X1)                                       0.02       0.69 f
+  U6855/ZN (NOR2_X1)                                      0.04       0.73 r
+  U6862/ZN (NAND2_X1)                                     0.03       0.76 f
+  U13886/ZN (AND4_X1)                                     0.05       0.81 f
+  U6879/ZN (AOI21_X1)                                     0.04       0.85 r
+  U6880/ZN (INV_X1)                                       0.03       0.87 f
+  U5092/Z (MUX2_X2)                                       0.07       0.94 f
+  U6903/ZN (AOI21_X1)                                     0.05       0.99 r
+  U6904/ZN (INV_X1)                                       0.03       1.03 f
+  U8384/ZN (OR3_X1)                                       0.09       1.12 f
+  U5565/ZN (NAND2_X1)                                     0.03       1.15 r
+  U5722/ZN (AND2_X1)                                      0.04       1.19 r
+  U5455/ZN (OR2_X1)                                       0.04       1.23 r
+  U5452/ZN (NOR2_X1)                                      0.02       1.25 f
+  U5413/ZN (OR2_X1)                                       0.06       1.30 f
+  U8877/ZN (NAND2_X1)                                     0.03       1.34 r
+  U5766/ZN (OAI21_X1)                                     0.03       1.37 f
+  U8878/ZN (XNOR2_X1)                                     0.05       1.42 f
+  U8969/ZN (NAND4_X1)                                     0.03       1.46 r
+  U5091/ZN (AND3_X2)                                      0.06       1.52 r
+  U12611/Z (BUF_X2)                                       0.08       1.60 r
+  U13517/ZN (OR2_X1)                                      0.06       1.66 r
+  U13537/ZN (INV_X1)                                      0.02       1.69 f
+  U13539/ZN (NAND2_X1)                                    0.02       1.71 r
+  if_stage_inst/pc_reg_inst/clk_gate_reg_data_reg/EN (SNPS_CLOCK_GATE_HIGH_gen_register_DATA_WIDTH32_12_9)
+                                                          0.00       1.71 r
+  if_stage_inst/pc_reg_inst/clk_gate_reg_data_reg/latch/D (DLL_X1)
+                                                          0.01       1.72 r
+  data arrival time                                                  1.72
+
+  clock clk (fall edge)                                   0.93       0.93
+  clock network delay (ideal)                             0.00       0.93
+  if_stage_inst/pc_reg_inst/clk_gate_reg_data_reg/latch/GN (DLL_X1)
+                                                          0.00       0.93 f
+  time borrowed from endpoint                             0.79       1.72
+  data required time                                                 1.72
+  --------------------------------------------------------------------------
+  data required time                                                 1.72
+  data arrival time                                                 -1.72
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.00
+
+  Time Borrowing Information
+  --------------------------------------------------------------
+  clk nominal pulse width                                 0.93   
+  library setup time                                     -0.03   
+  --------------------------------------------------------------
+  max time borrow                                         0.90   
+  actual time borrow                                      0.79   
+  --------------------------------------------------------------
+
+
+  Startpoint: if_stage_inst/instruction_reg/reg_data_reg[27]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: hazard_unit_inst/clk_gate_status_table_reg[31]/latch
+            (negative level-sensitive latch clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  dlx                5K_hvratio_1_1        NangateOpenCellLibrary
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  if_stage_inst/instruction_reg/reg_data_reg[27]/CK (DFF_X1)
+                                                          0.00       0.00 r
+  if_stage_inst/instruction_reg/reg_data_reg[27]/Q (DFF_X1)
+                                                          0.09       0.09 f
+  U5939/ZN (OR2_X1)                                       0.06       0.15 f
+  U5940/ZN (NOR2_X1)                                      0.05       0.20 r
+  U5941/ZN (NAND2_X1)                                     0.04       0.24 f
+  U5994/ZN (INV_X1)                                       0.03       0.26 r
+  U5995/ZN (NAND2_X1)                                     0.03       0.29 f
+  U5403/Z (BUF_X1)                                        0.07       0.36 f
+  U6642/ZN (NOR3_X1)                                      0.10       0.46 r
+  U6643/ZN (OR2_X1)                                       0.06       0.53 r
+  U6644/ZN (NAND4_X1)                                     0.06       0.59 f
+  U9022/ZN (NAND2_X1)                                     0.04       0.63 r
+  U9129/ZN (NAND4_X1)                                     0.04       0.67 f
+  U9130/ZN (NAND2_X1)                                     0.03       0.70 r
+  U5318/ZN (AND2_X1)                                      0.05       0.75 r
+  U5302/ZN (AND2_X1)                                      0.08       0.82 r
+  U5294/ZN (AND2_X1)                                      0.06       0.89 r
+  U13274/ZN (AND2_X1)                                     0.05       0.94 r
+  U13275/ZN (NAND2_X1)                                    0.03       0.97 f
+  U13276/ZN (NAND2_X1)                                    0.06       1.03 r
+  U13333/ZN (AND2_X1)                                     0.07       1.10 r
+  U13705/ZN (INV_X1)                                      0.03       1.13 f
+  U13822/ZN (OAI21_X1)                                    0.03       1.16 r
+  hazard_unit_inst/clk_gate_status_table_reg[31]/EN (SNPS_CLOCK_GATE_HIGH_hazard_unit_id_1_31)
+                                                          0.00       1.16 r
+  hazard_unit_inst/clk_gate_status_table_reg[31]/latch/D (DLL_X1)
+                                                          0.01       1.16 r
+  data arrival time                                                  1.16
+
+  clock clk (fall edge)                                   0.93       0.93
+  clock network delay (ideal)                             0.00       0.93
+  hazard_unit_inst/clk_gate_status_table_reg[31]/latch/GN (DLL_X1)
+                                                          0.00       0.93 f
+  time borrowed from endpoint                             0.24       1.16
+  data required time                                                 1.16
+  --------------------------------------------------------------------------
+  data required time                                                 1.16
+  data arrival time                                                 -1.16
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.00
+
+  Time Borrowing Information
+  --------------------------------------------------------------
+  clk nominal pulse width                                 0.93   
+  library setup time                                     -0.04   
+  --------------------------------------------------------------
+  max time borrow                                         0.89   
+  actual time borrow                                      0.24   
+  --------------------------------------------------------------
+
+
+  Startpoint: if_stage_inst/instruction_reg/reg_data_reg[27]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: hazard_unit_inst/clk_gate_status_table_reg[30]/latch
+            (negative level-sensitive latch clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  dlx                5K_hvratio_1_1        NangateOpenCellLibrary
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  if_stage_inst/instruction_reg/reg_data_reg[27]/CK (DFF_X1)
+                                                          0.00       0.00 r
+  if_stage_inst/instruction_reg/reg_data_reg[27]/Q (DFF_X1)
+                                                          0.09       0.09 f
+  U5939/ZN (OR2_X1)                                       0.06       0.15 f
+  U5940/ZN (NOR2_X1)                                      0.05       0.20 r
+  U5941/ZN (NAND2_X1)                                     0.04       0.24 f
+  U5994/ZN (INV_X1)                                       0.03       0.26 r
+  U5995/ZN (NAND2_X1)                                     0.03       0.29 f
+  U5403/Z (BUF_X1)                                        0.07       0.36 f
+  U6642/ZN (NOR3_X1)                                      0.10       0.46 r
+  U6643/ZN (OR2_X1)                                       0.06       0.53 r
+  U6644/ZN (NAND4_X1)                                     0.06       0.59 f
+  U9022/ZN (NAND2_X1)                                     0.04       0.63 r
+  U9129/ZN (NAND4_X1)                                     0.04       0.67 f
+  U9130/ZN (NAND2_X1)                                     0.03       0.70 r
+  U5318/ZN (AND2_X1)                                      0.05       0.75 r
+  U5302/ZN (AND2_X1)                                      0.08       0.82 r
+  U5294/ZN (AND2_X1)                                      0.06       0.89 r
+  U13274/ZN (AND2_X1)                                     0.05       0.94 r
+  U13275/ZN (NAND2_X1)                                    0.03       0.97 f
+  U13276/ZN (NAND2_X1)                                    0.06       1.03 r
+  U13285/ZN (AND2_X1)                                     0.07       1.10 r
+  U13712/ZN (INV_X1)                                      0.03       1.13 f
+  U13823/ZN (OAI21_X1)                                    0.03       1.16 r
+  hazard_unit_inst/clk_gate_status_table_reg[30]/EN (SNPS_CLOCK_GATE_HIGH_hazard_unit_id_1_30)
+                                                          0.00       1.16 r
+  hazard_unit_inst/clk_gate_status_table_reg[30]/latch/D (DLL_X1)
+                                                          0.01       1.16 r
+  data arrival time                                                  1.16
+
+  clock clk (fall edge)                                   0.93       0.93
+  clock network delay (ideal)                             0.00       0.93
+  hazard_unit_inst/clk_gate_status_table_reg[30]/latch/GN (DLL_X1)
+                                                          0.00       0.93 f
+  time borrowed from endpoint                             0.24       1.16
+  data required time                                                 1.16
+  --------------------------------------------------------------------------
+  data required time                                                 1.16
+  data arrival time                                                 -1.16
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.00
+
+  Time Borrowing Information
+  --------------------------------------------------------------
+  clk nominal pulse width                                 0.93   
+  library setup time                                     -0.04   
+  --------------------------------------------------------------
+  max time borrow                                         0.89   
+  actual time borrow                                      0.24   
+  --------------------------------------------------------------
+
+
+  Startpoint: if_stage_inst/instruction_reg/reg_data_reg[27]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: hazard_unit_inst/clk_gate_status_table_reg[29]/latch
+            (negative level-sensitive latch clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  dlx                5K_hvratio_1_1        NangateOpenCellLibrary
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  if_stage_inst/instruction_reg/reg_data_reg[27]/CK (DFF_X1)
+                                                          0.00       0.00 r
+  if_stage_inst/instruction_reg/reg_data_reg[27]/Q (DFF_X1)
+                                                          0.09       0.09 f
+  U5939/ZN (OR2_X1)                                       0.06       0.15 f
+  U5940/ZN (NOR2_X1)                                      0.05       0.20 r
+  U5941/ZN (NAND2_X1)                                     0.04       0.24 f
+  U5994/ZN (INV_X1)                                       0.03       0.26 r
+  U5995/ZN (NAND2_X1)                                     0.03       0.29 f
+  U5403/Z (BUF_X1)                                        0.07       0.36 f
+  U6642/ZN (NOR3_X1)                                      0.10       0.46 r
+  U6643/ZN (OR2_X1)                                       0.06       0.53 r
+  U6644/ZN (NAND4_X1)                                     0.06       0.59 f
+  U9022/ZN (NAND2_X1)                                     0.04       0.63 r
+  U9129/ZN (NAND4_X1)                                     0.04       0.67 f
+  U9130/ZN (NAND2_X1)                                     0.03       0.70 r
+  U5318/ZN (AND2_X1)                                      0.05       0.75 r
+  U5302/ZN (AND2_X1)                                      0.08       0.82 r
+  U5294/ZN (AND2_X1)                                      0.06       0.89 r
+  U13274/ZN (AND2_X1)                                     0.05       0.94 r
+  U13275/ZN (NAND2_X1)                                    0.03       0.97 f
+  U13276/ZN (NAND2_X1)                                    0.06       1.03 r
+  U13346/ZN (AND2_X1)                                     0.07       1.10 r
+  U13716/ZN (INV_X1)                                      0.03       1.13 f
+  U13824/ZN (OAI21_X1)                                    0.03       1.16 r
+  hazard_unit_inst/clk_gate_status_table_reg[29]/EN (SNPS_CLOCK_GATE_HIGH_hazard_unit_id_1_29)
+                                                          0.00       1.16 r
+  hazard_unit_inst/clk_gate_status_table_reg[29]/latch/D (DLL_X1)
+                                                          0.01       1.16 r
+  data arrival time                                                  1.16
+
+  clock clk (fall edge)                                   0.93       0.93
+  clock network delay (ideal)                             0.00       0.93
+  hazard_unit_inst/clk_gate_status_table_reg[29]/latch/GN (DLL_X1)
+                                                          0.00       0.93 f
+  time borrowed from endpoint                             0.24       1.16
+  data required time                                                 1.16
+  --------------------------------------------------------------------------
+  data required time                                                 1.16
+  data arrival time                                                 -1.16
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.00
+
+  Time Borrowing Information
+  --------------------------------------------------------------
+  clk nominal pulse width                                 0.93   
+  library setup time                                     -0.04   
+  --------------------------------------------------------------
+  max time borrow                                         0.89   
+  actual time borrow                                      0.24   
+  --------------------------------------------------------------
+
+
+  Startpoint: if_stage_inst/instruction_reg/reg_data_reg[27]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: hazard_unit_inst/clk_gate_status_table_reg[28]/latch
+            (negative level-sensitive latch clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  dlx                5K_hvratio_1_1        NangateOpenCellLibrary
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  if_stage_inst/instruction_reg/reg_data_reg[27]/CK (DFF_X1)
+                                                          0.00       0.00 r
+  if_stage_inst/instruction_reg/reg_data_reg[27]/Q (DFF_X1)
+                                                          0.09       0.09 f
+  U5939/ZN (OR2_X1)                                       0.06       0.15 f
+  U5940/ZN (NOR2_X1)                                      0.05       0.20 r
+  U5941/ZN (NAND2_X1)                                     0.04       0.24 f
+  U5994/ZN (INV_X1)                                       0.03       0.26 r
+  U5995/ZN (NAND2_X1)                                     0.03       0.29 f
+  U5403/Z (BUF_X1)                                        0.07       0.36 f
+  U6642/ZN (NOR3_X1)                                      0.10       0.46 r
+  U6643/ZN (OR2_X1)                                       0.06       0.53 r
+  U6644/ZN (NAND4_X1)                                     0.06       0.59 f
+  U9022/ZN (NAND2_X1)                                     0.04       0.63 r
+  U9129/ZN (NAND4_X1)                                     0.04       0.67 f
+  U9130/ZN (NAND2_X1)                                     0.03       0.70 r
+  U5318/ZN (AND2_X1)                                      0.05       0.75 r
+  U5302/ZN (AND2_X1)                                      0.08       0.82 r
+  U5294/ZN (AND2_X1)                                      0.06       0.89 r
+  U13274/ZN (AND2_X1)                                     0.05       0.94 r
+  U13275/ZN (NAND2_X1)                                    0.03       0.97 f
+  U13276/ZN (NAND2_X1)                                    0.06       1.03 r
+  U13299/ZN (AND2_X1)                                     0.07       1.10 r
+  U13720/ZN (INV_X1)                                      0.03       1.13 f
+  U13825/ZN (OAI21_X1)                                    0.03       1.16 r
+  hazard_unit_inst/clk_gate_status_table_reg[28]/EN (SNPS_CLOCK_GATE_HIGH_hazard_unit_id_1_28)
+                                                          0.00       1.16 r
+  hazard_unit_inst/clk_gate_status_table_reg[28]/latch/D (DLL_X1)
+                                                          0.01       1.16 r
+  data arrival time                                                  1.16
+
+  clock clk (fall edge)                                   0.93       0.93
+  clock network delay (ideal)                             0.00       0.93
+  hazard_unit_inst/clk_gate_status_table_reg[28]/latch/GN (DLL_X1)
+                                                          0.00       0.93 f
+  time borrowed from endpoint                             0.24       1.16
+  data required time                                                 1.16
+  --------------------------------------------------------------------------
+  data required time                                                 1.16
+  data arrival time                                                 -1.16
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.00
+
+  Time Borrowing Information
+  --------------------------------------------------------------
+  clk nominal pulse width                                 0.93   
+  library setup time                                     -0.04   
+  --------------------------------------------------------------
+  max time borrow                                         0.89   
+  actual time borrow                                      0.24   
+  --------------------------------------------------------------
+
+
+  Startpoint: if_stage_inst/instruction_reg/reg_data_reg[27]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: hazard_unit_inst/clk_gate_status_table_reg[27]/latch
+            (negative level-sensitive latch clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  dlx                5K_hvratio_1_1        NangateOpenCellLibrary
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  if_stage_inst/instruction_reg/reg_data_reg[27]/CK (DFF_X1)
+                                                          0.00       0.00 r
+  if_stage_inst/instruction_reg/reg_data_reg[27]/Q (DFF_X1)
+                                                          0.09       0.09 f
+  U5939/ZN (OR2_X1)                                       0.06       0.15 f
+  U5940/ZN (NOR2_X1)                                      0.05       0.20 r
+  U5941/ZN (NAND2_X1)                                     0.04       0.24 f
+  U5994/ZN (INV_X1)                                       0.03       0.26 r
+  U5995/ZN (NAND2_X1)                                     0.03       0.29 f
+  U5403/Z (BUF_X1)                                        0.07       0.36 f
+  U6642/ZN (NOR3_X1)                                      0.10       0.46 r
+  U6643/ZN (OR2_X1)                                       0.06       0.53 r
+  U6644/ZN (NAND4_X1)                                     0.06       0.59 f
+  U9022/ZN (NAND2_X1)                                     0.04       0.63 r
+  U9129/ZN (NAND4_X1)                                     0.04       0.67 f
+  U9130/ZN (NAND2_X1)                                     0.03       0.70 r
+  U5318/ZN (AND2_X1)                                      0.05       0.75 r
+  U5302/ZN (AND2_X1)                                      0.08       0.82 r
+  U5294/ZN (AND2_X1)                                      0.06       0.89 r
+  U13274/ZN (AND2_X1)                                     0.05       0.94 r
+  U13275/ZN (NAND2_X1)                                    0.03       0.97 f
+  U13276/ZN (NAND2_X1)                                    0.06       1.03 r
+  U13327/ZN (AND2_X1)                                     0.07       1.10 r
+  U13724/ZN (INV_X1)                                      0.03       1.13 f
+  U13826/ZN (OAI21_X1)                                    0.03       1.16 r
+  hazard_unit_inst/clk_gate_status_table_reg[27]/EN (SNPS_CLOCK_GATE_HIGH_hazard_unit_id_1_27)
+                                                          0.00       1.16 r
+  hazard_unit_inst/clk_gate_status_table_reg[27]/latch/D (DLL_X1)
+                                                          0.01       1.16 r
+  data arrival time                                                  1.16
+
+  clock clk (fall edge)                                   0.93       0.93
+  clock network delay (ideal)                             0.00       0.93
+  hazard_unit_inst/clk_gate_status_table_reg[27]/latch/GN (DLL_X1)
+                                                          0.00       0.93 f
+  time borrowed from endpoint                             0.24       1.16
+  data required time                                                 1.16
+  --------------------------------------------------------------------------
+  data required time                                                 1.16
+  data arrival time                                                 -1.16
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.00
+
+  Time Borrowing Information
+  --------------------------------------------------------------
+  clk nominal pulse width                                 0.93   
+  library setup time                                     -0.04   
+  --------------------------------------------------------------
+  max time borrow                                         0.89   
+  actual time borrow                                      0.24   
+  --------------------------------------------------------------
+
+
+  Startpoint: if_stage_inst/instruction_reg/reg_data_reg[27]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: hazard_unit_inst/clk_gate_status_table_reg[26]/latch
+            (negative level-sensitive latch clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  dlx                5K_hvratio_1_1        NangateOpenCellLibrary
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  if_stage_inst/instruction_reg/reg_data_reg[27]/CK (DFF_X1)
+                                                          0.00       0.00 r
+  if_stage_inst/instruction_reg/reg_data_reg[27]/Q (DFF_X1)
+                                                          0.09       0.09 f
+  U5939/ZN (OR2_X1)                                       0.06       0.15 f
+  U5940/ZN (NOR2_X1)                                      0.05       0.20 r
+  U5941/ZN (NAND2_X1)                                     0.04       0.24 f
+  U5994/ZN (INV_X1)                                       0.03       0.26 r
+  U5995/ZN (NAND2_X1)                                     0.03       0.29 f
+  U5403/Z (BUF_X1)                                        0.07       0.36 f
+  U6642/ZN (NOR3_X1)                                      0.10       0.46 r
+  U6643/ZN (OR2_X1)                                       0.06       0.53 r
+  U6644/ZN (NAND4_X1)                                     0.06       0.59 f
+  U9022/ZN (NAND2_X1)                                     0.04       0.63 r
+  U9129/ZN (NAND4_X1)                                     0.04       0.67 f
+  U9130/ZN (NAND2_X1)                                     0.03       0.70 r
+  U5318/ZN (AND2_X1)                                      0.05       0.75 r
+  U5302/ZN (AND2_X1)                                      0.08       0.82 r
+  U5294/ZN (AND2_X1)                                      0.06       0.89 r
+  U13274/ZN (AND2_X1)                                     0.05       0.94 r
+  U13275/ZN (NAND2_X1)                                    0.03       0.97 f
+  U13276/ZN (NAND2_X1)                                    0.06       1.03 r
+  U13277/ZN (AND2_X1)                                     0.07       1.10 r
+  U13728/ZN (INV_X1)                                      0.03       1.13 f
+  U13828/ZN (OAI21_X1)                                    0.03       1.16 r
+  hazard_unit_inst/clk_gate_status_table_reg[26]/EN (SNPS_CLOCK_GATE_HIGH_hazard_unit_id_1_26)
+                                                          0.00       1.16 r
+  hazard_unit_inst/clk_gate_status_table_reg[26]/latch/D (DLL_X1)
+                                                          0.01       1.16 r
+  data arrival time                                                  1.16
+
+  clock clk (fall edge)                                   0.93       0.93
+  clock network delay (ideal)                             0.00       0.93
+  hazard_unit_inst/clk_gate_status_table_reg[26]/latch/GN (DLL_X1)
+                                                          0.00       0.93 f
+  time borrowed from endpoint                             0.24       1.16
+  data required time                                                 1.16
+  --------------------------------------------------------------------------
+  data required time                                                 1.16
+  data arrival time                                                 -1.16
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.00
+
+  Time Borrowing Information
+  --------------------------------------------------------------
+  clk nominal pulse width                                 0.93   
+  library setup time                                     -0.04   
+  --------------------------------------------------------------
+  max time borrow                                         0.89   
+  actual time borrow                                      0.24   
+  --------------------------------------------------------------
+
+
+  Startpoint: if_stage_inst/instruction_reg/reg_data_reg[27]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: hazard_unit_inst/clk_gate_status_table_reg[25]/latch
+            (negative level-sensitive latch clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  dlx                5K_hvratio_1_1        NangateOpenCellLibrary
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  if_stage_inst/instruction_reg/reg_data_reg[27]/CK (DFF_X1)
+                                                          0.00       0.00 r
+  if_stage_inst/instruction_reg/reg_data_reg[27]/Q (DFF_X1)
+                                                          0.09       0.09 f
+  U5939/ZN (OR2_X1)                                       0.06       0.15 f
+  U5940/ZN (NOR2_X1)                                      0.05       0.20 r
+  U5941/ZN (NAND2_X1)                                     0.04       0.24 f
+  U5994/ZN (INV_X1)                                       0.03       0.26 r
+  U5995/ZN (NAND2_X1)                                     0.03       0.29 f
+  U5403/Z (BUF_X1)                                        0.07       0.36 f
+  U6642/ZN (NOR3_X1)                                      0.10       0.46 r
+  U6643/ZN (OR2_X1)                                       0.06       0.53 r
+  U6644/ZN (NAND4_X1)                                     0.06       0.59 f
+  U9022/ZN (NAND2_X1)                                     0.04       0.63 r
+  U9129/ZN (NAND4_X1)                                     0.04       0.67 f
+  U9130/ZN (NAND2_X1)                                     0.03       0.70 r
+  U5318/ZN (AND2_X1)                                      0.05       0.75 r
+  U5302/ZN (AND2_X1)                                      0.08       0.82 r
+  U5294/ZN (AND2_X1)                                      0.06       0.89 r
+  U13274/ZN (AND2_X1)                                     0.05       0.94 r
+  U13275/ZN (NAND2_X1)                                    0.03       0.97 f
+  U13276/ZN (NAND2_X1)                                    0.06       1.03 r
+  U13340/ZN (AND2_X1)                                     0.07       1.10 r
+  U13731/ZN (INV_X1)                                      0.03       1.13 f
+  U13829/ZN (OAI21_X1)                                    0.03       1.16 r
+  hazard_unit_inst/clk_gate_status_table_reg[25]/EN (SNPS_CLOCK_GATE_HIGH_hazard_unit_id_1_25)
+                                                          0.00       1.16 r
+  hazard_unit_inst/clk_gate_status_table_reg[25]/latch/D (DLL_X1)
+                                                          0.01       1.16 r
+  data arrival time                                                  1.16
+
+  clock clk (fall edge)                                   0.93       0.93
+  clock network delay (ideal)                             0.00       0.93
+  hazard_unit_inst/clk_gate_status_table_reg[25]/latch/GN (DLL_X1)
+                                                          0.00       0.93 f
+  time borrowed from endpoint                             0.24       1.16
+  data required time                                                 1.16
+  --------------------------------------------------------------------------
+  data required time                                                 1.16
+  data arrival time                                                 -1.16
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.00
+
+  Time Borrowing Information
+  --------------------------------------------------------------
+  clk nominal pulse width                                 0.93   
+  library setup time                                     -0.04   
+  --------------------------------------------------------------
+  max time borrow                                         0.89   
+  actual time borrow                                      0.24   
+  --------------------------------------------------------------
+
+
+  Startpoint: if_stage_inst/instruction_reg/reg_data_reg[27]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: hazard_unit_inst/clk_gate_status_table_reg[31]/latch
+            (negative level-sensitive latch clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  dlx                5K_hvratio_1_1        NangateOpenCellLibrary
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  if_stage_inst/instruction_reg/reg_data_reg[27]/CK (DFF_X1)
+                                                          0.00       0.00 r
+  if_stage_inst/instruction_reg/reg_data_reg[27]/Q (DFF_X1)
+                                                          0.09       0.09 f
+  U5939/ZN (OR2_X1)                                       0.06       0.15 f
+  U5940/ZN (NOR2_X1)                                      0.05       0.20 r
+  U5941/ZN (NAND2_X1)                                     0.04       0.24 f
+  U5994/ZN (INV_X1)                                       0.03       0.26 r
+  U5995/ZN (NAND2_X1)                                     0.03       0.29 f
+  U5403/Z (BUF_X1)                                        0.07       0.36 f
+  U6642/ZN (NOR3_X1)                                      0.10       0.46 r
+  U6643/ZN (OR2_X1)                                       0.06       0.53 r
+  U6644/ZN (NAND4_X1)                                     0.06       0.59 f
+  U9022/ZN (NAND2_X1)                                     0.04       0.63 r
+  U9129/ZN (NAND4_X1)                                     0.04       0.67 f
+  U9130/ZN (NAND2_X1)                                     0.03       0.70 r
+  U5318/ZN (AND2_X1)                                      0.05       0.75 r
+  U5302/ZN (AND2_X1)                                      0.08       0.82 r
+  U5294/ZN (AND2_X1)                                      0.06       0.89 r
+  U13274/ZN (AND2_X1)                                     0.05       0.94 r
+  U13275/ZN (NAND2_X1)                                    0.03       0.97 f
+  U13276/ZN (NAND2_X1)                                    0.06       1.03 r
+  U13333/ZN (AND2_X1)                                     0.07       1.10 r
+  U13705/ZN (INV_X1)                                      0.03       1.13 f
+  U13822/ZN (OAI21_X1)                                    0.03       1.16 r
+  hazard_unit_inst/clk_gate_status_table_reg[31]/EN (SNPS_CLOCK_GATE_HIGH_hazard_unit_id_1_31)
+                                                          0.00       1.16 r
+  hazard_unit_inst/clk_gate_status_table_reg[31]/latch/D (DLL_X1)
+                                                          0.01       1.16 r
+  data arrival time                                                  1.16
+
+  clock clk (fall edge)                                   0.93       0.93
+  clock network delay (ideal)                             0.00       0.93
+  hazard_unit_inst/clk_gate_status_table_reg[31]/latch/GN (DLL_X1)
+                                                          0.00       0.93 f
+  time borrowed from endpoint                             0.23       1.16
+  data required time                                                 1.16
+  --------------------------------------------------------------------------
+  data required time                                                 1.16
+  data arrival time                                                 -1.16
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.00
+
+  Time Borrowing Information
+  --------------------------------------------------------------
+  clk nominal pulse width                                 0.93   
+  library setup time                                     -0.04   
+  --------------------------------------------------------------
+  max time borrow                                         0.89   
+  actual time borrow                                      0.23   
+  --------------------------------------------------------------
+
+
+  Startpoint: if_stage_inst/instruction_reg/reg_data_reg[27]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: hazard_unit_inst/clk_gate_status_table_reg[30]/latch
+            (negative level-sensitive latch clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  dlx                5K_hvratio_1_1        NangateOpenCellLibrary
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  if_stage_inst/instruction_reg/reg_data_reg[27]/CK (DFF_X1)
+                                                          0.00       0.00 r
+  if_stage_inst/instruction_reg/reg_data_reg[27]/Q (DFF_X1)
+                                                          0.09       0.09 f
+  U5939/ZN (OR2_X1)                                       0.06       0.15 f
+  U5940/ZN (NOR2_X1)                                      0.05       0.20 r
+  U5941/ZN (NAND2_X1)                                     0.04       0.24 f
+  U5994/ZN (INV_X1)                                       0.03       0.26 r
+  U5995/ZN (NAND2_X1)                                     0.03       0.29 f
+  U5403/Z (BUF_X1)                                        0.07       0.36 f
+  U6642/ZN (NOR3_X1)                                      0.10       0.46 r
+  U6643/ZN (OR2_X1)                                       0.06       0.53 r
+  U6644/ZN (NAND4_X1)                                     0.06       0.59 f
+  U9022/ZN (NAND2_X1)                                     0.04       0.63 r
+  U9129/ZN (NAND4_X1)                                     0.04       0.67 f
+  U9130/ZN (NAND2_X1)                                     0.03       0.70 r
+  U5318/ZN (AND2_X1)                                      0.05       0.75 r
+  U5302/ZN (AND2_X1)                                      0.08       0.82 r
+  U5294/ZN (AND2_X1)                                      0.06       0.89 r
+  U13274/ZN (AND2_X1)                                     0.05       0.94 r
+  U13275/ZN (NAND2_X1)                                    0.03       0.97 f
+  U13276/ZN (NAND2_X1)                                    0.06       1.03 r
+  U13285/ZN (AND2_X1)                                     0.07       1.10 r
+  U13712/ZN (INV_X1)                                      0.03       1.13 f
+  U13823/ZN (OAI21_X1)                                    0.03       1.16 r
+  hazard_unit_inst/clk_gate_status_table_reg[30]/EN (SNPS_CLOCK_GATE_HIGH_hazard_unit_id_1_30)
+                                                          0.00       1.16 r
+  hazard_unit_inst/clk_gate_status_table_reg[30]/latch/D (DLL_X1)
+                                                          0.01       1.16 r
+  data arrival time                                                  1.16
+
+  clock clk (fall edge)                                   0.93       0.93
+  clock network delay (ideal)                             0.00       0.93
+  hazard_unit_inst/clk_gate_status_table_reg[30]/latch/GN (DLL_X1)
+                                                          0.00       0.93 f
+  time borrowed from endpoint                             0.23       1.16
+  data required time                                                 1.16
+  --------------------------------------------------------------------------
+  data required time                                                 1.16
+  data arrival time                                                 -1.16
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.00
+
+  Time Borrowing Information
+  --------------------------------------------------------------
+  clk nominal pulse width                                 0.93   
+  library setup time                                     -0.04   
+  --------------------------------------------------------------
+  max time borrow                                         0.89   
+  actual time borrow                                      0.23   
+  --------------------------------------------------------------
+
+
+  Startpoint: if_stage_inst/instruction_reg/reg_data_reg[27]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: hazard_unit_inst/clk_gate_status_table_reg[29]/latch
+            (negative level-sensitive latch clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  dlx                5K_hvratio_1_1        NangateOpenCellLibrary
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  if_stage_inst/instruction_reg/reg_data_reg[27]/CK (DFF_X1)
+                                                          0.00       0.00 r
+  if_stage_inst/instruction_reg/reg_data_reg[27]/Q (DFF_X1)
+                                                          0.09       0.09 f
+  U5939/ZN (OR2_X1)                                       0.06       0.15 f
+  U5940/ZN (NOR2_X1)                                      0.05       0.20 r
+  U5941/ZN (NAND2_X1)                                     0.04       0.24 f
+  U5994/ZN (INV_X1)                                       0.03       0.26 r
+  U5995/ZN (NAND2_X1)                                     0.03       0.29 f
+  U5403/Z (BUF_X1)                                        0.07       0.36 f
+  U6642/ZN (NOR3_X1)                                      0.10       0.46 r
+  U6643/ZN (OR2_X1)                                       0.06       0.53 r
+  U6644/ZN (NAND4_X1)                                     0.06       0.59 f
+  U9022/ZN (NAND2_X1)                                     0.04       0.63 r
+  U9129/ZN (NAND4_X1)                                     0.04       0.67 f
+  U9130/ZN (NAND2_X1)                                     0.03       0.70 r
+  U5318/ZN (AND2_X1)                                      0.05       0.75 r
+  U5302/ZN (AND2_X1)                                      0.08       0.82 r
+  U5294/ZN (AND2_X1)                                      0.06       0.89 r
+  U13274/ZN (AND2_X1)                                     0.05       0.94 r
+  U13275/ZN (NAND2_X1)                                    0.03       0.97 f
+  U13276/ZN (NAND2_X1)                                    0.06       1.03 r
+  U13346/ZN (AND2_X1)                                     0.07       1.10 r
+  U13716/ZN (INV_X1)                                      0.03       1.13 f
+  U13824/ZN (OAI21_X1)                                    0.03       1.16 r
+  hazard_unit_inst/clk_gate_status_table_reg[29]/EN (SNPS_CLOCK_GATE_HIGH_hazard_unit_id_1_29)
+                                                          0.00       1.16 r
+  hazard_unit_inst/clk_gate_status_table_reg[29]/latch/D (DLL_X1)
+                                                          0.01       1.16 r
+  data arrival time                                                  1.16
+
+  clock clk (fall edge)                                   0.93       0.93
+  clock network delay (ideal)                             0.00       0.93
+  hazard_unit_inst/clk_gate_status_table_reg[29]/latch/GN (DLL_X1)
+                                                          0.00       0.93 f
+  time borrowed from endpoint                             0.23       1.16
+  data required time                                                 1.16
+  --------------------------------------------------------------------------
+  data required time                                                 1.16
+  data arrival time                                                 -1.16
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.00
+
+  Time Borrowing Information
+  --------------------------------------------------------------
+  clk nominal pulse width                                 0.93   
+  library setup time                                     -0.04   
+  --------------------------------------------------------------
+  max time borrow                                         0.89   
+  actual time borrow                                      0.23   
+  --------------------------------------------------------------
+
+
+  Startpoint: if_stage_inst/instruction_reg/reg_data_reg[27]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: hazard_unit_inst/clk_gate_status_table_reg[28]/latch
+            (negative level-sensitive latch clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  dlx                5K_hvratio_1_1        NangateOpenCellLibrary
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  if_stage_inst/instruction_reg/reg_data_reg[27]/CK (DFF_X1)
+                                                          0.00       0.00 r
+  if_stage_inst/instruction_reg/reg_data_reg[27]/Q (DFF_X1)
+                                                          0.09       0.09 f
+  U5939/ZN (OR2_X1)                                       0.06       0.15 f
+  U5940/ZN (NOR2_X1)                                      0.05       0.20 r
+  U5941/ZN (NAND2_X1)                                     0.04       0.24 f
+  U5994/ZN (INV_X1)                                       0.03       0.26 r
+  U5995/ZN (NAND2_X1)                                     0.03       0.29 f
+  U5403/Z (BUF_X1)                                        0.07       0.36 f
+  U6642/ZN (NOR3_X1)                                      0.10       0.46 r
+  U6643/ZN (OR2_X1)                                       0.06       0.53 r
+  U6644/ZN (NAND4_X1)                                     0.06       0.59 f
+  U9022/ZN (NAND2_X1)                                     0.04       0.63 r
+  U9129/ZN (NAND4_X1)                                     0.04       0.67 f
+  U9130/ZN (NAND2_X1)                                     0.03       0.70 r
+  U5318/ZN (AND2_X1)                                      0.05       0.75 r
+  U5302/ZN (AND2_X1)                                      0.08       0.82 r
+  U5294/ZN (AND2_X1)                                      0.06       0.89 r
+  U13274/ZN (AND2_X1)                                     0.05       0.94 r
+  U13275/ZN (NAND2_X1)                                    0.03       0.97 f
+  U13276/ZN (NAND2_X1)                                    0.06       1.03 r
+  U13299/ZN (AND2_X1)                                     0.07       1.10 r
+  U13720/ZN (INV_X1)                                      0.03       1.13 f
+  U13825/ZN (OAI21_X1)                                    0.03       1.16 r
+  hazard_unit_inst/clk_gate_status_table_reg[28]/EN (SNPS_CLOCK_GATE_HIGH_hazard_unit_id_1_28)
+                                                          0.00       1.16 r
+  hazard_unit_inst/clk_gate_status_table_reg[28]/latch/D (DLL_X1)
+                                                          0.01       1.16 r
+  data arrival time                                                  1.16
+
+  clock clk (fall edge)                                   0.93       0.93
+  clock network delay (ideal)                             0.00       0.93
+  hazard_unit_inst/clk_gate_status_table_reg[28]/latch/GN (DLL_X1)
+                                                          0.00       0.93 f
+  time borrowed from endpoint                             0.23       1.16
+  data required time                                                 1.16
+  --------------------------------------------------------------------------
+  data required time                                                 1.16
+  data arrival time                                                 -1.16
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.00
+
+  Time Borrowing Information
+  --------------------------------------------------------------
+  clk nominal pulse width                                 0.93   
+  library setup time                                     -0.04   
+  --------------------------------------------------------------
+  max time borrow                                         0.89   
+  actual time borrow                                      0.23   
+  --------------------------------------------------------------
+
+
+  Startpoint: if_stage_inst/instruction_reg/reg_data_reg[27]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: hazard_unit_inst/clk_gate_status_table_reg[27]/latch
+            (negative level-sensitive latch clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  dlx                5K_hvratio_1_1        NangateOpenCellLibrary
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  if_stage_inst/instruction_reg/reg_data_reg[27]/CK (DFF_X1)
+                                                          0.00       0.00 r
+  if_stage_inst/instruction_reg/reg_data_reg[27]/Q (DFF_X1)
+                                                          0.09       0.09 f
+  U5939/ZN (OR2_X1)                                       0.06       0.15 f
+  U5940/ZN (NOR2_X1)                                      0.05       0.20 r
+  U5941/ZN (NAND2_X1)                                     0.04       0.24 f
+  U5994/ZN (INV_X1)                                       0.03       0.26 r
+  U5995/ZN (NAND2_X1)                                     0.03       0.29 f
+  U5403/Z (BUF_X1)                                        0.07       0.36 f
+  U6642/ZN (NOR3_X1)                                      0.10       0.46 r
+  U6643/ZN (OR2_X1)                                       0.06       0.53 r
+  U6644/ZN (NAND4_X1)                                     0.06       0.59 f
+  U9022/ZN (NAND2_X1)                                     0.04       0.63 r
+  U9129/ZN (NAND4_X1)                                     0.04       0.67 f
+  U9130/ZN (NAND2_X1)                                     0.03       0.70 r
+  U5318/ZN (AND2_X1)                                      0.05       0.75 r
+  U5302/ZN (AND2_X1)                                      0.08       0.82 r
+  U5294/ZN (AND2_X1)                                      0.06       0.89 r
+  U13274/ZN (AND2_X1)                                     0.05       0.94 r
+  U13275/ZN (NAND2_X1)                                    0.03       0.97 f
+  U13276/ZN (NAND2_X1)                                    0.06       1.03 r
+  U13327/ZN (AND2_X1)                                     0.07       1.10 r
+  U13724/ZN (INV_X1)                                      0.03       1.13 f
+  U13826/ZN (OAI21_X1)                                    0.03       1.16 r
+  hazard_unit_inst/clk_gate_status_table_reg[27]/EN (SNPS_CLOCK_GATE_HIGH_hazard_unit_id_1_27)
+                                                          0.00       1.16 r
+  hazard_unit_inst/clk_gate_status_table_reg[27]/latch/D (DLL_X1)
+                                                          0.01       1.16 r
+  data arrival time                                                  1.16
+
+  clock clk (fall edge)                                   0.93       0.93
+  clock network delay (ideal)                             0.00       0.93
+  hazard_unit_inst/clk_gate_status_table_reg[27]/latch/GN (DLL_X1)
+                                                          0.00       0.93 f
+  time borrowed from endpoint                             0.23       1.16
+  data required time                                                 1.16
+  --------------------------------------------------------------------------
+  data required time                                                 1.16
+  data arrival time                                                 -1.16
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.00
+
+  Time Borrowing Information
+  --------------------------------------------------------------
+  clk nominal pulse width                                 0.93   
+  library setup time                                     -0.04   
+  --------------------------------------------------------------
+  max time borrow                                         0.89   
+  actual time borrow                                      0.23   
+  --------------------------------------------------------------
+
+
+  Startpoint: if_stage_inst/instruction_reg/reg_data_reg[27]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: hazard_unit_inst/clk_gate_status_table_reg[26]/latch
+            (negative level-sensitive latch clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  dlx                5K_hvratio_1_1        NangateOpenCellLibrary
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  if_stage_inst/instruction_reg/reg_data_reg[27]/CK (DFF_X1)
+                                                          0.00       0.00 r
+  if_stage_inst/instruction_reg/reg_data_reg[27]/Q (DFF_X1)
+                                                          0.09       0.09 f
+  U5939/ZN (OR2_X1)                                       0.06       0.15 f
+  U5940/ZN (NOR2_X1)                                      0.05       0.20 r
+  U5941/ZN (NAND2_X1)                                     0.04       0.24 f
+  U5994/ZN (INV_X1)                                       0.03       0.26 r
+  U5995/ZN (NAND2_X1)                                     0.03       0.29 f
+  U5403/Z (BUF_X1)                                        0.07       0.36 f
+  U6642/ZN (NOR3_X1)                                      0.10       0.46 r
+  U6643/ZN (OR2_X1)                                       0.06       0.53 r
+  U6644/ZN (NAND4_X1)                                     0.06       0.59 f
+  U9022/ZN (NAND2_X1)                                     0.04       0.63 r
+  U9129/ZN (NAND4_X1)                                     0.04       0.67 f
+  U9130/ZN (NAND2_X1)                                     0.03       0.70 r
+  U5318/ZN (AND2_X1)                                      0.05       0.75 r
+  U5302/ZN (AND2_X1)                                      0.08       0.82 r
+  U5294/ZN (AND2_X1)                                      0.06       0.89 r
+  U13274/ZN (AND2_X1)                                     0.05       0.94 r
+  U13275/ZN (NAND2_X1)                                    0.03       0.97 f
+  U13276/ZN (NAND2_X1)                                    0.06       1.03 r
+  U13277/ZN (AND2_X1)                                     0.07       1.10 r
+  U13728/ZN (INV_X1)                                      0.03       1.13 f
+  U13828/ZN (OAI21_X1)                                    0.03       1.16 r
+  hazard_unit_inst/clk_gate_status_table_reg[26]/EN (SNPS_CLOCK_GATE_HIGH_hazard_unit_id_1_26)
+                                                          0.00       1.16 r
+  hazard_unit_inst/clk_gate_status_table_reg[26]/latch/D (DLL_X1)
+                                                          0.01       1.16 r
+  data arrival time                                                  1.16
+
+  clock clk (fall edge)                                   0.93       0.93
+  clock network delay (ideal)                             0.00       0.93
+  hazard_unit_inst/clk_gate_status_table_reg[26]/latch/GN (DLL_X1)
+                                                          0.00       0.93 f
+  time borrowed from endpoint                             0.23       1.16
+  data required time                                                 1.16
+  --------------------------------------------------------------------------
+  data required time                                                 1.16
+  data arrival time                                                 -1.16
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.00
+
+  Time Borrowing Information
+  --------------------------------------------------------------
+  clk nominal pulse width                                 0.93   
+  library setup time                                     -0.04   
+  --------------------------------------------------------------
+  max time borrow                                         0.89   
+  actual time borrow                                      0.23   
+  --------------------------------------------------------------
+
+
+  Startpoint: if_stage_inst/instruction_reg/reg_data_reg[27]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: hazard_unit_inst/clk_gate_status_table_reg[25]/latch
+            (negative level-sensitive latch clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  dlx                5K_hvratio_1_1        NangateOpenCellLibrary
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  if_stage_inst/instruction_reg/reg_data_reg[27]/CK (DFF_X1)
+                                                          0.00       0.00 r
+  if_stage_inst/instruction_reg/reg_data_reg[27]/Q (DFF_X1)
+                                                          0.09       0.09 f
+  U5939/ZN (OR2_X1)                                       0.06       0.15 f
+  U5940/ZN (NOR2_X1)                                      0.05       0.20 r
+  U5941/ZN (NAND2_X1)                                     0.04       0.24 f
+  U5994/ZN (INV_X1)                                       0.03       0.26 r
+  U5995/ZN (NAND2_X1)                                     0.03       0.29 f
+  U5403/Z (BUF_X1)                                        0.07       0.36 f
+  U6642/ZN (NOR3_X1)                                      0.10       0.46 r
+  U6643/ZN (OR2_X1)                                       0.06       0.53 r
+  U6644/ZN (NAND4_X1)                                     0.06       0.59 f
+  U9022/ZN (NAND2_X1)                                     0.04       0.63 r
+  U9129/ZN (NAND4_X1)                                     0.04       0.67 f
+  U9130/ZN (NAND2_X1)                                     0.03       0.70 r
+  U5318/ZN (AND2_X1)                                      0.05       0.75 r
+  U5302/ZN (AND2_X1)                                      0.08       0.82 r
+  U5294/ZN (AND2_X1)                                      0.06       0.89 r
+  U13274/ZN (AND2_X1)                                     0.05       0.94 r
+  U13275/ZN (NAND2_X1)                                    0.03       0.97 f
+  U13276/ZN (NAND2_X1)                                    0.06       1.03 r
+  U13340/ZN (AND2_X1)                                     0.07       1.10 r
+  U13731/ZN (INV_X1)                                      0.03       1.13 f
+  U13829/ZN (OAI21_X1)                                    0.03       1.16 r
+  hazard_unit_inst/clk_gate_status_table_reg[25]/EN (SNPS_CLOCK_GATE_HIGH_hazard_unit_id_1_25)
+                                                          0.00       1.16 r
+  hazard_unit_inst/clk_gate_status_table_reg[25]/latch/D (DLL_X1)
+                                                          0.01       1.16 r
+  data arrival time                                                  1.16
+
+  clock clk (fall edge)                                   0.93       0.93
+  clock network delay (ideal)                             0.00       0.93
+  hazard_unit_inst/clk_gate_status_table_reg[25]/latch/GN (DLL_X1)
+                                                          0.00       0.93 f
+  time borrowed from endpoint                             0.23       1.16
+  data required time                                                 1.16
+  --------------------------------------------------------------------------
+  data required time                                                 1.16
+  data arrival time                                                 -1.16
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.00
+
+  Time Borrowing Information
+  --------------------------------------------------------------
+  clk nominal pulse width                                 0.93   
+  library setup time                                     -0.04   
+  --------------------------------------------------------------
+  max time borrow                                         0.89   
+  actual time borrow                                      0.23   
+  --------------------------------------------------------------
+
+
+  Startpoint: if_stage_inst/instruction_reg/reg_data_reg[27]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: hazard_unit_inst/clk_gate_status_table_reg[31]/latch
+            (negative level-sensitive latch clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  dlx                5K_hvratio_1_1        NangateOpenCellLibrary
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  if_stage_inst/instruction_reg/reg_data_reg[27]/CK (DFF_X1)
+                                                          0.00       0.00 r
+  if_stage_inst/instruction_reg/reg_data_reg[27]/Q (DFF_X1)
+                                                          0.09       0.09 f
+  U5939/ZN (OR2_X1)                                       0.06       0.15 f
+  U5940/ZN (NOR2_X1)                                      0.05       0.20 r
+  U5941/ZN (NAND2_X1)                                     0.04       0.24 f
+  U5994/ZN (INV_X1)                                       0.03       0.26 r
+  U5995/ZN (NAND2_X1)                                     0.03       0.29 f
+  U5403/Z (BUF_X1)                                        0.07       0.36 f
+  U6642/ZN (NOR3_X1)                                      0.10       0.46 r
+  U6643/ZN (OR2_X1)                                       0.06       0.53 r
+  U6644/ZN (NAND4_X1)                                     0.06       0.59 f
+  U9022/ZN (NAND2_X1)                                     0.04       0.63 r
+  U9129/ZN (NAND4_X1)                                     0.04       0.67 f
+  U9130/ZN (NAND2_X1)                                     0.03       0.70 r
+  U5318/ZN (AND2_X1)                                      0.05       0.75 r
+  U5302/ZN (AND2_X1)                                      0.08       0.82 r
+  U5294/ZN (AND2_X1)                                      0.06       0.89 r
+  U13274/ZN (AND2_X1)                                     0.05       0.94 r
+  U13275/ZN (NAND2_X1)                                    0.03       0.97 f
+  U13276/ZN (NAND2_X1)                                    0.06       1.03 r
+  U13333/ZN (AND2_X1)                                     0.07       1.10 r
+  U13705/ZN (INV_X1)                                      0.03       1.13 f
+  U13822/ZN (OAI21_X1)                                    0.03       1.16 r
+  hazard_unit_inst/clk_gate_status_table_reg[31]/EN (SNPS_CLOCK_GATE_HIGH_hazard_unit_id_1_31)
+                                                          0.00       1.16 r
+  hazard_unit_inst/clk_gate_status_table_reg[31]/latch/D (DLL_X1)
+                                                          0.01       1.16 r
+  data arrival time                                                  1.16
+
+  clock clk (fall edge)                                   0.93       0.93
+  clock network delay (ideal)                             0.00       0.93
+  hazard_unit_inst/clk_gate_status_table_reg[31]/latch/GN (DLL_X1)
+                                                          0.00       0.93 f
+  time borrowed from endpoint                             0.23       1.16
+  data required time                                                 1.16
+  --------------------------------------------------------------------------
+  data required time                                                 1.16
+  data arrival time                                                 -1.16
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.00
+
+  Time Borrowing Information
+  --------------------------------------------------------------
+  clk nominal pulse width                                 0.93   
+  library setup time                                     -0.04   
+  --------------------------------------------------------------
+  max time borrow                                         0.89   
+  actual time borrow                                      0.23   
+  --------------------------------------------------------------
+
+
+1

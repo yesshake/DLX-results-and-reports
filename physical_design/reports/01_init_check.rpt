@@ -1,0 +1,472 @@
+Begin checking placement ... (start mem=2435.1M, init mem=2563.8M)
+*info: Recommended don't use cell = 0           
+*info: Placed = 0             
+*info: Unplaced = 13471       
+Placement Density:70.02%(24352/34776)
+Placement Density (including fixed std cells):70.02%(24352/34776)
+Finished checkPlace (total: cpu=0:00:00.1, real=0:00:00.0; vio checks: cpu=0:00:00.0, real=0:00:00.0; mem=2563.8M)
+Design: dlx
+
+------ Design Summary:
+Total Standard Cell Number   (cells) : 13471
+Total Block Cell Number      (cells) : 0
+Total I/O Pad Cell Number    (cells) : 0
+Total Standard Cell Area     ( um^2) : 24352.57
+Total Block Cell Area        ( um^2) : 0.00
+Total I/O Pad Cell Area      ( um^2) : 0.00
+
+------ Design Statistics:
+
+Number of Instances            : 13471
+Number of Non-uniquified Insts : 13465
+Number of Nets                 : 14233
+Average number of Pins per Net : 3.25
+Maximum number of Pins in Net  : 296
+
+------ I/O Port summary
+
+Number of Primary I/O Ports    : 136
+Number of Input Ports          : 36
+Number of Output Ports         : 68
+Number of Bidirectional Ports  : 32
+Number of Power/Ground Ports   : 0
+Number of Floating Ports                     *: 0
+Number of Ports Connected to Multiple Pads   *: 0
+Number of Ports Connected to Core Instances   : 136
+**WARN: (IMPREPO-202):	There are 136 Ports connected to core instances.
+
+------ Design Rule Checking:
+
+Number of Output Pins connect to Power/Ground *: 0
+Number of Insts with Input Pins tied together ?: 0
+Number of TieHi/Lo term nets not connected to instance's PG terms ?: 0
+**WARN: (IMPDB-2136):	Input term 'D' of  instance 'ex_stage_inst/result_reg/reg_data_reg[5]' does not connect to a 'TieLo ' net. The netlist is not correct or the net for connecting tie high/low signals is not specified. To resolve this problem, check your netlist or run globalNetConnect to specify the tie high/low signal nets.
+**WARN: (IMPDB-2136):	Input term 'D' of  instance 'ex_stage_inst/mult_pp_inst/inst_reg_rd/reg_data_reg[1]' does not connect to a 'TieLo ' net. The netlist is not correct or the net for connecting tie high/low signals is not specified. To resolve this problem, check your netlist or run globalNetConnect to specify the tie high/low signal nets.
+**WARN: (IMPDB-2136):	Input term 'SI' of  instance 'id_stage_inst/immediate_reg/reg_data_reg[2]' does not connect to a 'TieLo ' net. The netlist is not correct or the net for connecting tie high/low signals is not specified. To resolve this problem, check your netlist or run globalNetConnect to specify the tie high/low signal nets.
+**WARN: (IMPDB-2136):	Input term 'SE' of  instance 'id_stage_inst/immediate_reg/reg_data_reg[2]' does not connect to a 'TieLo ' net. The netlist is not correct or the net for connecting tie high/low signals is not specified. To resolve this problem, check your netlist or run globalNetConnect to specify the tie high/low signal nets.
+**WARN: (IMPDB-2136):	Input term 'D' of  instance 'id_stage_inst/pc_plus4_reg/reg_data_reg[7]' does not connect to a 'TieLo ' net. The netlist is not correct or the net for connecting tie high/low signals is not specified. To resolve this problem, check your netlist or run globalNetConnect to specify the tie high/low signal nets.
+**WARN: (IMPDB-2136):	Input term 'SI' of  instance 'id_stage_inst/rs1_reg/reg_data_reg[2]' does not connect to a 'TieHi ' net. The netlist is not correct or the net for connecting tie high/low signals is not specified. To resolve this problem, check your netlist or run globalNetConnect to specify the tie high/low signal nets.
+**WARN: (IMPDB-2136):	Input term 'SI' of  instance 'id_stage_inst/rd_addr_reg/reg_data_reg[4]' does not connect to a 'TieHi ' net. The netlist is not correct or the net for connecting tie high/low signals is not specified. To resolve this problem, check your netlist or run globalNetConnect to specify the tie high/low signal nets.
+**WARN: (IMPDB-2136):	Input term 'D' of  instance 'if_stage_inst/current_pc_reg/reg_data_reg[25]' does not connect to a 'TieLo ' net. The netlist is not correct or the net for connecting tie high/low signals is not specified. To resolve this problem, check your netlist or run globalNetConnect to specify the tie high/low signal nets.
+**WARN: (IMPDB-2136):	Input term 'D' of  instance 'ex_stage_inst/mult_pp_inst/tree_i/layer_4_r_reg[0][6]' does not connect to a 'TieLo ' net. The netlist is not correct or the net for connecting tie high/low signals is not specified. To resolve this problem, check your netlist or run globalNetConnect to specify the tie high/low signal nets.
+**WARN: (IMPDB-2136):	Input term 'D' of  instance 'ex_stage_inst/result_reg/reg_data_reg[8]' does not connect to a 'TieLo ' net. The netlist is not correct or the net for connecting tie high/low signals is not specified. To resolve this problem, check your netlist or run globalNetConnect to specify the tie high/low signal nets.
+**WARN: (IMPDB-2136):	Input term 'D' of  instance 'id_stage_inst/immediate_reg/reg_data_reg[6]' does not connect to a 'TieLo ' net. The netlist is not correct or the net for connecting tie high/low signals is not specified. To resolve this problem, check your netlist or run globalNetConnect to specify the tie high/low signal nets.
+**WARN: (IMPDB-2136):	Input term 'D' of  instance 'if_stage_inst/current_pc_reg/reg_data_reg[26]' does not connect to a 'TieLo ' net. The netlist is not correct or the net for connecting tie high/low signals is not specified. To resolve this problem, check your netlist or run globalNetConnect to specify the tie high/low signal nets.
+**WARN: (IMPDB-2136):	Input term 'D' of  instance 'id_stage_inst/pc_plus4_reg/reg_data_reg[31]' does not connect to a 'TieLo ' net. The netlist is not correct or the net for connecting tie high/low signals is not specified. To resolve this problem, check your netlist or run globalNetConnect to specify the tie high/low signal nets.
+**WARN: (IMPDB-2136):	Input term 'D' of  instance 'if_stage_inst/current_pc_reg/reg_data_reg[29]' does not connect to a 'TieLo ' net. The netlist is not correct or the net for connecting tie high/low signals is not specified. To resolve this problem, check your netlist or run globalNetConnect to specify the tie high/low signal nets.
+**WARN: (IMPDB-2136):	Input term 'D' of  instance 'if_stage_inst/current_pc_reg/reg_data_reg[28]' does not connect to a 'TieLo ' net. The netlist is not correct or the net for connecting tie high/low signals is not specified. To resolve this problem, check your netlist or run globalNetConnect to specify the tie high/low signal nets.
+**WARN: (IMPDB-2136):	Input term 'D' of  instance 'ex_stage_inst/rs_addr_reg/reg_data_reg[3]' does not connect to a 'TieLo ' net. The netlist is not correct or the net for connecting tie high/low signals is not specified. To resolve this problem, check your netlist or run globalNetConnect to specify the tie high/low signal nets.
+**WARN: (IMPDB-2136):	Input term 'D' of  instance 'id_stage_inst/pc_plus4_reg/reg_data_reg[6]' does not connect to a 'TieLo ' net. The netlist is not correct or the net for connecting tie high/low signals is not specified. To resolve this problem, check your netlist or run globalNetConnect to specify the tie high/low signal nets.
+**WARN: (IMPDB-2136):	Input term 'D' of  instance 'id_stage_inst/pc_plus4_reg/reg_data_reg[8]' does not connect to a 'TieLo ' net. The netlist is not correct or the net for connecting tie high/low signals is not specified. To resolve this problem, check your netlist or run globalNetConnect to specify the tie high/low signal nets.
+**WARN: (IMPDB-2136):	Input term 'D' of  instance 'id_stage_inst/pc_plus4_reg/reg_data_reg[12]' does not connect to a 'TieLo ' net. The netlist is not correct or the net for connecting tie high/low signals is not specified. To resolve this problem, check your netlist or run globalNetConnect to specify the tie high/low signal nets.
+**WARN: (IMPDB-2136):	Input term 'D' of  instance 'id_stage_inst/pc_plus4_reg/reg_data_reg[15]' does not connect to a 'TieLo ' net. The netlist is not correct or the net for connecting tie high/low signals is not specified. To resolve this problem, check your netlist or run globalNetConnect to specify the tie high/low signal nets.
+**WARN: (EMS-27):	Message (IMPDB-2136) has exceeded the current message display limit of 20.
+To increase the message display limit, refer to the product command reference manual.
+Number of Input/InOut Floating Pins            : 34
+Number of Output Floating Pins                 : 0
+Number of Output Term Marked TieHi/Lo         *: 0
+
+**WARN: (IMPREPO-218):	There are 34 Floating Instance terminals.
+Number of nets with tri-state drivers          : 32
+Number of nets with parallel drivers           : 0
+Number of nets with multiple drivers           : 0
+Number of nets with no driver (No FanIn)       : 0
+Number of Output Floating nets (No FanOut)     : 91
+Number of High Fanout nets (>50)               : 22
+**WARN: (IMPREPO-227):	There are 22 High Fanout nets (>50).
+**WARN: (IMPREPO-213):	There are 136 I/O Pins connected to Non-IO Insts.
+Checking for any assigns in the netlist...
+Assigns in module mem_if_1
+  dram_readnotwrite_o n6
+  dmem_rd_data_o[0] dram_data_io[0]
+  dmem_rd_data_o[1] dram_data_io[1]
+  dmem_rd_data_o[2] dram_data_io[2]
+  dmem_rd_data_o[3] dram_data_io[3]
+  dmem_rd_data_o[4] dram_data_io[4]
+  dmem_rd_data_o[5] dram_data_io[5]
+  dmem_rd_data_o[6] dram_data_io[6]
+  dmem_rd_data_o[7] dram_data_io[7]
+  dmem_rd_data_o[8] dram_data_io[8]
+  dmem_rd_data_o[9] dram_data_io[9]
+  dmem_rd_data_o[10] dram_data_io[10]
+  dmem_rd_data_o[11] dram_data_io[11]
+  dmem_rd_data_o[12] dram_data_io[12]
+  dmem_rd_data_o[13] dram_data_io[13]
+  dmem_rd_data_o[14] dram_data_io[14]
+  dmem_rd_data_o[15] dram_data_io[15]
+  dmem_rd_data_o[16] dram_data_io[16]
+  dmem_rd_data_o[17] dram_data_io[17]
+  dmem_rd_data_o[18] dram_data_io[18]
+  dmem_rd_data_o[19] dram_data_io[19]
+  dmem_rd_data_o[20] dram_data_io[20]
+  dmem_rd_data_o[21] dram_data_io[21]
+  dmem_rd_data_o[22] dram_data_io[22]
+  dmem_rd_data_o[23] dram_data_io[23]
+  dmem_rd_data_o[24] dram_data_io[24]
+  dmem_rd_data_o[25] dram_data_io[25]
+  dmem_rd_data_o[26] dram_data_io[26]
+  dmem_rd_data_o[27] dram_data_io[27]
+  dmem_rd_data_o[28] dram_data_io[28]
+  dmem_rd_data_o[29] dram_data_io[29]
+  dmem_rd_data_o[30] dram_data_io[30]
+  dmem_rd_data_o[31] dram_data_io[31]
+  dram_address_o[0] dmem_addr_i[0]
+  dram_address_o[1] dmem_addr_i[1]
+  dram_address_o[2] dmem_addr_i[2]
+  dram_address_o[3] dmem_addr_i[3]
+  dram_address_o[4] dmem_addr_i[4]
+  dram_address_o[5] dmem_addr_i[5]
+  dram_address_o[6] dmem_addr_i[6]
+  dram_address_o[7] dmem_addr_i[7]
+  dram_address_o[8] dmem_addr_i[8]
+  dram_address_o[9] dmem_addr_i[9]
+  dram_address_o[10] dmem_addr_i[10]
+  dram_address_o[11] dmem_addr_i[11]
+  dram_address_o[12] dmem_addr_i[12]
+  dram_address_o[13] dmem_addr_i[13]
+  dram_address_o[14] dmem_addr_i[14]
+  dram_address_o[15] dmem_addr_i[15]
+  dram_address_o[16] dmem_addr_i[16]
+  dram_address_o[17] dmem_addr_i[17]
+  dram_address_o[18] dmem_addr_i[18]
+  dram_address_o[19] dmem_addr_i[19]
+  dram_address_o[20] dmem_addr_i[20]
+  dram_address_o[21] dmem_addr_i[21]
+  dram_address_o[22] dmem_addr_i[22]
+  dram_address_o[23] dmem_addr_i[23]
+  dram_address_o[24] dmem_addr_i[24]
+  dram_address_o[25] dmem_addr_i[25]
+  dram_address_o[26] dmem_addr_i[26]
+  dram_address_o[27] dmem_addr_i[27]
+  dram_address_o[28] dmem_addr_i[28]
+  dram_address_o[29] dmem_addr_i[29]
+  dram_address_o[30] dmem_addr_i[30]
+  dram_address_o[31] dmem_addr_i[31]
+  iram_address_o[0] imem_addr_i[0]
+  iram_address_o[1] imem_addr_i[1]
+  iram_address_o[2] imem_addr_i[2]
+  iram_address_o[3] imem_addr_i[3]
+  iram_address_o[4] imem_addr_i[4]
+  iram_address_o[5] imem_addr_i[5]
+  iram_address_o[6] imem_addr_i[6]
+  iram_address_o[7] imem_addr_i[7]
+  iram_address_o[8] imem_addr_i[8]
+  iram_address_o[9] imem_addr_i[9]
+  iram_address_o[10] imem_addr_i[10]
+  iram_address_o[11] imem_addr_i[11]
+  iram_address_o[12] imem_addr_i[12]
+  iram_address_o[13] imem_addr_i[13]
+  iram_address_o[14] imem_addr_i[14]
+  iram_address_o[15] imem_addr_i[15]
+  iram_address_o[16] imem_addr_i[16]
+  iram_address_o[17] imem_addr_i[17]
+  iram_address_o[18] imem_addr_i[18]
+  iram_address_o[19] imem_addr_i[19]
+  iram_address_o[20] imem_addr_i[20]
+  iram_address_o[21] imem_addr_i[21]
+  iram_address_o[22] imem_addr_i[22]
+  iram_address_o[23] imem_addr_i[23]
+  iram_address_o[24] imem_addr_i[24]
+  iram_address_o[25] imem_addr_i[25]
+  iram_address_o[26] imem_addr_i[26]
+  iram_address_o[27] imem_addr_i[27]
+  iram_address_o[28] imem_addr_i[28]
+  iram_address_o[29] imem_addr_i[29]
+  iram_address_o[30] imem_addr_i[30]
+  iram_address_o[31] imem_addr_i[31]
+  imem_rdata_o[0] iram_data_i[0]
+  imem_rdata_o[1] iram_data_i[1]
+  imem_rdata_o[2] iram_data_i[2]
+  imem_rdata_o[3] iram_data_i[3]
+  imem_rdata_o[4] iram_data_i[4]
+  imem_rdata_o[5] iram_data_i[5]
+  imem_rdata_o[6] iram_data_i[6]
+  imem_rdata_o[7] iram_data_i[7]
+  imem_rdata_o[8] iram_data_i[8]
+  imem_rdata_o[9] iram_data_i[9]
+  imem_rdata_o[10] iram_data_i[10]
+  imem_rdata_o[11] iram_data_i[11]
+  imem_rdata_o[12] iram_data_i[12]
+  imem_rdata_o[13] iram_data_i[13]
+  imem_rdata_o[14] iram_data_i[14]
+  imem_rdata_o[15] iram_data_i[15]
+  imem_rdata_o[16] iram_data_i[16]
+  imem_rdata_o[17] iram_data_i[17]
+  imem_rdata_o[18] iram_data_i[18]
+  imem_rdata_o[19] iram_data_i[19]
+  imem_rdata_o[20] iram_data_i[20]
+  imem_rdata_o[21] iram_data_i[21]
+  imem_rdata_o[22] iram_data_i[22]
+  imem_rdata_o[23] iram_data_i[23]
+  imem_rdata_o[24] iram_data_i[24]
+  imem_rdata_o[25] iram_data_i[25]
+  imem_rdata_o[26] iram_data_i[26]
+  imem_rdata_o[27] iram_data_i[27]
+  imem_rdata_o[28] iram_data_i[28]
+  imem_rdata_o[29] iram_data_i[29]
+  imem_rdata_o[30] iram_data_i[30]
+  imem_rdata_o[31] iram_data_i[31]
+Assigns in module SNPS_CLOCK_GATE_HIGH_reg_file_id_1_0
+  net3527231 EN
+  ENCLK net3432661
+  net3432659 CLK
+Assigns in module SNPS_CLOCK_GATE_HIGH_reg_file_id_1_31
+  net3432662 EN
+  ENCLK net3432661
+  net3432659 CLK
+Assigns in module SNPS_CLOCK_GATE_HIGH_reg_file_id_1_30
+  net3432662 EN
+  ENCLK net3432661
+  net3432659 CLK
+Assigns in module SNPS_CLOCK_GATE_HIGH_reg_file_id_1_29
+  net3432662 EN
+  ENCLK net3432661
+  net3432659 CLK
+Assigns in module SNPS_CLOCK_GATE_HIGH_reg_file_id_1_28
+  net3432662 EN
+  ENCLK net3432661
+  net3432659 CLK
+Assigns in module SNPS_CLOCK_GATE_HIGH_reg_file_id_1_27
+  net3432662 EN
+  ENCLK net3432661
+  net3432659 CLK
+Assigns in module SNPS_CLOCK_GATE_HIGH_reg_file_id_1_26
+  net3432662 EN
+  ENCLK net3432661
+  net3432659 CLK
+Assigns in module SNPS_CLOCK_GATE_HIGH_reg_file_id_1_25
+  net3432662 EN
+  ENCLK net3432661
+  net3432659 CLK
+Assigns in module SNPS_CLOCK_GATE_HIGH_reg_file_id_1_24
+  net3432662 EN
+  ENCLK net3432661
+  net3432659 CLK
+Assigns in module SNPS_CLOCK_GATE_HIGH_reg_file_id_1_23
+  net3432662 EN
+  ENCLK net3432661
+  net3432659 CLK
+Assigns in module SNPS_CLOCK_GATE_HIGH_reg_file_id_1_22
+  net3432662 EN
+  ENCLK net3432661
+  net3432659 CLK
+Assigns in module SNPS_CLOCK_GATE_HIGH_reg_file_id_1_21
+  net3432662 EN
+  ENCLK net3432661
+  net3432659 CLK
+Assigns in module SNPS_CLOCK_GATE_HIGH_reg_file_id_1_20
+  net3432662 EN
+  ENCLK net3432661
+  net3432659 CLK
+Assigns in module SNPS_CLOCK_GATE_HIGH_reg_file_id_1_19
+  net3432662 EN
+  ENCLK net3432661
+  net3432659 CLK
+Assigns in module SNPS_CLOCK_GATE_HIGH_reg_file_id_1_18
+  net3432662 EN
+  ENCLK net3432661
+  net3432659 CLK
+Assigns in module SNPS_CLOCK_GATE_HIGH_reg_file_id_1_17
+  net3432662 EN
+  ENCLK net3432661
+  net3432659 CLK
+Assigns in module SNPS_CLOCK_GATE_HIGH_reg_file_id_1_16
+  net3432662 EN
+  ENCLK net3432661
+  net3432659 CLK
+Assigns in module SNPS_CLOCK_GATE_HIGH_reg_file_id_1_15
+  net3432662 EN
+  ENCLK net3432661
+  net3432659 CLK
+Assigns in module SNPS_CLOCK_GATE_HIGH_reg_file_id_1_14
+  net3432662 EN
+  ENCLK net3432661
+  net3432659 CLK
+Assigns in module SNPS_CLOCK_GATE_HIGH_reg_file_id_1_13
+  net3432662 EN
+  ENCLK net3432661
+  net3432659 CLK
+Assigns in module SNPS_CLOCK_GATE_HIGH_reg_file_id_1_12
+  net3432662 EN
+  ENCLK net3432661
+  net3432659 CLK
+Assigns in module SNPS_CLOCK_GATE_HIGH_reg_file_id_1_11
+  net3432662 EN
+  ENCLK net3432661
+  net3432659 CLK
+Assigns in module SNPS_CLOCK_GATE_HIGH_reg_file_id_1_10
+  net3432662 EN
+  ENCLK net3432661
+  net3432659 CLK
+Assigns in module SNPS_CLOCK_GATE_HIGH_reg_file_id_1_9
+  net3432662 EN
+  ENCLK net3432661
+  net3432659 CLK
+Assigns in module SNPS_CLOCK_GATE_HIGH_reg_file_id_1_8
+  net3432662 EN
+  ENCLK net3432661
+  net3432659 CLK
+Assigns in module SNPS_CLOCK_GATE_HIGH_reg_file_id_1_7
+  net3432662 EN
+  ENCLK net3432661
+  net3432659 CLK
+Assigns in module SNPS_CLOCK_GATE_HIGH_reg_file_id_1_6
+  net3432662 EN
+  ENCLK net3432661
+  net3432659 CLK
+Assigns in module SNPS_CLOCK_GATE_HIGH_reg_file_id_1_5
+  net3432662 EN
+  ENCLK net3432661
+  net3432659 CLK
+Assigns in module SNPS_CLOCK_GATE_HIGH_reg_file_id_1_4
+  net3432662 EN
+  ENCLK net3432661
+  net3432659 CLK
+Assigns in module SNPS_CLOCK_GATE_HIGH_reg_file_id_1_3
+  net3432662 EN
+  ENCLK net3432661
+  net3432659 CLK
+Assigns in module SNPS_CLOCK_GATE_HIGH_reg_file_id_1_2
+  net3432662 EN
+  ENCLK net3432661
+  net3432659 CLK
+Assigns in module SNPS_CLOCK_GATE_HIGH_reg_file_id_1_1
+  net3432662 EN
+  ENCLK net3432661
+  net3432659 CLK
+Assigns in module SNPS_CLOCK_GATE_HIGH_gen_register_DATA_WIDTH32_12_9
+  net3432571 EN
+  ENCLK net3432570
+  net3432568 CLK
+Assigns in module SNPS_CLOCK_GATE_HIGH_gen_register_DATA_WIDTH32_12_5
+  net3432571 EN
+  ENCLK net3432570
+  net3432568 CLK
+Assigns in module SNPS_CLOCK_GATE_HIGH_gen_register_DATA_WIDTH32_12_1
+  net3432571 EN
+  ENCLK net3432570
+  net3432568 CLK
+Assigns in module SNPS_CLOCK_GATE_HIGH_dadda_tree_1
+  net3432601 EN
+  ENCLK net3432600
+  net3432598 CLK
+Assigns in module SNPS_CLOCK_GATE_HIGH_BTB_if_1_1
+  net3432832 EN
+  ENCLK net3432831
+  net3432829 CLK
+Assigns in module SNPS_CLOCK_GATE_HIGH_BTB_if_1_2
+  net3432832 EN
+  ENCLK net3432831
+  net3432829 CLK
+Assigns in module SNPS_CLOCK_GATE_HIGH_BTB_if_1_3
+  net3432832 EN
+  ENCLK net3432831
+  net3432829 CLK
+Assigns in module SNPS_CLOCK_GATE_HIGH_BTB_if_1_4
+  net3432832 EN
+  ENCLK net3432831
+  net3432829 CLK
+Assigns in module SNPS_CLOCK_GATE_HIGH_BTB_if_1_5
+  net3432832 EN
+  ENCLK net3432831
+  net3432829 CLK
+Assigns in module SNPS_CLOCK_GATE_HIGH_BTB_if_1_6
+  net3432832 EN
+  ENCLK net3432831
+  net3432829 CLK
+Assigns in module SNPS_CLOCK_GATE_HIGH_BTB_if_1_7
+  net3432832 EN
+  ENCLK net3432831
+  net3432829 CLK
+Assigns in module SNPS_CLOCK_GATE_HIGH_BTB_if_1_8
+  net3432832 EN
+  ENCLK net3432831
+  net3432829 CLK
+Assigns in module SNPS_CLOCK_GATE_HIGH_BTB_if_1_9
+  net3432832 EN
+  ENCLK net3432831
+  net3432829 CLK
+Assigns in module SNPS_CLOCK_GATE_HIGH_BTB_if_1_10
+  net3432832 EN
+  ENCLK net3432831
+  net3432829 CLK
+Assigns in module SNPS_CLOCK_GATE_HIGH_BTB_if_1_11
+  net3432832 EN
+  ENCLK net3432831
+  net3432829 CLK
+Assigns in module SNPS_CLOCK_GATE_HIGH_BTB_if_1_12
+  net3432832 EN
+  ENCLK net3432831
+  net3432829 CLK
+Assigns in module SNPS_CLOCK_GATE_HIGH_BTB_if_1_13
+  net3432832 EN
+  ENCLK net3432831
+  net3432829 CLK
+Assigns in module SNPS_CLOCK_GATE_HIGH_BTB_if_1_14
+  net3432832 EN
+  ENCLK net3432831
+  net3432829 CLK
+Assigns in module SNPS_CLOCK_GATE_HIGH_BTB_if_1_15
+  net3432832 EN
+  ENCLK net3432831
+  net3432829 CLK
+Assigns in module SNPS_CLOCK_GATE_HIGH_BTB_if_1_0
+  net3432832 EN
+  ENCLK net3432831
+  net3432829 CLK
+**ERROR: (IMPECO-682):	Net dram_data[31] of module dlx has multiple drivers.
+**ERROR: (IMPECO-682):	Net dram_data[30] of module dlx has multiple drivers.
+**ERROR: (IMPECO-682):	Net dram_data[29] of module dlx has multiple drivers.
+**ERROR: (IMPECO-682):	Net dram_data[28] of module dlx has multiple drivers.
+**ERROR: (IMPECO-682):	Net dram_data[27] of module dlx has multiple drivers.
+**ERROR: (IMPECO-682):	Net dram_data[26] of module dlx has multiple drivers.
+**ERROR: (IMPECO-682):	Net dram_data[25] of module dlx has multiple drivers.
+**ERROR: (IMPECO-682):	Net dram_data[24] of module dlx has multiple drivers.
+**ERROR: (IMPECO-682):	Net dram_data[23] of module dlx has multiple drivers.
+**ERROR: (IMPECO-682):	Net dram_data[22] of module dlx has multiple drivers.
+**ERROR: (IMPECO-682):	Net dram_data[21] of module dlx has multiple drivers.
+**ERROR: (IMPECO-682):	Net dram_data[20] of module dlx has multiple drivers.
+**ERROR: (IMPECO-682):	Net dram_data[19] of module dlx has multiple drivers.
+**ERROR: (IMPECO-682):	Net dram_data[18] of module dlx has multiple drivers.
+**ERROR: (IMPECO-682):	Net dram_data[17] of module dlx has multiple drivers.
+**ERROR: (IMPECO-682):	Net dram_data[16] of module dlx has multiple drivers.
+**ERROR: (IMPECO-682):	Net dram_data[15] of module dlx has multiple drivers.
+**ERROR: (IMPECO-682):	Net dram_data[14] of module dlx has multiple drivers.
+**ERROR: (IMPECO-682):	Net dram_data[13] of module dlx has multiple drivers.
+**ERROR: (IMPECO-682):	Net dram_data[12] of module dlx has multiple drivers.
+**WARN: (EMS-27):	Message (IMPECO-682) has exceeded the current message display limit of 20.
+To increase the message display limit, refer to the product command reference manual.
+Checking routing tracks.....
+Checking other grids.....
+Checking FINFET Grid is on Manufacture Grid.....
+
+Checking core/die box is on Grid.....
+
+WARNING (IMPFP-7235): DIE's corner: (186.8400000000 , 186.2000000000) is NOT on PlacementGrid,  Please use command getFPlanMode to check current Grid settings, use command setFPlanMode to change which grid to snap to. And use command get_snap_grid_info to get grids' offset and pitch. Command floorPlan can be used to fix this issue.
+WARNING (IMPFP-7237): CORE's corner: (186.8400000000 , 186.2000000000) is NOT on PlacementGrid,  Please use command getFPlanMode to check current Grid settings, use command setFPlanMode to change which grid to snap to. And use command get_snap_grid_info to get grids' offset and pitch. Command floorPlan can be used to fix this issue.
+Checking snap rule ......
+
+Checking Row is on grid......
+
+Checking AreaIO row.....
+Checking routing blockage.....
+Checking components.....
+Checking constraints (guide/region/fence).....
+Checking groups.....
+Checking Ptn Core Box.....
+
+Checking Preroutes.....
+No. of regular pre-routes not on tracks : 0 
+ Design check done.
+Report saved in file checkDesign/dlx.main.htm.ascii
+
+*** Summary of all messages that are not suppressed in this session:
+Severity  ID               Count  Summary                                  
+WARNING   IMPDB-2136          34  %s term '%s' of %s instance '%s' does no...
+ERROR     IMPECO-682          32  Net %s of module %s has multiple drivers...
+WARNING   IMPREPO-227          1  There are %d High Fanout nets (>50).     
+WARNING   IMPREPO-202          1  There are %d Ports connected to core ins...
+WARNING   IMPREPO-213          1  There are %d I/O Pins connected to Non-I...
+WARNING   IMPREPO-218          1  There are %d Floating Instance terminals...
+*** Message Summary: 38 warning(s), 32 error(s)
+

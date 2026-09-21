@@ -1,0 +1,624 @@
+ 
+****************************************
+Report : constraint
+        -all_violators
+Design : dlx
+Version: W-2024.09-SP2
+Date   : Wed Sep 16 13:34:06 2026
+****************************************
+
+
+   max_delay/setup ('clk' group)
+
+                             Required        Actual
+   Endpoint                 Path Delay     Path Delay        Slack
+   -----------------------------------------------------------------
+   if_stage_inst/pc_reg_inst/reg_data_reg[9]/D
+                                1.47           1.81 r        -0.35  (VIOLATED)
+   if_stage_inst/pc_reg_inst/reg_data_reg[24]/D
+                                1.47           1.81 r        -0.35  (VIOLATED)
+   if_stage_inst/pc_reg_inst/reg_data_reg[29]/D
+                                1.47           1.81 r        -0.35  (VIOLATED)
+   if_stage_inst/predicted_target_reg/reg_data_reg[9]/D
+                                1.47           1.81 r        -0.35  (VIOLATED)
+   if_stage_inst/predicted_target_reg/reg_data_reg[24]/D
+                                1.47           1.81 r        -0.35  (VIOLATED)
+   if_stage_inst/predicted_target_reg/reg_data_reg[29]/D
+                                1.47           1.81 r        -0.35  (VIOLATED)
+   if_stage_inst/pc_reg_inst/reg_data_reg[12]/D
+                                1.47           1.81 r        -0.35  (VIOLATED)
+   if_stage_inst/pc_reg_inst/reg_data_reg[15]/D
+                                1.47           1.81 r        -0.35  (VIOLATED)
+   if_stage_inst/pc_reg_inst/reg_data_reg[18]/D
+                                1.47           1.81 r        -0.35  (VIOLATED)
+   if_stage_inst/pc_reg_inst/reg_data_reg[31]/D
+                                1.47           1.81 r        -0.35  (VIOLATED)
+   if_stage_inst/predicted_target_reg/reg_data_reg[12]/D
+                                1.47           1.81 r        -0.35  (VIOLATED)
+   if_stage_inst/predicted_target_reg/reg_data_reg[15]/D
+                                1.47           1.81 r        -0.35  (VIOLATED)
+   if_stage_inst/predicted_target_reg/reg_data_reg[18]/D
+                                1.47           1.81 r        -0.35  (VIOLATED)
+   if_stage_inst/predicted_target_reg/reg_data_reg[31]/D
+                                1.47           1.81 r        -0.35  (VIOLATED)
+   if_stage_inst/pc_reg_inst/reg_data_reg[2]/D
+                                1.45           1.80 f        -0.35  (VIOLATED)
+   if_stage_inst/predicted_target_reg/reg_data_reg[2]/D
+                                1.45           1.80 f        -0.35  (VIOLATED)
+   if_stage_inst/pc_reg_inst/reg_data_reg[4]/D
+                                1.45           1.80 f        -0.35  (VIOLATED)
+   if_stage_inst/pc_reg_inst/reg_data_reg[5]/D
+                                1.45           1.80 f        -0.35  (VIOLATED)
+   if_stage_inst/pc_reg_inst/reg_data_reg[8]/D
+                                1.45           1.80 f        -0.35  (VIOLATED)
+   if_stage_inst/pc_reg_inst/reg_data_reg[16]/D
+                                1.45           1.80 f        -0.35  (VIOLATED)
+   if_stage_inst/pc_reg_inst/reg_data_reg[17]/D
+                                1.45           1.80 f        -0.35  (VIOLATED)
+   if_stage_inst/pc_reg_inst/reg_data_reg[21]/D
+                                1.45           1.80 f        -0.35  (VIOLATED)
+   if_stage_inst/pc_reg_inst/reg_data_reg[22]/D
+                                1.45           1.80 f        -0.35  (VIOLATED)
+   if_stage_inst/pc_reg_inst/reg_data_reg[23]/D
+                                1.45           1.80 f        -0.35  (VIOLATED)
+   if_stage_inst/pc_reg_inst/reg_data_reg[28]/D
+                                1.45           1.80 f        -0.35  (VIOLATED)
+   if_stage_inst/pc_reg_inst/reg_data_reg[30]/D
+                                1.45           1.80 f        -0.35  (VIOLATED)
+   if_stage_inst/predicted_target_reg/reg_data_reg[4]/D
+                                1.45           1.80 f        -0.35  (VIOLATED)
+   if_stage_inst/predicted_target_reg/reg_data_reg[5]/D
+                                1.45           1.80 f        -0.35  (VIOLATED)
+   if_stage_inst/predicted_target_reg/reg_data_reg[8]/D
+                                1.45           1.80 f        -0.35  (VIOLATED)
+   if_stage_inst/predicted_target_reg/reg_data_reg[16]/D
+                                1.45           1.80 f        -0.35  (VIOLATED)
+   if_stage_inst/predicted_target_reg/reg_data_reg[17]/D
+                                1.45           1.80 f        -0.35  (VIOLATED)
+   if_stage_inst/predicted_target_reg/reg_data_reg[21]/D
+                                1.45           1.80 f        -0.35  (VIOLATED)
+   if_stage_inst/predicted_target_reg/reg_data_reg[22]/D
+                                1.45           1.80 f        -0.35  (VIOLATED)
+   if_stage_inst/predicted_target_reg/reg_data_reg[23]/D
+                                1.45           1.80 f        -0.35  (VIOLATED)
+   if_stage_inst/predicted_target_reg/reg_data_reg[28]/D
+                                1.45           1.80 f        -0.35  (VIOLATED)
+   if_stage_inst/predicted_target_reg/reg_data_reg[30]/D
+                                1.45           1.80 f        -0.35  (VIOLATED)
+   if_stage_inst/pc_reg_inst/reg_data_reg[0]/D
+                                1.46           1.80 f        -0.34  (VIOLATED)
+   if_stage_inst/pc_reg_inst/reg_data_reg[3]/D
+                                1.46           1.80 f        -0.34  (VIOLATED)
+   if_stage_inst/pc_reg_inst/reg_data_reg[10]/D
+                                1.46           1.80 f        -0.34  (VIOLATED)
+   if_stage_inst/pc_reg_inst/reg_data_reg[25]/D
+                                1.46           1.80 f        -0.34  (VIOLATED)
+   if_stage_inst/predicted_target_reg/reg_data_reg[0]/D
+                                1.46           1.80 f        -0.34  (VIOLATED)
+   if_stage_inst/predicted_target_reg/reg_data_reg[3]/D
+                                1.46           1.80 f        -0.34  (VIOLATED)
+   if_stage_inst/predicted_target_reg/reg_data_reg[10]/D
+                                1.46           1.80 f        -0.34  (VIOLATED)
+   if_stage_inst/predicted_target_reg/reg_data_reg[25]/D
+                                1.46           1.80 f        -0.34  (VIOLATED)
+   if_stage_inst/pc_reg_inst/reg_data_reg[7]/D
+                                1.47           1.81 r        -0.34  (VIOLATED)
+   if_stage_inst/predicted_target_reg/reg_data_reg[7]/D
+                                1.47           1.81 r        -0.34  (VIOLATED)
+   if_stage_inst/pc_reg_inst/reg_data_reg[13]/D
+                                1.45           1.80 f        -0.34  (VIOLATED)
+   if_stage_inst/predicted_target_reg/reg_data_reg[6]/D
+                                1.47           1.81 r        -0.34  (VIOLATED)
+   if_stage_inst/pc_reg_inst/reg_data_reg[14]/D
+                                1.45           1.80 f        -0.34  (VIOLATED)
+   if_stage_inst/pc_reg_inst/reg_data_reg[19]/D
+                                1.45           1.80 f        -0.34  (VIOLATED)
+   if_stage_inst/pc_reg_inst/reg_data_reg[27]/D
+                                1.45           1.80 f        -0.34  (VIOLATED)
+   if_stage_inst/predicted_target_reg/reg_data_reg[14]/D
+                                1.45           1.80 f        -0.34  (VIOLATED)
+   if_stage_inst/predicted_target_reg/reg_data_reg[19]/D
+                                1.45           1.80 f        -0.34  (VIOLATED)
+   if_stage_inst/predicted_target_reg/reg_data_reg[27]/D
+                                1.45           1.80 f        -0.34  (VIOLATED)
+   if_stage_inst/pc_reg_inst/reg_data_reg[11]/D
+                                1.45           1.80 f        -0.34  (VIOLATED)
+   if_stage_inst/pc_reg_inst/reg_data_reg[26]/D
+                                1.45           1.80 f        -0.34  (VIOLATED)
+   if_stage_inst/predicted_target_reg/reg_data_reg[11]/D
+                                1.45           1.80 f        -0.34  (VIOLATED)
+   if_stage_inst/predicted_target_reg/reg_data_reg[26]/D
+                                1.45           1.80 f        -0.34  (VIOLATED)
+   if_stage_inst/predicted_target_reg/reg_data_reg[13]/D
+                                1.47           1.81 r        -0.34  (VIOLATED)
+   if_stage_inst/pc_reg_inst/reg_data_reg[6]/D
+                                1.47           1.81 r        -0.34  (VIOLATED)
+   if_stage_inst/pc_reg_inst/reg_data_reg[1]/D
+                                1.47           1.81 r        -0.34  (VIOLATED)
+   if_stage_inst/pc_reg_inst/reg_data_reg[20]/D
+                                1.47           1.81 r        -0.34  (VIOLATED)
+   if_stage_inst/predicted_target_reg/reg_data_reg[1]/D
+                                1.47           1.81 r        -0.34  (VIOLATED)
+   if_stage_inst/predicted_target_reg/reg_data_reg[20]/D
+                                1.47           1.81 r        -0.34  (VIOLATED)
+   ex_stage_inst/mult_pp_inst/tree_i/layer_4_r_reg[0][31]/D
+                                1.47           1.81 r        -0.34  (VIOLATED)
+   ex_stage_inst/mult_pp_inst/tree_i/layer_4_r_reg[0][16]/D
+                                1.47           1.80 r        -0.34  (VIOLATED)
+   if_stage_inst/if_id_valid_reg/reg_data_reg[0]/D
+                                1.46           1.79 f        -0.33  (VIOLATED)
+   if_stage_inst/pc_reg_inst/clk_gate_reg_data_reg/latch/D
+                                1.45           1.78 f        -0.32  (VIOLATED)
+   if_stage_inst/btb_inst/btb_reg[5][COUNTER][0]/D
+                                1.46           1.77 f        -0.31  (VIOLATED)
+   if_stage_inst/btb_inst/btb_reg[6][COUNTER][0]/D
+                                1.46           1.77 f        -0.31  (VIOLATED)
+   if_stage_inst/btb_inst/btb_reg[7][COUNTER][0]/D
+                                1.46           1.77 f        -0.31  (VIOLATED)
+   if_stage_inst/btb_inst/btb_reg[8][COUNTER][0]/D
+                                1.46           1.77 f        -0.31  (VIOLATED)
+   if_stage_inst/btb_inst/btb_reg[9][COUNTER][0]/D
+                                1.46           1.77 f        -0.31  (VIOLATED)
+   if_stage_inst/btb_inst/btb_reg[10][COUNTER][0]/D
+                                1.46           1.77 f        -0.31  (VIOLATED)
+   ex_stage_inst/mult_pp_inst/tree_i/layer_4_r_reg[1][17]/D
+                                1.47           1.78 r        -0.31  (VIOLATED)
+   if_stage_inst/btb_inst/btb_reg[13][COUNTER][0]/D
+                                1.46           1.76 f        -0.30  (VIOLATED)
+   ex_stage_inst/mult_pp_inst/tree_i/layer_4_r_reg[0][26]/D
+                                1.47           1.77 r        -0.30  (VIOLATED)
+   if_stage_inst/btb_inst/btb_reg[3][COUNTER][0]/D
+                                1.46           1.76 f        -0.30  (VIOLATED)
+   if_stage_inst/btb_inst/btb_reg[12][COUNTER][0]/D
+                                1.46           1.76 f        -0.30  (VIOLATED)
+   if_stage_inst/btb_inst/btb_reg[4][COUNTER][0]/D
+                                1.46           1.76 f        -0.30  (VIOLATED)
+   if_stage_inst/btb_inst/btb_reg[0][COUNTER][0]/D
+                                1.46           1.76 f        -0.30  (VIOLATED)
+   if_stage_inst/btb_inst/btb_reg[1][COUNTER][0]/D
+                                1.46           1.76 f        -0.30  (VIOLATED)
+   if_stage_inst/btb_inst/btb_reg[2][COUNTER][0]/D
+                                1.46           1.76 f        -0.30  (VIOLATED)
+   if_stage_inst/btb_inst/btb_reg[11][COUNTER][0]/D
+                                1.46           1.76 f        -0.30  (VIOLATED)
+   if_stage_inst/btb_inst/btb_reg[14][COUNTER][0]/D
+                                1.46           1.76 f        -0.30  (VIOLATED)
+   if_stage_inst/btb_inst/btb_reg[15][COUNTER][0]/D
+                                1.46           1.76 f        -0.30  (VIOLATED)
+   ex_stage_inst/mult_pp_inst/tree_i/layer_4_r_reg[1][22]/D
+                                1.47           1.76 r        -0.29  (VIOLATED)
+   ex_stage_inst/mult_pp_inst/tree_i/layer_4_r_reg[0][15]/D
+                                1.46           1.75 f        -0.29  (VIOLATED)
+   ex_stage_inst/mult_pp_inst/tree_i/layer_4_r_reg[0][19]/D
+                                1.46           1.74 f        -0.28  (VIOLATED)
+   ex_stage_inst/mult_pp_inst/tree_i/layer_4_r_reg[0][20]/D
+                                1.47           1.75 r        -0.28  (VIOLATED)
+   ex_stage_inst/mult_pp_inst/tree_i/layer_4_r_reg[1][27]/D
+                                1.47           1.75 r        -0.28  (VIOLATED)
+   ex_stage_inst/mult_pp_inst/tree_i/layer_4_r_reg[0][21]/D
+                                1.47           1.75 r        -0.28  (VIOLATED)
+   ex_stage_inst/mult_pp_inst/tree_i/layer_4_r_reg[0][17]/D
+                                1.47           1.75 r        -0.28  (VIOLATED)
+   ex_stage_inst/mult_pp_inst/tree_i/layer_4_r_reg[0][27]/D
+                                1.45           1.73 f        -0.28  (VIOLATED)
+   ex_stage_inst/mult_pp_inst/tree_i/layer_4_r_reg[0][29]/D
+                                1.47           1.74 r        -0.27  (VIOLATED)
+   ex_stage_inst/mult_pp_inst/tree_i/layer_4_r_reg[0][23]/D
+                                1.47           1.74 r        -0.27  (VIOLATED)
+   ex_stage_inst/mult_pp_inst/tree_i/layer_4_r_reg[0][18]/D
+                                1.47           1.74 r        -0.27  (VIOLATED)
+   if_stage_inst/btb_inst/btb_reg[0][COUNTER][1]/D
+                                1.46           1.72 f        -0.27  (VIOLATED)
+   if_stage_inst/btb_inst/btb_reg[1][COUNTER][1]/D
+                                1.46           1.72 f        -0.27  (VIOLATED)
+   if_stage_inst/btb_inst/btb_reg[2][COUNTER][1]/D
+                                1.46           1.72 f        -0.27  (VIOLATED)
+   if_stage_inst/btb_inst/btb_reg[3][COUNTER][1]/D
+                                1.46           1.72 f        -0.27  (VIOLATED)
+   if_stage_inst/btb_inst/btb_reg[4][COUNTER][1]/D
+                                1.46           1.72 f        -0.27  (VIOLATED)
+   if_stage_inst/btb_inst/btb_reg[5][COUNTER][1]/D
+                                1.46           1.72 f        -0.27  (VIOLATED)
+   if_stage_inst/btb_inst/btb_reg[6][COUNTER][1]/D
+                                1.46           1.72 f        -0.26  (VIOLATED)
+   if_stage_inst/btb_inst/btb_reg[7][COUNTER][1]/D
+                                1.46           1.72 f        -0.26  (VIOLATED)
+   if_stage_inst/btb_inst/btb_reg[8][COUNTER][1]/D
+                                1.46           1.72 f        -0.26  (VIOLATED)
+   if_stage_inst/btb_inst/btb_reg[9][COUNTER][1]/D
+                                1.46           1.72 f        -0.26  (VIOLATED)
+   if_stage_inst/btb_inst/btb_reg[10][COUNTER][1]/D
+                                1.46           1.72 f        -0.26  (VIOLATED)
+   if_stage_inst/btb_inst/btb_reg[11][COUNTER][1]/D
+                                1.46           1.72 f        -0.26  (VIOLATED)
+   if_stage_inst/btb_inst/btb_reg[12][COUNTER][1]/D
+                                1.46           1.72 f        -0.26  (VIOLATED)
+   if_stage_inst/btb_inst/btb_reg[13][COUNTER][1]/D
+                                1.46           1.72 f        -0.26  (VIOLATED)
+   if_stage_inst/btb_inst/btb_reg[14][COUNTER][1]/D
+                                1.46           1.72 f        -0.26  (VIOLATED)
+   if_stage_inst/btb_inst/btb_reg[15][COUNTER][1]/D
+                                1.46           1.72 f        -0.26  (VIOLATED)
+   ex_stage_inst/mult_pp_inst/tree_i/layer_4_r_reg[0][25]/D
+                                1.47           1.73 r        -0.26  (VIOLATED)
+   ex_stage_inst/mult_pp_inst/tree_i/layer_4_r_reg[1][30]/D
+                                1.46           1.72 r        -0.26  (VIOLATED)
+   ex_stage_inst/mult_pp_inst/tree_i/layer_4_r_reg[0][22]/D
+                                1.46           1.72 f        -0.26  (VIOLATED)
+   ex_stage_inst/mult_pp_inst/tree_i/layer_4_r_reg[0][24]/D
+                                1.46           1.72 r        -0.26  (VIOLATED)
+   ex_stage_inst/mult_pp_inst/tree_i/layer_4_r_reg[1][18]/D
+                                1.46           1.72 f        -0.26  (VIOLATED)
+   ex_stage_inst/mult_pp_inst/tree_i/layer_4_r_reg[1][14]/D
+                                1.46           1.72 f        -0.26  (VIOLATED)
+   ex_stage_inst/mult_pp_inst/tree_i/layer_4_r_reg[0][28]/D
+                                1.47           1.72 r        -0.26  (VIOLATED)
+   ex_stage_inst/mult_pp_inst/tree_i/layer_4_r_reg[1][15]/D
+                                1.46           1.71 f        -0.25  (VIOLATED)
+   ex_stage_inst/mult_pp_inst/tree_i/layer_4_r_reg[1][28]/D
+                                1.46           1.71 r        -0.25  (VIOLATED)
+   ex_stage_inst/mult_pp_inst/tree_i/layer_4_r_reg[1][23]/D
+                                1.47           1.71 r        -0.25  (VIOLATED)
+   ex_stage_inst/mult_pp_inst/tree_i/layer_4_r_reg[0][13]/D
+                                1.46           1.71 r        -0.25  (VIOLATED)
+   ex_stage_inst/mult_pp_inst/tree_i/layer_4_r_reg[1][24]/D
+                                1.46           1.70 r        -0.24  (VIOLATED)
+   ex_stage_inst/mult_pp_inst/tree_i/layer_4_r_reg[0][30]/D
+                                1.45           1.69 f        -0.24  (VIOLATED)
+   ex_stage_inst/mult_pp_inst/tree_i/layer_4_r_reg[0][14]/D
+                                1.47           1.71 r        -0.24  (VIOLATED)
+   ex_stage_inst/mult_pp_inst/tree_i/layer_4_r_reg[1][20]/D
+                                1.47           1.70 r        -0.23  (VIOLATED)
+   ex_stage_inst/mult_pp_inst/tree_i/layer_4_r_reg[1][25]/D
+                                1.47           1.69 r        -0.22  (VIOLATED)
+   ex_stage_inst/mult_pp_inst/tree_i/layer_4_r_reg[1][21]/D
+                                1.46           1.68 f        -0.22  (VIOLATED)
+   ex_stage_inst/mult_pp_inst/tree_i/layer_4_r_reg[1][29]/D
+                                1.46           1.68 r        -0.22  (VIOLATED)
+   ex_stage_inst/mult_pp_inst/tree_i/layer_4_r_reg[1][19]/D
+                                1.46           1.68 r        -0.22  (VIOLATED)
+   ex_stage_inst/mult_pp_inst/tree_i/layer_4_r_reg[1][26]/D
+                                1.46           1.67 f        -0.21  (VIOLATED)
+   ex_stage_inst/mult_pp_inst/tree_i/layer_4_r_reg[1][16]/D
+                                1.47           1.68 r        -0.21  (VIOLATED)
+   ex_stage_inst/mult_pp_inst/tree_i/layer_4_r_reg[2][31]/D
+                                1.47           1.68 r        -0.21  (VIOLATED)
+   ex_stage_inst/mult_pp_inst/tree_i/layer_4_r_reg[1][31]/D
+                                1.47           1.68 r        -0.21  (VIOLATED)
+   ex_stage_inst/mult_pp_inst/tree_i/layer_4_r_reg[0][11]/D
+                                1.47           1.67 r        -0.21  (VIOLATED)
+   if_stage_inst/pc_plus4_reg/reg_data_reg[31]/D
+                                1.47           1.65 r        -0.18  (VIOLATED)
+   ex_stage_inst/mult_pp_inst/tree_i/layer_4_r_reg[0][12]/D
+                                1.47           1.65 r        -0.18  (VIOLATED)
+   ex_stage_inst/mult_pp_inst/tree_i/layer_4_r_reg[2][22]/D
+                                1.46           1.63 r        -0.17  (VIOLATED)
+   ex_stage_inst/mult_pp_inst/tree_i/layer_4_r_reg[3][23]/D
+                                1.47           1.63 r        -0.16  (VIOLATED)
+   ex_stage_inst/mult_pp_inst/tree_i/layer_4_r_reg[1][12]/D
+                                1.47           1.61 r        -0.15  (VIOLATED)
+   ex_stage_inst/mult_pp_inst/tree_i/layer_4_r_reg[0][10]/D
+                                1.47           1.61 r        -0.14  (VIOLATED)
+   ex_stage_inst/mult_pp_inst/tree_i/layer_4_r_reg[0][9]/D
+                                1.47           1.61 r        -0.14  (VIOLATED)
+   if_stage_inst/btb_inst/btb_reg[0][TARGET][0]/D
+                                1.46           1.59 r        -0.13  (VIOLATED)
+   if_stage_inst/btb_inst/btb_reg[1][TARGET][0]/D
+                                1.46           1.59 r        -0.13  (VIOLATED)
+   if_stage_inst/btb_inst/btb_reg[2][TARGET][0]/D
+                                1.46           1.59 r        -0.13  (VIOLATED)
+   if_stage_inst/btb_inst/btb_reg[3][TARGET][0]/D
+                                1.46           1.59 r        -0.13  (VIOLATED)
+   if_stage_inst/btb_inst/btb_reg[4][TARGET][0]/D
+                                1.46           1.59 r        -0.13  (VIOLATED)
+   if_stage_inst/btb_inst/btb_reg[5][TARGET][0]/D
+                                1.46           1.59 r        -0.13  (VIOLATED)
+   if_stage_inst/btb_inst/btb_reg[6][TARGET][0]/D
+                                1.46           1.59 r        -0.13  (VIOLATED)
+   if_stage_inst/btb_inst/btb_reg[7][TARGET][0]/D
+                                1.46           1.59 r        -0.13  (VIOLATED)
+   if_stage_inst/btb_inst/btb_reg[8][TARGET][0]/D
+                                1.46           1.59 r        -0.13  (VIOLATED)
+   if_stage_inst/btb_inst/btb_reg[9][TARGET][0]/D
+                                1.46           1.59 r        -0.13  (VIOLATED)
+   if_stage_inst/btb_inst/btb_reg[10][TARGET][0]/D
+                                1.46           1.59 r        -0.13  (VIOLATED)
+   if_stage_inst/btb_inst/btb_reg[11][TARGET][0]/D
+                                1.46           1.59 r        -0.13  (VIOLATED)
+   if_stage_inst/btb_inst/btb_reg[12][TARGET][0]/D
+                                1.46           1.59 r        -0.13  (VIOLATED)
+   if_stage_inst/btb_inst/btb_reg[13][TARGET][0]/D
+                                1.46           1.59 r        -0.13  (VIOLATED)
+   if_stage_inst/btb_inst/btb_reg[14][TARGET][0]/D
+                                1.46           1.59 r        -0.13  (VIOLATED)
+   if_stage_inst/btb_inst/btb_reg[15][TARGET][0]/D
+                                1.46           1.59 r        -0.13  (VIOLATED)
+   if_stage_inst/pc_plus4_reg/reg_data_reg[30]/D
+                                1.46           1.59 f        -0.13  (VIOLATED)
+   ex_stage_inst/mult_pp_inst/tree_i/layer_4_r_reg[2][24]/D
+                                1.47           1.59 r        -0.13  (VIOLATED)
+   if_stage_inst/btb_inst/btb_reg[0][TARGET][29]/D
+                                1.45           1.57 f        -0.12  (VIOLATED)
+   if_stage_inst/btb_inst/btb_reg[1][TARGET][29]/D
+                                1.45           1.57 f        -0.12  (VIOLATED)
+   if_stage_inst/btb_inst/btb_reg[2][TARGET][29]/D
+                                1.45           1.57 f        -0.12  (VIOLATED)
+   if_stage_inst/btb_inst/btb_reg[3][TARGET][29]/D
+                                1.45           1.57 f        -0.12  (VIOLATED)
+   if_stage_inst/btb_inst/btb_reg[4][TARGET][29]/D
+                                1.45           1.57 f        -0.12  (VIOLATED)
+   if_stage_inst/btb_inst/btb_reg[5][TARGET][29]/D
+                                1.45           1.57 f        -0.12  (VIOLATED)
+   if_stage_inst/btb_inst/btb_reg[6][TARGET][29]/D
+                                1.45           1.57 f        -0.12  (VIOLATED)
+   if_stage_inst/btb_inst/btb_reg[7][TARGET][29]/D
+                                1.45           1.57 f        -0.12  (VIOLATED)
+   if_stage_inst/btb_inst/btb_reg[8][TARGET][29]/D
+                                1.45           1.57 f        -0.12  (VIOLATED)
+   if_stage_inst/btb_inst/btb_reg[9][TARGET][29]/D
+                                1.45           1.57 f        -0.12  (VIOLATED)
+   if_stage_inst/btb_inst/btb_reg[10][TARGET][29]/D
+                                1.45           1.57 f        -0.12  (VIOLATED)
+   if_stage_inst/btb_inst/btb_reg[11][TARGET][29]/D
+                                1.45           1.57 f        -0.12  (VIOLATED)
+   if_stage_inst/btb_inst/btb_reg[12][TARGET][29]/D
+                                1.45           1.57 f        -0.12  (VIOLATED)
+   if_stage_inst/btb_inst/btb_reg[13][TARGET][29]/D
+                                1.45           1.57 f        -0.12  (VIOLATED)
+   if_stage_inst/btb_inst/btb_reg[14][TARGET][29]/D
+                                1.45           1.57 f        -0.12  (VIOLATED)
+   if_stage_inst/btb_inst/btb_reg[15][TARGET][29]/D
+                                1.45           1.57 f        -0.12  (VIOLATED)
+   ex_stage_inst/mult_pp_inst/tree_i/layer_4_r_reg[1][13]/D
+                                1.47           1.59 r        -0.12  (VIOLATED)
+   ex_stage_inst/mult_pp_inst/tree_i/layer_4_r_reg[2][28]/D
+                                1.47           1.58 r        -0.11  (VIOLATED)
+   R_23/D                       1.46           1.57 f        -0.11  (VIOLATED)
+   ex_stage_inst/mult_pp_inst/tree_i/layer_4_r_reg[2][29]/D
+                                1.46           1.57 r        -0.11  (VIOLATED)
+   ex_stage_inst/mult_pp_inst/tree_i/layer_4_r_reg[1][11]/D
+                                1.46           1.57 r        -0.10  (VIOLATED)
+   ex_stage_inst/mult_pp_inst/tree_i/layer_4_r_reg[2][27]/D
+                                1.47           1.56 r        -0.10  (VIOLATED)
+   ex_stage_inst/mult_pp_inst/tree_i/layer_4_r_reg[3][27]/D
+                                1.47           1.55 r        -0.08  (VIOLATED)
+   ex_stage_inst/mult_pp_inst/tree_i/layer_4_r_reg[2][30]/D
+                                1.46           1.54 f        -0.08  (VIOLATED)
+   ex_stage_inst/mult_pp_inst/tree_i/layer_4_r_reg[1][10]/D
+                                1.47           1.55 r        -0.08  (VIOLATED)
+   R_26/D                       1.46           1.54 f        -0.08  (VIOLATED)
+   ex_stage_inst/mult_pp_inst/tree_i/layer_4_r_reg[3][28]/D
+                                1.46           1.54 f        -0.08  (VIOLATED)
+   ex_stage_inst/mult_pp_inst/tree_i/layer_4_r_reg[3][25]/D
+                                1.46           1.54 r        -0.08  (VIOLATED)
+   ex_stage_inst/mult_pp_inst/tree_i/layer_4_r_reg[2][26]/D
+                                1.46           1.54 f        -0.08  (VIOLATED)
+   ex_stage_inst/result_reg/reg_data_reg[0]/D
+                                1.46           1.53 f        -0.07  (VIOLATED)
+   if_stage_inst/btb_inst/btb_reg[0][TARGET][31]/D
+                                1.46           1.52 r        -0.07  (VIOLATED)
+   if_stage_inst/btb_inst/btb_reg[1][TARGET][31]/D
+                                1.46           1.52 r        -0.07  (VIOLATED)
+   if_stage_inst/btb_inst/btb_reg[2][TARGET][31]/D
+                                1.46           1.52 r        -0.07  (VIOLATED)
+   if_stage_inst/btb_inst/btb_reg[3][TARGET][31]/D
+                                1.46           1.52 r        -0.07  (VIOLATED)
+   if_stage_inst/btb_inst/btb_reg[4][TARGET][31]/D
+                                1.46           1.52 r        -0.07  (VIOLATED)
+   if_stage_inst/btb_inst/btb_reg[5][TARGET][31]/D
+                                1.46           1.52 r        -0.07  (VIOLATED)
+   if_stage_inst/btb_inst/btb_reg[6][TARGET][31]/D
+                                1.46           1.52 r        -0.07  (VIOLATED)
+   if_stage_inst/btb_inst/btb_reg[7][TARGET][31]/D
+                                1.46           1.52 r        -0.07  (VIOLATED)
+   if_stage_inst/btb_inst/btb_reg[8][TARGET][31]/D
+                                1.46           1.52 r        -0.07  (VIOLATED)
+   if_stage_inst/btb_inst/btb_reg[9][TARGET][31]/D
+                                1.46           1.52 r        -0.07  (VIOLATED)
+   if_stage_inst/btb_inst/btb_reg[10][TARGET][31]/D
+                                1.46           1.52 r        -0.07  (VIOLATED)
+   if_stage_inst/btb_inst/btb_reg[11][TARGET][31]/D
+                                1.46           1.52 r        -0.07  (VIOLATED)
+   if_stage_inst/btb_inst/btb_reg[12][TARGET][31]/D
+                                1.46           1.52 r        -0.07  (VIOLATED)
+   if_stage_inst/btb_inst/btb_reg[13][TARGET][31]/D
+                                1.46           1.52 r        -0.07  (VIOLATED)
+   if_stage_inst/btb_inst/btb_reg[14][TARGET][31]/D
+                                1.46           1.52 r        -0.07  (VIOLATED)
+   if_stage_inst/btb_inst/btb_reg[15][TARGET][31]/D
+                                1.46           1.52 r        -0.07  (VIOLATED)
+   ex_stage_inst/mult_pp_inst/tree_i/layer_4_r_reg[3][31]/D
+                                1.46           1.52 f        -0.06  (VIOLATED)
+   ex_stage_inst/mult_pp_inst/tree_i/layer_4_r_reg[3][30]/D
+                                1.46           1.52 f        -0.06  (VIOLATED)
+   ex_stage_inst/mult_pp_inst/tree_i/layer_4_r_reg[3][29]/D
+                                1.46           1.52 f        -0.06  (VIOLATED)
+   if_stage_inst/pc_plus4_reg/reg_data_reg[29]/D
+                                1.46           1.52 f        -0.06  (VIOLATED)
+   ex_stage_inst/mult_pp_inst/tree_i/layer_4_r_reg[0][8]/D
+                                1.46           1.51 f        -0.05  (VIOLATED)
+   R_24/D                       1.47           1.52 r        -0.05  (VIOLATED)
+   ex_stage_inst/mult_pp_inst/tree_i/layer_4_r_reg[2][20]/D
+                                1.46           1.50 f        -0.04  (VIOLATED)
+   ex_stage_inst/mult_pp_inst/tree_i/layer_4_r_reg[3][21]/D
+                                1.47           1.51 r        -0.04  (VIOLATED)
+   ex_stage_inst/mult_pp_inst/tree_i/layer_4_r_reg[2][23]/D
+                                1.46           1.50 f        -0.04  (VIOLATED)
+   if_stage_inst/btb_inst/btb_reg[0][TARGET][26]/D
+                                1.45           1.48 f        -0.03  (VIOLATED)
+   if_stage_inst/btb_inst/btb_reg[1][TARGET][26]/D
+                                1.45           1.48 f        -0.03  (VIOLATED)
+   if_stage_inst/btb_inst/btb_reg[2][TARGET][26]/D
+                                1.45           1.48 f        -0.03  (VIOLATED)
+   if_stage_inst/btb_inst/btb_reg[3][TARGET][26]/D
+                                1.45           1.48 f        -0.03  (VIOLATED)
+   if_stage_inst/btb_inst/btb_reg[4][TARGET][26]/D
+                                1.45           1.48 f        -0.03  (VIOLATED)
+   if_stage_inst/btb_inst/btb_reg[5][TARGET][26]/D
+                                1.45           1.48 f        -0.03  (VIOLATED)
+   if_stage_inst/btb_inst/btb_reg[6][TARGET][26]/D
+                                1.45           1.48 f        -0.03  (VIOLATED)
+   if_stage_inst/btb_inst/btb_reg[7][TARGET][26]/D
+                                1.45           1.48 f        -0.03  (VIOLATED)
+   if_stage_inst/btb_inst/btb_reg[8][TARGET][26]/D
+                                1.45           1.48 f        -0.03  (VIOLATED)
+   if_stage_inst/btb_inst/btb_reg[9][TARGET][26]/D
+                                1.45           1.48 f        -0.03  (VIOLATED)
+   if_stage_inst/btb_inst/btb_reg[10][TARGET][26]/D
+                                1.45           1.48 f        -0.03  (VIOLATED)
+   if_stage_inst/btb_inst/btb_reg[11][TARGET][26]/D
+                                1.45           1.48 f        -0.03  (VIOLATED)
+   if_stage_inst/btb_inst/btb_reg[12][TARGET][26]/D
+                                1.45           1.48 f        -0.03  (VIOLATED)
+   if_stage_inst/btb_inst/btb_reg[13][TARGET][26]/D
+                                1.45           1.48 f        -0.03  (VIOLATED)
+   if_stage_inst/btb_inst/btb_reg[14][TARGET][26]/D
+                                1.45           1.48 f        -0.03  (VIOLATED)
+   if_stage_inst/btb_inst/btb_reg[15][TARGET][26]/D
+                                1.45           1.48 f        -0.03  (VIOLATED)
+   if_stage_inst/btb_inst/btb_reg[0][TARGET][28]/D
+                                1.46           1.49 r        -0.03  (VIOLATED)
+   if_stage_inst/btb_inst/btb_reg[1][TARGET][28]/D
+                                1.46           1.49 r        -0.03  (VIOLATED)
+   if_stage_inst/btb_inst/btb_reg[2][TARGET][28]/D
+                                1.46           1.49 r        -0.03  (VIOLATED)
+   if_stage_inst/btb_inst/btb_reg[3][TARGET][28]/D
+                                1.46           1.49 r        -0.03  (VIOLATED)
+   if_stage_inst/btb_inst/btb_reg[4][TARGET][28]/D
+                                1.46           1.49 r        -0.03  (VIOLATED)
+   if_stage_inst/btb_inst/btb_reg[5][TARGET][28]/D
+                                1.46           1.49 r        -0.03  (VIOLATED)
+   if_stage_inst/btb_inst/btb_reg[6][TARGET][28]/D
+                                1.46           1.49 r        -0.03  (VIOLATED)
+   if_stage_inst/btb_inst/btb_reg[7][TARGET][28]/D
+                                1.46           1.49 r        -0.03  (VIOLATED)
+   if_stage_inst/btb_inst/btb_reg[8][TARGET][28]/D
+                                1.46           1.49 r        -0.03  (VIOLATED)
+   if_stage_inst/btb_inst/btb_reg[9][TARGET][28]/D
+                                1.46           1.49 r        -0.03  (VIOLATED)
+   if_stage_inst/btb_inst/btb_reg[10][TARGET][28]/D
+                                1.46           1.49 r        -0.03  (VIOLATED)
+   if_stage_inst/btb_inst/btb_reg[11][TARGET][28]/D
+                                1.46           1.49 r        -0.03  (VIOLATED)
+   if_stage_inst/btb_inst/btb_reg[12][TARGET][28]/D
+                                1.46           1.49 r        -0.03  (VIOLATED)
+   if_stage_inst/btb_inst/btb_reg[13][TARGET][28]/D
+                                1.46           1.49 r        -0.03  (VIOLATED)
+   if_stage_inst/btb_inst/btb_reg[14][TARGET][28]/D
+                                1.46           1.49 r        -0.03  (VIOLATED)
+   if_stage_inst/btb_inst/btb_reg[15][TARGET][28]/D
+                                1.46           1.49 r        -0.03  (VIOLATED)
+   if_stage_inst/btb_inst/btb_reg[0][TARGET][25]/D
+                                1.45           1.48 f        -0.03  (VIOLATED)
+   if_stage_inst/btb_inst/btb_reg[1][TARGET][25]/D
+                                1.45           1.48 f        -0.03  (VIOLATED)
+   if_stage_inst/btb_inst/btb_reg[2][TARGET][25]/D
+                                1.45           1.48 f        -0.03  (VIOLATED)
+   if_stage_inst/btb_inst/btb_reg[3][TARGET][25]/D
+                                1.45           1.48 f        -0.03  (VIOLATED)
+   if_stage_inst/btb_inst/btb_reg[4][TARGET][25]/D
+                                1.45           1.48 f        -0.03  (VIOLATED)
+   if_stage_inst/btb_inst/btb_reg[5][TARGET][25]/D
+                                1.45           1.48 f        -0.03  (VIOLATED)
+   if_stage_inst/btb_inst/btb_reg[6][TARGET][25]/D
+                                1.45           1.48 f        -0.03  (VIOLATED)
+   if_stage_inst/btb_inst/btb_reg[7][TARGET][25]/D
+                                1.45           1.48 f        -0.03  (VIOLATED)
+   if_stage_inst/btb_inst/btb_reg[8][TARGET][25]/D
+                                1.45           1.48 f        -0.03  (VIOLATED)
+   if_stage_inst/btb_inst/btb_reg[9][TARGET][25]/D
+                                1.45           1.48 f        -0.03  (VIOLATED)
+   if_stage_inst/btb_inst/btb_reg[10][TARGET][25]/D
+                                1.45           1.48 f        -0.03  (VIOLATED)
+   if_stage_inst/btb_inst/btb_reg[11][TARGET][25]/D
+                                1.45           1.48 f        -0.03  (VIOLATED)
+   if_stage_inst/btb_inst/btb_reg[12][TARGET][25]/D
+                                1.45           1.48 f        -0.03  (VIOLATED)
+   if_stage_inst/btb_inst/btb_reg[13][TARGET][25]/D
+                                1.45           1.48 f        -0.03  (VIOLATED)
+   if_stage_inst/btb_inst/btb_reg[14][TARGET][25]/D
+                                1.45           1.48 f        -0.03  (VIOLATED)
+   if_stage_inst/btb_inst/btb_reg[15][TARGET][25]/D
+                                1.45           1.48 f        -0.03  (VIOLATED)
+   if_stage_inst/pc_plus4_reg/reg_data_reg[28]/D
+                                1.46           1.49 f        -0.03  (VIOLATED)
+   ex_stage_inst/mult_pp_inst/tree_i/layer_4_r_reg[1][9]/D
+                                1.47           1.49 r        -0.03  (VIOLATED)
+   if_stage_inst/btb_inst/btb_reg[0][TARGET][30]/D
+                                1.46           1.48 r        -0.02  (VIOLATED)
+   if_stage_inst/btb_inst/btb_reg[1][TARGET][30]/D
+                                1.46           1.48 r        -0.02  (VIOLATED)
+   if_stage_inst/btb_inst/btb_reg[2][TARGET][30]/D
+                                1.46           1.48 r        -0.02  (VIOLATED)
+   if_stage_inst/btb_inst/btb_reg[3][TARGET][30]/D
+                                1.46           1.48 r        -0.02  (VIOLATED)
+   if_stage_inst/btb_inst/btb_reg[4][TARGET][30]/D
+                                1.46           1.48 r        -0.02  (VIOLATED)
+   if_stage_inst/btb_inst/btb_reg[5][TARGET][30]/D
+                                1.46           1.48 r        -0.02  (VIOLATED)
+   if_stage_inst/btb_inst/btb_reg[6][TARGET][30]/D
+                                1.46           1.48 r        -0.02  (VIOLATED)
+   if_stage_inst/btb_inst/btb_reg[7][TARGET][30]/D
+                                1.46           1.48 r        -0.02  (VIOLATED)
+   if_stage_inst/btb_inst/btb_reg[8][TARGET][30]/D
+                                1.46           1.48 r        -0.02  (VIOLATED)
+   if_stage_inst/btb_inst/btb_reg[9][TARGET][30]/D
+                                1.46           1.48 r        -0.02  (VIOLATED)
+   if_stage_inst/btb_inst/btb_reg[10][TARGET][30]/D
+                                1.46           1.48 r        -0.02  (VIOLATED)
+   if_stage_inst/btb_inst/btb_reg[11][TARGET][30]/D
+                                1.46           1.48 r        -0.02  (VIOLATED)
+   if_stage_inst/btb_inst/btb_reg[12][TARGET][30]/D
+                                1.46           1.48 r        -0.02  (VIOLATED)
+   if_stage_inst/btb_inst/btb_reg[13][TARGET][30]/D
+                                1.46           1.48 r        -0.02  (VIOLATED)
+   if_stage_inst/btb_inst/btb_reg[14][TARGET][30]/D
+                                1.46           1.48 r        -0.02  (VIOLATED)
+   if_stage_inst/btb_inst/btb_reg[15][TARGET][30]/D
+                                1.46           1.48 r        -0.02  (VIOLATED)
+   if_stage_inst/pc_reg_inst/clk_gate_reg_data_reg/main_gate/A1
+                                0.75           0.77 f        -0.02  (VIOLATED)
+   if_stage_inst/btb_inst/btb_reg[0][TARGET][24]/D
+                                1.46           1.46 r         0.00  (VIOLATED: increase significant digits)
+   if_stage_inst/btb_inst/btb_reg[1][TARGET][24]/D
+                                1.46           1.46 r         0.00  (VIOLATED: increase significant digits)
+   if_stage_inst/btb_inst/btb_reg[2][TARGET][24]/D
+                                1.46           1.46 r         0.00  (VIOLATED: increase significant digits)
+   if_stage_inst/btb_inst/btb_reg[3][TARGET][24]/D
+                                1.46           1.46 r         0.00  (VIOLATED: increase significant digits)
+   if_stage_inst/btb_inst/btb_reg[4][TARGET][24]/D
+                                1.46           1.46 r         0.00  (VIOLATED: increase significant digits)
+   if_stage_inst/btb_inst/btb_reg[5][TARGET][24]/D
+                                1.46           1.46 r         0.00  (VIOLATED: increase significant digits)
+   if_stage_inst/btb_inst/btb_reg[6][TARGET][24]/D
+                                1.46           1.46 r         0.00  (VIOLATED: increase significant digits)
+   if_stage_inst/btb_inst/btb_reg[7][TARGET][24]/D
+                                1.46           1.46 r         0.00  (VIOLATED: increase significant digits)
+   if_stage_inst/btb_inst/btb_reg[8][TARGET][24]/D
+                                1.46           1.46 r         0.00  (VIOLATED: increase significant digits)
+   if_stage_inst/btb_inst/btb_reg[9][TARGET][24]/D
+                                1.46           1.46 r         0.00  (VIOLATED: increase significant digits)
+   if_stage_inst/btb_inst/btb_reg[10][TARGET][24]/D
+                                1.46           1.46 r         0.00  (VIOLATED: increase significant digits)
+   if_stage_inst/btb_inst/btb_reg[11][TARGET][24]/D
+                                1.46           1.46 r         0.00  (VIOLATED: increase significant digits)
+   if_stage_inst/btb_inst/btb_reg[12][TARGET][24]/D
+                                1.46           1.46 r         0.00  (VIOLATED: increase significant digits)
+   if_stage_inst/btb_inst/btb_reg[14][TARGET][24]/D
+                                1.46           1.46 r         0.00  (VIOLATED: increase significant digits)
+   if_stage_inst/btb_inst/btb_reg[15][TARGET][24]/D
+                                1.46           1.46 r         0.00  (VIOLATED: increase significant digits)
+   if_stage_inst/btb_inst/btb_reg[13][TARGET][24]/D
+                                1.46           1.46 r         0.00  (VIOLATED: increase significant digits)
+
+
+   max_leakage_power
+
+                             Required        Actual
+   Design                   Leakage Power  Leakage Power     Slack
+   -----------------------------------------------------------------
+   dlx                          0.00       512357.00      -512357.00
+                                                                    (VIOLATED)
+
+
+1
