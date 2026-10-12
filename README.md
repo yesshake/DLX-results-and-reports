@@ -2,9 +2,26 @@
 
 This repository collects the architecture notes, verification results, synthesis exploration, and physical-design results of my DLX processor implementation.
 
-The complete RTL is not published here because of university obligations. The public repository is therefore focused on the design decisions, diagrams, implementation flow, and results. The RTL can be shared privately where permitted.
+The complete project includes the RTL, verification, synthesis and physical design flow and can be provided upon request where permitted. It is not published here because of university obligations. This public repository focuses on the design decisions, diagrams, implementation flow and results.
 
-The current post-route implementation closes timing at **556.8 MHz** at the typical corner, with **36,648 µm²** of standard-cell area and **23.11 mW** estimated total power at **1.1 V** using activity assumptions.
+The final physical implementation targets a clock frequency of **556.8 MHz** and has **36,689 µm²** of standard cell area and **23.11 mW** estimated total power at **1.1 V** using activity assumptions.
+
+## Performance
+
+Instructions Per Cycle values were measured through RTL simulation of the example programs. The table lists the IPC reported by each program's simulation report.
+
+| Program | Measured IPC |
+|---|---:|
+| Signed and unsigned arithmetic | 0.7917 |
+| Bitwise logic and constant construction | 0.8182 |
+| Logical and arithmetic shifts | 0.8261 |
+| Signed and unsigned comparisons | 0.8438 |
+| Countdown sum and conditional branches | 0.6304 |
+| Subroutine calls and returns | 0.5652 |
+| Byte stores and signed and unsigned byte loads | 0.8261 |
+| Multiplication and factorial loop | 0.6400 |
+| Array products and dot product | 0.7231 |
+| Pipeline dependencies and forwarding | 0.6667 |
 
 ## Architecture
 
@@ -115,7 +132,7 @@ Switching activity for power analysis came from simulation using an average work
 
 ## Physical Design
 
-The selected netlist was taken through a physical design flow using **Cadence Innovus** with **Nangate45/FreePDK45** technology. The implementation used the **1.796 ns** operating period selected after synthesis, corresponding to approximately **556.8 MHz**.
+The selected netlist was taken through a physical design flow using **Cadence Innovus** with **Nangate45/FreePDK45** technology. The physical design target clock period was **1.796 ns**, corresponding to approximately **556.8 MHz**. This constraint is separate from the measured timing results.
 
 The flow was:
 
@@ -138,24 +155,30 @@ Timing, power and DRC checks
 ```
 
 
-A square floorplan was used with **60% initial utilization**. Power distribution used VDD/GND rings and stripes. Signal routing used **metal1–metal6**.
+A square floorplan was used with **60% initial utilization**. Power distribution used VDD/GND rings and stripes. The final routing statistics report wire lengths on **metal1–metal8**.
 
 Placement and Clock tree synthesis was then performed with targets of **50 ps transition** and **20 ps skew**, followed by routing and post-route setup/hold optimization.
 
-Post-route timing was analyzed at typical, slow, and fast corners. For the scope of the project, timing closure was accepted at the **typical corner**, where the design achieved **+103 ps setup slack** and **+18 ps hold slack**, with no setup or hold violations at **556.8 MHz** under the applied constraints. External interface timing was not fully specified.
+The available post-route timing log from 18 September 2026 reports the following results at the **1.796 ns** target clock period. Timing closure was accepted at the typical corner under the applied constraints. External interface timing was not fully specified.
 
-Full closure is not claimed. The slow corner had a setup WNS of **−300 ps**, while the fast corner had a hold WNS of **−33 ps**.
+| Analysis corner | Setup WNS | Setup TNS | Hold WNS | Hold TNS |
+|---|---:|---:|---:|---:|
+| Typical | +103 ps | 0 ps | +18 ps | 0 ps |
+| Slow | -300 ps | -28,052 ps | Not reported | Not reported |
+| Fast | Not reported | Not reported | -33 ps | -662 ps |
 
-![Routed layout](physical_design/images/route_layout.gif)
+Full timing closure across corners is not claimed. The final area and physical verification reports are dated 13 October 2026. Setup and hold reports for that final layout are unavailable, so its timing results cannot be verified.
 
-The post-route implementation contained **22,343 instances**. The main physical metrics were:
+![Final layout](physical_design/images/full_layout.gif)
+
+The post-route implementation contained **22,379 instances**. The main physical metrics were:
 
 | Metric | Result |
 |---|---:|
-| Standard-cell area | 36,647.884 µm² |
+| Standard-cell area | 36,689.380 µm² |
 | Core area | 40,624.584 µm² |
 | Die area | 44,827.490 µm² |
-| Final utilization | 90.211% |
+| Final utilization | 90.313% |
 
 Typical-corner post-route power at **1.1 V** was evaluated using the updated activity assumptions:
 
@@ -168,4 +191,4 @@ Typical-corner post-route power at **1.1 V** was evaluated using the updated act
 
 Compared with the earlier **30.712 mW** vectorless estimate, the updated total is approximately **24.8% lower**. This difference reflects the change in activity assumptions.
 
-Connectivity verification reported no problems, and no electrical design rule violations were reported. **Four physical DRC violations remained, including one metal short**.
+The final Innovus DRC report found no violations. Connectivity verification found no problems or warnings.
