@@ -8,20 +8,15 @@ The final physical implementation targets a clock frequency of **556.8 MHz** and
 
 ## Performance
 
-Instructions Per Cycle values were measured through RTL simulation of the example programs. The table lists the IPC reported by each program's simulation report.
+Instructions Per Cycle values were measured through RTL simulation. The table gives the unweighted mean of the reported program IPC values in each group. Arithmetic and logic includes arithmetic, bitwise logic, shifts and comparisons. Multiplication includes the factorial and array dot product programs. Data dependencies and byte memory each represent one program.
 
-| Program | Measured IPC |
+| Program group | Average IPC |
 |---|---:|
-| Signed and unsigned arithmetic | 0.7917 |
-| Bitwise logic and constant construction | 0.8182 |
-| Logical and arithmetic shifts | 0.8261 |
-| Signed and unsigned comparisons | 0.8438 |
-| Countdown sum and conditional branches | 0.6304 |
-| Subroutine calls and returns | 0.5652 |
-| Byte stores and signed and unsigned byte loads | 0.8261 |
-| Multiplication and factorial loop | 0.6400 |
-| Array products and dot product | 0.7231 |
-| Pipeline dependencies and forwarding | 0.6667 |
+| Arithmetic and logic | 0.8200 |
+| Branches and calls | 0.5978 |
+| Data dependencies and forwarding | 0.6667 |
+| Multiplication and dot product | 0.6816 |
+| Byte memory accesses | 0.8261 |
 
 ## Architecture
 
