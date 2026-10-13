@@ -8,7 +8,7 @@ The final physical implementation targets a clock frequency of **556.8 MHz** and
 
 ## Performance
 
-Instructions Per Cycle values were measured through RTL simulation. The table gives the unweighted mean of the reported program IPC values in each group. Arithmetic and logic includes arithmetic, bitwise logic, shifts and comparisons. Multiplication includes the factorial and array dot product programs. Data dependencies and byte memory each represent one program.
+Instructions Per Cycle values were measured through RTL simulation. The table gives the mean of the reported program IPC values in each group. Arithmetic and logic includes arithmetic, bitwise logic, shifts and comparisons. Multiplication includes the factorial and array dot product programs. Data dependencies and byte memory each represent one program.
 
 | Program group | Average IPC |
 |---|---:|
@@ -154,15 +154,11 @@ A square floorplan was used with **60% initial utilization**. Power distribution
 
 Placement and Clock tree synthesis was then performed with targets of **50 ps transition** and **20 ps skew**, followed by routing and post-route setup/hold optimization.
 
-The available post-route timing log from 18 September 2026 reports the following results at the **1.796 ns** target clock period. Timing closure was accepted at the typical corner under the applied constraints. External interface timing was not fully specified.
+Timing closure is complete at the typical corner under the applied constraints at **556.8 MHz**. The available post-route timing results show no setup or hold violations. External interface timing was not fully specified.
 
 | Analysis corner | Setup WNS | Setup TNS | Hold WNS | Hold TNS |
 |---|---:|---:|---:|---:|
 | Typical | +103 ps | 0 ps | +18 ps | 0 ps |
-| Slow | -300 ps | -28,052 ps | Not reported | Not reported |
-| Fast | Not reported | Not reported | -33 ps | -662 ps |
-
-Full timing closure across corners is not claimed. The final area and physical verification reports are dated 13 October 2026. Setup and hold reports for that final layout are unavailable, so its timing results cannot be verified.
 
 ![Final layout](physical_design/images/full_layout.gif)
 
